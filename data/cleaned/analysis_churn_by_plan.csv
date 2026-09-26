@@ -1,0 +1,5 @@
+plan_tier,customers,churned,total_mrr,churn_pct,mrr_lost,share_of_all_losses
+Starter,493,198,98984.47,40.2,33087.74,10.9
+Growth,373,130,205252.03,34.9,62088.18,20.4
+Business,267,75,486222.73,28.1,124131.7,40.7
+Enterprise,117,27,469810.05,23.1,85620.71,28.1

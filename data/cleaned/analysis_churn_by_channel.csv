@@ -1,0 +1,7 @@
+acquisition_channel,customers,churned,total_mrr,churn_pct,mrr_lost,share_of_all_losses
+Organic,282,68,312459.18,24.1,51404.159999999996,16.9
+Referral,232,64,236191.69,27.6,34074.98,11.2
+Outbound Sales,146,53,123422.70999999999,36.3,27214.31,8.9
+Partner,196,79,159135.38,40.3,57558.39,18.9
+Paid Search,281,117,326719.49,41.6,86987.03,28.5
+Events,113,49,102340.83,43.4,47689.46,15.6

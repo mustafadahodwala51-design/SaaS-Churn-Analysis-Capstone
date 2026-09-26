@@ -1,0 +1,17 @@
+KPI,Value,Unit
+Total customers (2023-2024),"1,250",Customers
+Churned customers,430,Customers
+"Active customers, Dec 2024",820,Customers
+Logo churn rate,34.4%,%
+"MRR, Dec 2024","$1,051,252",USD
+"ARR run-rate, Dec 2024","$12,615,022",USD
+"ARPU, Dec 2024","$1,282",USD
+MRR lost to churn (period),"$304,928",USD
+MRR peak,"$1,052,669 (Oct 2024)",USD
+Change in MRR since peak,-0.1%,%
+Survival at month 6 (of all signups),70%,%
+Survival at month 12 (of all signups),43%,%
+Average NPS,6.99,Score (0-10)
+Average tenure,11.1,Months
+Data quality issues found,12,Categories
+Rows removed as duplicates,54,Rows

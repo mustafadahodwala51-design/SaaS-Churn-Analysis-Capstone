@@ -1,0 +1,23 @@
+# Normalise line endings so the repo behaves the same on Windows, macOS and
+# Linux. Without this, every file shows as modified when switching machines,
+# which buries real changes in diff noise.
+* text=auto eol=lf
+
+# Binary files - never diff these, never rewrite line endings in them.
+*.png binary
+*.xlsx binary
+*.ipynb binary
+*.csv -text
+
+# Scripts and docs
+*.py text eol=lf
+*.sql text eol=lf
+*.md text eol=lf
+*.txt text eol=lf
+requirements.txt text eol=lf
+.gitignore text eol=lf
+.gitattributes text eol=lf
+
+# Keep the notebook diff-readable rather than one giant JSON line.
+*.ipynb text eol=lf
+diff=ipynb

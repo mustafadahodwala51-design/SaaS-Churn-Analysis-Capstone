@@ -1,0 +1,1274 @@
+customer_id,signup_date,plan_tier,industry,country,region,company_size,seats,billing_cycle,acquisition_channel,discount_pct,mrr_at_signup,status,churn_date,churn_reason,tenure_months,nps_score,last_login_date,seats_current
+CUST-10001,2023-01-02,Business,Healthcare,France,Europe,1-50,12,Monthly,Referral,0.0,783.0,Churned,2024-10-01 00:00:00,Company downsizing,21,6,2024-09-05 00:00:00,24
+CUST-10002,2023-01-03,Starter,Healthcare,Brazil,Latin America,1-50,2,Monthly,Referral,5.5,71.68,Churned,2024-10-01 00:00:00,,21,7,2024-09-03 00:00:00,1
+CUST-10003,2023-01-03,Business,Manufacturing,Mexico,Latin America,1-50,6,Monthly,Events,14.2,563.74,Churned,2023-08-01 00:00:00,Switched to competitor,7,10,,4
+CUST-10004,2023-01-03,Business,Financial Services,United States,North America,1000+,173,Monthly,Paid Search,7.5,5519.8,Active,,,24,7,2024-12-16 00:00:00,291
+CUST-10005,2023-01-04,Business,Healthcare,United States,North America,201-1000,87,Monthly,Referral,11.2,2871.19,Churned,2024-05-01 00:00:00,Switched to competitor,16,7,2024-04-14 00:00:00,110
+CUST-10006,2023-01-05,Growth,Financial Services,Germany,Europe,1-50,3,Monthly,Organic,5.8,211.17,Active,,,24,6,,3
+CUST-10007,2023-01-05,Growth,Technology,Germany,Europe,1-50,8,Monthly,Organic,0.0,325.0,Active,,,24,10,2024-12-21 00:00:00,5
+CUST-10008,2023-01-06,Starter,Healthcare,India,Asia Pacific,1-50,3,Annual,Partner,22.4,76.94,Churned,2024-10-01 00:00:00,Too expensive,21,6,2024-09-21 00:00:00,2
+CUST-10009,2023-01-07,Enterprise,Technology,Australia,Asia Pacific,1-50,24,Monthly,Paid Search,8.7,1885.04,Active,,,24,9,2024-12-18 00:00:00,32
+CUST-10010,2023-01-10,Business,Media,India,Asia Pacific,51-200,12,Annual,Referral,6.4,758.42,Churned,2023-08-01 00:00:00,Missing features,7,,2023-07-14 00:00:00,14
+CUST-10011,2023-01-11,Growth,Technology,Canada,North America,1-50,10,Monthly,Referral,0.0,369.0,Active,,,24,4,2024-12-22 00:00:00,18
+CUST-10012,2023-01-12,Starter,Technology,United States,North America,1000+,157,Annual,Organic,3.6,1865.18,Churned,2024-05-01 00:00:00,,16,7,2024-04-26 00:00:00,74
+CUST-10013,2023-01-12,Business,Logistics,Brazil,Latin America,1000+,78,Annual,Organic,12.8,2575.51,Active,,,24,5,2024-12-22 00:00:00,88
+CUST-10014,2023-01-12,Business,Manufacturing,United States,North America,1-50,9,Monthly,Referral,2.9,678.65,Active,,,24,6,2024-12-22 00:00:00,14
+CUST-10015,2023-01-13,Starter,Manufacturing,India,Asia Pacific,1000+,99,Annual,Paid Search,11.3,1102.76,Churned,2023-11-01 00:00:00,Low adoption / unused seats,10,8,2023-10-23 00:00:00,66
+CUST-10016,2023-01-14,Starter,Technology,Germany,north america,51-200,42,Annual,Partner,12.0,492.52,Churned,2024-03-01 00:00:00,Low adoption / unused seats,14,3,2024-02-03 00:00:00,32
+CUST-10017,2023-01-15,Business,Technology,United States,North America,201-1000,30,Annual,Partner,15.0,1215.0,Churned,2023-09-01 00:00:00,Switched to competitor,8,8,2023-08-20 00:00:00,42
+CUST-10018,2023-01-15,Growth,Healthcare,United Kingdom,Europe,51-200,16,Monthly,Outbound Sales,16.5,442.92,Churned,2023-12-01 00:00:00,Company downsizing,11,5,2023-11-23 00:00:00,12
+CUST-10019,2023-01-16,Business,Logistics,Mexico,Latin America,1-50,9,Monthly,Paid Search,5.3,671.74,Active,,,24,4,2024-12-02 00:00:00,18
+CUST-10020,2023-01-17,Starter,Logistics,India,Asia Pacific,51-200,14,Annual,Paid Search,8.1,203.39,Churned,2024-03-01 00:00:00,Missing features,14,9,2024-02-17 00:00:00,11
+CUST-10021,2023-01-18,Business,Manufacturing,United States,North America,1-50,9,Annual,Organic,6.7,667.7,Active,,,24,5,2024-12-04 00:00:00,8
+CUST-10022,2023-01-19,Starter,Financial Services,United States,North America,1000+,108,Annual,Paid Search,23.7,1037.85,Active,,,24,3,,118
+CUST-10023,2023-01-19,Growth,Technology,France,Europe,1-50,5,Annual,Paid Search,10.4,247.56,Active,,,24,,2024-12-09 00:00:00,3
+CUST-10024,2023-01-19,Enterprise,Financial Services,Germany,Europe,51-200,52,Monthly,Organic,0.0,3239.0,Active,,,24,7,2024-12-17 00:00:00,95
+CUST-10025,2023-01-20,Enterprise,Technology,United Kingdom,Europe,201-1000,82,Annual,Events,7.4,4315.94,Churned,2023-08-01 00:00:00,Switched to competitor,7,7,2023-07-19 00:00:00,53
+CUST-10026,2023-01-21,Business,Manufacturing,United Kingdom,Europe,1000+,514,Annual,Partner,20.7,13442.26,Churned,2023-07-01 00:00:00,Switched to competitor,6,8,2023-06-20 00:00:00,540
+CUST-10027,2023-01-21,Business,Technology,United Kingdom,Europe,201-1000,55,Monthly,Paid Search,8.7,2005.88,Active,,,24,5,2024-12-26 00:00:00,53
+CUST-10028,2023-01-21,Growth,Technology,Canada,North America,1-50,6,Monthly,Referral,0.0,281.0,Active,,,24,7,,7
+CUST-10029,2023-01-21,Business,Healthcare,United Kingdom,Europe,1-50,10,Monthly,Referral,9.9,687.32,Active,,,24,3,2024-12-15 00:00:00,9
+CUST-10030,2023-01-21,Starter,Media,United States,North America,51-200,14,Annual,Referral,9.1,201.71,Churned,2023-02-01 00:00:00,Missing features,1,9,2023-01-10 00:00:00,14
+CUST-10031,2023-01-21,Starter,Healthcare,United States,North America,201-1000,27,Annual,Outbound Sales,21.3,303.99,Churned,2023-08-01 00:00:00,Too expensive,7,9,,32
+CUST-10032,2023-01-21,Starter,Logistics,Canada,North America,51-200,6,Monthly,Referral,7.7,115.46,Active,,,24,10,2024-12-20 00:00:00,9
+CUST-10033,2023-01-22,Business,Technology,Germany,Europe,51-200,26,Monthly,Paid Search,5.8,1182.74,Churned,2023-07-01 00:00:00,Too expensive,6,,2023-06-24 00:00:00,27
+CUST-10034,2023-01-22,Starter,Technology,United Kingdom,Europe,1-50,1,Annual,Paid Search,12.4,59.51,Churned,2024-04-01 00:00:00,Too expensive,15,9,2024-03-25 00:00:00,1
+CUST-10035,2023-01-23,Starter,Technology,Germany,Europe,1-50,4,Monthly,Paid Search,17.1,88.79,Churned,2023-02-01 00:00:00,Low adoption / unused seats,1,6,2023-01-26 00:00:00,4
+CUST-10036,2023-01-23,Growth,Financial Services,United Kingdom,Europe,1-50,3,Monthly,Referral,6.9,210.45,Churned,2023-02-01 00:00:00,Missing features,1,10,2023-01-14 00:00:00,3
+CUST-10037,2023-01-25,Business,Media,United Kingdom,Europe,1-50,12,Annual,Events,6.4,758.42,Churned,2023-02-01 00:00:00,Low adoption / unused seats,1,7,2023-01-15 00:00:00,12
+CUST-10038,2023-01-26,Growth,Technology,Germany,Europe,1-50,4,Monthly,Partner,13.8,224.86,Active,,,24,10,2024-12-26 00:00:00,4
+CUST-10039,2023-01-28,Starter,Media,Singapore,Asia Pacific,1-50,4,Monthly,Paid Search,4.8,94.7,Active,,,24,7,2024-12-19 00:00:00,8
+CUST-10040,2023-01-28,Starter,Education,Germany,Europe,1-50,2,Monthly,Partner,20.0,68.2,Churned,2023-03-01 00:00:00,Missing features,2,6,,2
+CUST-10041,2023-02-01,Business,Technology,India,Asia Pacific,1000+,109,Annual,Organic,6.6,3656.79,Active,,,23,,2024-12-07 00:00:00,98
+CUST-10042,2023-02-01,Growth,Healthcare,Spain,Europe,1-50,14,Monthly,Organic,2.3,449.92,Active,,,23,7,2024-12-03 00:00:00,15
+CUST-10043,2023-02-01,Enterprise,Financial Services,India,Asia Pacific,1-50,17,Monthly,Outbound Sales,12.2,1570.67,Churned,2024-11-01 00:00:00,Poor support experience,21,9,2024-10-19 00:00:00,16
+CUST-10044,2023-02-02,Starter,Retail,Japan,Asia Pacific,1-50,6,Monthly,Events,17.9,108.11,Churned,2023-06-01 00:00:00,Low adoption / unused seats,4,6,2023-05-07 00:00:00,6
+CUST-10045,2023-02-02,Business,Logistics,United States,North America,51-200,20,Annual,Events,14.7,944.92,Active,,,23,7,2024-12-10 00:00:00,25
+CUST-10046,2023-02-02,Growth,Logistics,United Kingdom,Europe,51-200,22,Annual,Partner,16.1,555.08,Active,,,23,7,,38
+CUST-10047,2023-02-02,Enterprise,Technology,France,Europe,1-50,16,Monthly,Paid Search,5.8,1577.24,Active,,,23,6,2024-12-09 00:00:00,22
+CUST-10048,2023-02-03,Growth,Financial Services,Brazil,Latin America,1-50,2,Monthly,Referral,2.6,191.86,Churned,2023-04-01 00:00:00,,2,7,2023-03-22 00:00:00,2
+CUST-10049,2023-02-04,Growth,Technology,Australia,Asia Pacific,51-200,9,Annual,Paid Search,17.1,313.14,Active,,,23,10,2024-12-27 00:00:00,6
+CUST-10050,2023-02-05,Business,Technology,Germany,Europe,1-50,8,Monthly,Partner,8.6,632.98,Churned,2023-11-01 00:00:00,Switched to competitor,9,6,2023-10-03 00:00:00,8
+CUST-10051,2023-02-06,Growth,Logistics,France,Europe,1-50,6,Monthly,Organic,7.3,271.36,Churned,2023-06-01 00:00:00,Poor support experience,4,10,2023-05-09 00:00:00,6
+CUST-10052,2023-02-06,Growth,Education,Germany,Europe,1-50,1,Monthly,Outbound Sales,11.3,168.51,Churned,2023-06-01 00:00:00,Too expensive,4,,2023-05-13 00:00:00,1
+CUST-10053,2023-02-06,Business,Media,United Kingdom,Europe,1-50,13,Monthly,Referral,8.1,781.3,Churned,2023-06-01 00:00:00,Company downsizing,4,6,2023-05-26 00:00:00,10
+CUST-10054,2023-02-06,Enterprise,Healthcare,Spain,Europe,1-50,9,Monthly,Paid Search,8.9,1267.95,Active,,,23,,2024-12-05 00:00:00,12
+CUST-10055,2023-02-07,Starter,Manufacturing,United States,North America,1000+,85,Annual,Events,20.3,861.94,Active,,,23,7,2024-12-27 00:00:00,65
+CUST-10056,2023-02-07,Starter,Logistics,Germany,Europe,1-50,4,Monthly,Paid Search,8.9,92.73,Churned,2023-07-01 00:00:00,Low adoption / unused seats,5,2,2023-06-04 00:00:00,4
+CUST-10057,2023-02-08,Growth,Retail,United States,North America,1000+,65,Annual,Paid Search,17.5,1328.75,Churned,01/08/2023,Switched to competitor,6,,2023-07-06 00:00:00,75
+CUST-10058,2023-02-09,Business,Media,United Kingdom,Europe,1-50,32,Monthly,Outbound Sales,14.4,1275.54,Active,,,23,7,,39
+CUST-10059,2023-02-09,Business,Education,United Kingdom,Europe,201-1000,86,Annual,Partner,20.5,2586.84,Active,,,23,,2024-12-02 00:00:00,133
+CUST-10060,2023-02-10,Enterprise,Education,United States,North America,201-1000,121,Monthly,Organic,4.8,6082.64,Active,,,23,8,,160
+CUST-10061,2023-02-10,Growth,Healthcare,United Kingdom,Europe,1-50,3,Monthly,Partner,14.9,-205.17,Active,,,23,6,2024-12-05 00:00:00,4
+CUST-10062,2023-02-11,Business,Healthcare,United Kingdom,Europe,1-50,11,Monthly,Paid Search,7.0,726.36,Churned,2023-04-01 00:00:00,Switched to competitor,2,,2023-03-07 00:00:00,11
+CUST-10063,2023-02-13,Growth,Education,Canada,North America,1-50,6,Monthly,Events,11.2,266.22,Churned,2023-04-01 00:00:00,Poor support experience,2,8,2023-03-21 00:00:00,6
+CUST-10064,2023-02-13,Business,Media,Canada,North America,1000+,342,Monthly,Paid Search,9.2,10336.15,Churned,2024-04-01 00:00:00,Missing features,14,7,2024-03-12 00:00:00,403
+CUST-10065,2023-02-14,Growth,Financial Services,Singapore,Asia Pacific,1-50,5,Monthly,Paid Search,1.3,257.57,Churned,2024-01-01 00:00:00,,11,10,2023-12-14 00:00:00,3
+CUST-10066,2023-02-14,Starter,Technology,Brazil,Latin America,51-200,19,Monthly,Organic,0.0,277.0,Churned,2024-06-01 00:00:00,Low adoption / unused seats,16,5,2024-05-15 00:00:00,29
+CUST-10067,2023-02-14,Business,Retail,Germany,Europe,1-50,16,Monthly,Partner,16.5,826.52,Active,,,23,9,2024-12-18 00:00:00,17
+CUST-10068,2023-02-14,Starter,Technology,United States,North America,51-200,14,Monthly,Partner,18.2,186.42,Churned,2023-03-01 00:00:00,Switched to competitor,1,7,2023-02-11 00:00:00,14
+CUST-10069,2023-02-15,Starter,Technology,Germany,Europe,51-200,5,Monthly,Events,8.2,104.08,Churned,2024-09-01 00:00:00,Low adoption / unused seats,19,6,2024-08-05 00:00:00,3
+CUST-10070,2023-02-15,Business,Technology,United States,North America,201-1000,42,Annual,Organic,8.5,1628.76,Active,,,23,8,2024-12-15 00:00:00,72
+CUST-10071,2023-02-15,Business,Financial Services,United Kingdom,Europe,51-200,13,Annual,Organic,4.6,795.86,Active,,,23,7,2024-12-13 00:00:00,17
+CUST-10072,2023-02-16,Growth,Healthcare,France,Europe,51-200,23,Monthly,Referral,3.9,635.27,Active,,,23,8,2024-12-10 00:00:00,72
+CUST-10073,2023-02-16,Starter,Technology,United Kingdom,Europe,1-50,1,Monthly,Organic,0.0,61.0,Active,,,23,8,2024-12-23 00:00:00,1
+CUST-10074,2023-02-16,Starter,Healthcare,Australia,Asia Pacific,201-1000,35,Annual,Paid Search,15.2,405.16,Active,,,23,9,2024-12-14 00:00:00,32
+CUST-10075,2023-02-16,Starter,Education,United States,North America,1000+,57,Monthly,Referral,13.6,639.98,Active,,,23,3,2024-12-08 00:00:00,58
+CUST-10076,2023-02-18,Starter,Manufacturing,United Kingdom,Europe,201-1000,36,Annual,Referral,11.3,432.18,Active,,,23,8,2024-12-02 00:00:00,52
+CUST-10077,2023-02-18, growth  ,Healthcare,Brazil,Latin America,201-1000,27,Monthly,Paid Search,14.2,658.65,Active,,,23,8,2024-12-19 00:00:00,69
+CUST-10078,2023-02-18,Starter,Retail,Singapore,Asia Pacific,51-200,33,Monthly,Organic,8.8,410.15,Active,,,23,7,,59
+CUST-10079,2023-02-20,Growth,Healthcare,United Kingdom,Europe,201-1000,81,Annual,Paid Search,9.7,1758.15,Active,,,23,10,2024-12-13 00:00:00,201
+CUST-10080,2023-02-21,Starter,Education,Japan,Asia Pacific,1000+,50,Annual,Organic,7.3,605.2,Active,,,23,6,2024-12-08 00:00:00,99
+CUST-10081,2023-02-21,Starter,Manufacturing,United Kingdom,Europe,51-200,7,Monthly,Partner,19.3,116.79,Churned,2024-08-01 00:00:00,Low adoption / unused seats,18,9,2024-07-16 00:00:00,5
+CUST-10082,2023-02-21,Growth,Manufacturing,Canada,North America,201-1000,37,Monthly,Paid Search,15.4,837.64,Active,,,23,,2024-12-05 00:00:00,82
+CUST-10083,2023-02-22,Growth,Technology,Japan,Asia Pacific,1-50,3,Monthly,Outbound Sales,16.5,204.11,Churned,2023-12-01 00:00:00,Poor support experience,10,2,2023-11-15 00:00:00,3
+CUST-10084,2023-02-22,Enterprise,Retail,Mexico,Latin America,201-1000,114,Annual,Partner,23.5,4823.45,Active,,,23,7,2024-12-08 00:00:00,55
+CUST-10085,2023-02-23,Enterprise,Technology,Mexico,Latin America,1-50,13,Monthly,Paid Search,5.4,1452.41,Active,,,23,7,2024-12-22 00:00:00,9
+CUST-10086,2023-02-24,Growth,Retail,India,Asia Pacific,51-200,18,Monthly,Paid Search,7.5,515.3,Churned,2023-07-01 00:00:00,Poor support experience,5,,2023-06-15 00:00:00,24
+CUST-10087,2023-02-25,Starter,Technology,United States,North America,1-50,4,Monthly,Organic,0.0,97.0,Churned,2024-09-01 00:00:00,Too expensive,19,8,2024-08-04 00:00:00,2
+CUST-10088,2023-02-25,Enterprise,Education,United States,North America,1-50,16,Monthly,Organic,3.8,1591.64,Active,,,23,7,2024-12-02 00:00:00,40
+CUST-10089,2023-02-25,Starter,Education,United States,North America,1-50,5,Monthly,Paid Search,8.5,103.9,Churned,2024-07-01 00:00:00,Switched to competitor,17,10,,5
+CUST-10090,2023-02-26,Starter,Education,United States,North America,1-50,4,Monthly,Partner,13.3,90.62,Churned,2023-07-01 00:00:00,,5,6,2023-06-20 00:00:00,4
+CUST-10091,2023-02-26,Business,Retail,France,Europe,51-200,16,Annual,Paid Search,5.0,885.4,Active,,,23,,2024-12-13 00:00:00,9
+CUST-10092,2023-02-26,Starter,Education,United Kingdom,Europe,51-200,4,Monthly,Organic,0.0,97.0,Churned,2023-04-01 00:00:00,Poor support experience,2,5,2023-03-17 00:00:00,4
+CUST-10093,2023-02-27,Growth,Retail,United States,North America,201-1000,40,Monthly,Partner,18.3,867.96,Churned,2023-07-01 00:00:00,Switched to competitor,5,,2023-06-02 00:00:00,36
+CUST-10094,2023-03-01,Growth,Technology,India,Asia Pacific,51-200,5,Annual,Partner,17.1,240.19,Churned,2023-08-01 00:00:00,Low adoption / unused seats,5,,2023-07-04 00:00:00,5
+CUST-10095,2023-03-01,Starter,Financial Services,India,Asia Pacific,51-200,20,Annual,Partner,19.9,241.24,Active,,,22,,2024-12-22 00:00:00,10
+CUST-10096,2023-03-02,Growth,Retail,France,Europe,1-50,3,Monthly,Organic,8.0,209.72,Active,,,22,8,2024-12-11 00:00:00,4
+CUST-10097,2023-03-02,Starter,Technology,Canada,North America,1-50,3,Monthly,Organic,6.0,82.84,Churned,2023-10-01 00:00:00,,7,8,2023-09-06 00:00:00,4
+CUST-10098,2023-03-02,Business,Retail,United States,North America,51-200,12,Annual,Outbound Sales,14.7,726.55,Churned,2023-07-01 00:00:00,Poor support experience,4,8,2023-06-06 00:00:00,12
+CUST-10099,2023-03-02,Growth,Healthcare,United Kingdom,Europe,201-1000,31,Annual,Organic,0.0,831.0,Active,,,22,3,2024-12-17 00:00:00,51
+CUST-10100,2023-03-02,Business,Financial Services,Singapore,Asia Pacific,1-50,6,Monthly,Partner,15.2,561.82,Active,,,22,8,2024-12-09 00:00:00,10
+CUST-10101,2023-03-02,Business,Retail,Germany,Europe,51-200,29,Monthly,Referral,6.3,1268.54,Churned,2023-04-01 00:00:00,Too expensive,1,9,2023-03-08 00:00:00,31
+CUST-10102,2023-03-04,Growth,Technology,United States,North America,1000+,156,Annual,Paid Search,15.2,3059.34,Active,,,22,,2024-12-13 00:00:00,60
+CUST-10103,2023-03-04,Business,Logistics,United States,North America,1-50,15,Monthly,Paid Search,5.8,851.16,Churned,2023-04-01 00:00:00,Switched to competitor,1,,,15
+CUST-10104,2023-03-04,Business,Technology,France,Europe,201-1000,57,Annual,Referral,14.2,1963.99,Churned,01/07/2024,Missing features,16,,2024-06-12 00:00:00,78
+CUST-10105,2023-03-04,Starter,Healthcare,France,Europe,201-1000,43,Monthly,Paid Search,16.2,481.41,Churned,01/10/2023,Company downsizing,7,10,2023-09-21 00:00:00,45
+CUST-10106,2023-03-06,Growth,Technology,United States,North America,1-50,4,Monthly,Outbound Sales,14.4,224.33,Churned,2024-06-01 00:00:00,Missing features,15,4,2024-05-26 00:00:00,5
+CUST-10107,2023-03-06,Business,Logistics,United States,North America,1-50,10,Monthly,Referral,3.8,706.84,Active,,,22,9,2024-12-24 00:00:00,8
+CUST-10108,2023-03-06,Business,Technology,Australia,Asia Pacific,51-200,14,Annual,Organic,0.1,$846.55,Active,,,22,,2024-12-20 00:00:00,18
+CUST-10109,2023-03-07,Growth,Technology,Australia,Asia Pacific,201-1000,13,Monthly,Referral,10.4,$405.26,Churned,2023-06-01 00:00:00,Switched to competitor,3,,,12
+CUST-10110,2023-03-07,Growth,Technology,Mexico,Latin America,1-50,7,Monthly,Partner,19.0,273.74,Churned,2024-10-01 00:00:00,Too expensive,19,,,10
+CUST-10111,2023-03-07,Business,Retail,United States,North America,1-50,16,Monthly,Referral,9.6,861.85,Churned,01/10/2024,Poor support experience,19,7,2024-09-27 00:00:00,19
+CUST-10112,2023-03-08,Growth,Healthcare,Spain,Europe,51-200,8,Annual,Events,5.0,316.2,Churned,2024-02-01 00:00:00,Poor support experience,11,,,8
+CUST-10113,2023-03-08,Growth,Retail,France,Europe,1000+,88,Annual,Referral,7.9,1932.06,Active,,,22,10,2024-12-24 00:00:00,130
+CUST-10114,2023-03-08,Growth,Technology,Japan,Asia Pacific,51-200,6,Annual,Partner,0.1,280.87,Active,,,22,7,2024-12-24 00:00:00,23
+CUST-10115,2023-03-09,Business,Healthcare,Japan,Asia Pacific,1-50,4,Annual,Organic,0.0,527.0,Active,,,22,8,2024-12-24 00:00:00,6
+CUST-10116,2023-03-10,Business,Media,United States,North America,51-200,27,Monthly,Partner,15.1,1132.54,Churned,2023-04-01 00:00:00,Low adoption / unused seats,1,10,2023-03-21 00:00:00,28
+CUST-10117,2023-03-10,Growth,Logistics,United States,North America,1-50,2,Monthly,Events,13.4,187.1,Churned,2024-09-01 00:00:00,Missing features,18,,2024-08-21 00:00:00,1
+CUST-10118,2023-03-11,Starter,Logistics,India,Asia Pacific,1000+,174,Monthly,Partner,17.0,1782.04,Active,,,22,,2024-12-20 00:00:00,166
+CUST-10119,2023-03-11,Starter,Healthcare,Japan,Asia Pacific,51-200,10,Annual,Paid Search,6.1,161.68,Churned,2024-01-01 00:00:00,Poor support experience,10,3,2023-12-06 00:00:00,11
+CUST-10120,2023-03-13,Growth,Healthcare,France,Europe,1-50,8,Monthly,Outbound Sales,17.3,$294.55,Active,,,22,10,2024-12-23 00:00:00,14
+CUST-10121,2023-03-13,Starter,Technology,India,Asia Pacific,51-200,6,Annual,Partner,20.6,106.17,Churned,2024-07-01 00:00:00,,16,,2024-06-17 00:00:00,8
+CUST-10122,2023-03-13,Enterprise,Logistics,United States,North America,1-50,22,Annual,Organic,0.0,1889.0,Active,,,22,4,2024-12-15 00:00:00,10
+CUST-10123,2023-03-14,Enterprise,Retail,Mexico,Latin America,51-200,23,Monthly,Referral,13.0,1799.45,Churned,2024-11-01 00:00:00,Poor support experience,20,8,,26
+CUST-10124,2023-03-15,Growth,Retail,Canada,North America,1-50,2,Monthly,Referral,0.4,192.82,Active,,,22,10,2024-12-05 00:00:00,2
+CUST-10125,2023-03-15,Business,Manufacturing,United Kingdom,Europe,51-200,8,Monthly,Paid Search,7.3,636.31,Churned,2024-07-01 00:00:00,Too expensive,16,6,2024-06-04 00:00:00,7
+CUST-10126,2023-03-15,Enterprise,Technology,United States,North America,1-50,31,Annual,Referral,3.3,2247.97,Active,,,22,10,2024-12-05 00:00:00,35
+CUST-10127,2023-03-16,Growth,Financial Services,United States,North America,1000+,145,Monthly,Referral,13.9,2895.59,Active,,,22,6,2024-12-07 00:00:00,56
+CUST-10128,2023-03-16,Business,Healthcare,Japan,Asia Pacific,51-200,21,Monthly,Referral,7.4,1021.27,Active,,,22,10,2024-12-25 00:00:00,22
+CUST-10129,2023-03-16,Business,Retail,Canada,North America,51-200,11,Monthly,Partner,18.5,685.88,Churned,2024-07-01 00:00:00,Too expensive,16,8,2024-06-03 00:00:00,10
+CUST-10130,2023-03-16,Starter,Logistics,United States,North America,1-50,1,Annual,Paid Search,4.8,60.42,Churned,2023-04-01 00:00:00,,1,,2023-03-24 00:00:00,1
+CUST-10131,2023-03-17,Starter,Retail,United Kingdom,Europe,201-1000,25,Monthly,Referral,9.0,322.0,Active,,,22,5,,41
+CUST-10132,2023-03-17,Starter,Retail,United States,North America,51-200,21,Monthly,Organic,0.0,301.0,Churned,2024-07-01 00:00:00,Poor support experience,16,,2024-06-17 00:00:00,30
+CUST-10133,2023-03-17,Business,Education,United States,North America,51-200,60,Monthly,Referral,8.0,2165.4,Churned,2023-04-01 00:00:00,Too expensive,1,3,2023-03-12 00:00:00,64
+CUST-10134,2023-03-19,Enterprise,Technology,United States,North America,1000+,735,Annual,Paid Search,10.7,30434.98,Active,,,22,10,2024-12-19 00:00:00,561
+CUST-10135,2023-03-19,Starter,Retail,Japan,Asia Pacific,1000+,49,Monthly,Partner,22.4,505.29,Churned,2023-12-01 00:00:00,Low adoption / unused seats,9,,,61
+CUST-10136,2023-03-19,Growth,Manufacturing,Germany,Europe,1-50,3,Monthly,Referral,6.7,210.58,Churned,2024-08-01 00:00:00,Poor support experience,17,8,,2
+CUST-10137,2023-03-20,Starter,Retail,India,Asia Pacific,1-50,5,Monthly,Paid Search,10.7,102.58,Churned,2024-01-01 00:00:00,,10,9,2023-12-12 00:00:00,6
+CUST-10138,2023-03-21,Growth,Financial Services,Japan,Asia Pacific,201-1000,29,Annual,Paid Search,9.8,724.48,Churned,2023-06-01 00:00:00,Too expensive,3,5,2023-05-06 00:00:00,32
+CUST-10139,2023-03-22,Starter,Financial Services,United States,North America,1-50,3,Monthly,Organic,0.7,84.75,Churned,2023-08-01 00:00:00,Switched to competitor,5,5,2023-07-26 00:00:00,4
+CUST-10140,2023-03-22,Starter,Financial Services,Germany,Europe,1-50,3,Monthly,Events,8.2,82.05,Churned,2023-04-01 00:00:00,Missing features,1,10,,3
+CUST-10141,2023-03-22,Enterprise,Retail,Australia,Asia Pacific,1000+,122,Annual,Events,15.2,5554.52,Active,,,22,4,2024-12-01 00:00:00,125
+CUST-10142,2023-03-23,Business,Retail,Germany,Europe,1-50,13,Monthly,Referral,7.3,784.63,Active,,,22,8,2024-12-02 00:00:00,16
+CUST-10143,2023-03-24,Starter,Technology,United Kingdom,Europe,51-200,7,Monthly,Referral,10.5,124.18,Churned,2024-08-01 00:00:00,Business priorities changed,17,8,2024-07-23 00:00:00,16
+CUST-10144,2023-03-25,Starter,Manufacturing,Australia,Asia Pacific,1-50,6,Monthly,Referral,2.5,119.2,Churned,2023-11-01 00:00:00,Too expensive,8,6,2023-10-02 00:00:00,4
+CUST-10145,2023-03-25,Starter,Financial Services,United Kingdom,Europe,201-1000,22,Annual,Partner,22.1,254.66,Active,,,22,8,2024-12-11 00:00:00,21
+CUST-10146,2023-03-25,Growth,Financial Services,United States,North America,1-50,4,Annual,Partner,12.8,225.74,Churned,2024-10-01 00:00:00,Too expensive,19,,2024-09-07 00:00:00,4
+CUST-10147,2023-03-25,Growth,Logistics,Mexico,Latin America,51-200,25,Monthly,Partner,17.5,602.75,Churned,2023-04-01 00:00:00,Too expensive,1,,2023-03-13 00:00:00,24
+CUST-10148,2023-03-26,Growth,Manufacturing,United States,North America,1-50,6,Annual,Referral,3.4,276.51,Churned,2024-07-01 00:00:00,,16,,2024-06-07 00:00:00,6
+CUST-10149,2023-03-26,Starter,Retail,United States,North America,1-50,4,Monthly,Outbound Sales,11.7,91.38,Churned,2024-07-01 00:00:00,Too expensive,16,6,2024-06-19 00:00:00,4
+CUST-10150,2023-03-26,Growth,Technology,Germany,Europe,1-50,9,Annual,Outbound Sales,19.0,309.38,Churned,01/03/2024,,12,6,2024-02-13 00:00:00,9
+CUST-10151,2023-03-26,Growth,Retail,France,Europe,1-50,2,Monthly,Events,10.6,188.34,Churned,2024-05-01 00:00:00,Poor support experience,14,6,2024-04-13 00:00:00,3
+CUST-10152,2023-03-27,Starter,Financial Services,United States,North America,51-200,9,Monthly,Outbound Sales,18.4,137.13,Active,,,22,,2024-12-27 00:00:00,7
+CUST-10153,2023-03-27,Growth,Manufacturing,Germany,Europe,201-1000,31,Monthly,Paid Search,17.3,713.01,Churned,01/08/2023,Too expensive,5,6,2023-07-18 00:00:00,28
+CUST-10154,2023-03-28,Starter,Logistics,United States,North America,1000+,74,Annual,Referral,8.2,864.18,Active,,,22,,2024-12-08 00:00:00,124
+CUST-10155,2023-04-01,Enterprise,Technology,Germany,Europe,1-50,11,Annual,Partner,14.7,1321.24,Active,,,21,7,2024-12-13 00:00:00,16
+CUST-10156,2023-04-01,Starter,Technology,United Kingdom,Europe,51-200,21,Annual,Referral,7.3,282.6,Active,,,21,5,2024-12-09 00:00:00,55
+CUST-10157,2023-04-01,Enterprise,Healthcare,Canada,North America,51-200,18,Annual,Outbound Sales,8.1,1643.39,Active,,,21,7,2024-12-09 00:00:00,11
+CUST-10158,2023-04-02,Business,Media,United States,North America,1-50,23,Monthly,Paid Search,14.5,1028.28,Churned,2023-11-01 00:00:00,Too expensive,7,,2023-10-03 00:00:00,22
+CUST-10159,2023-04-02,Starter,Retail,United States,North America,1-50,1,Monthly,Organic,0.7,60.92,Active,,,21,6,2024-12-24 00:00:00,1
+CUST-10160,2023-04-03,Growth,Manufacturing,Singapore,Asia Pacific,1000+,154,Annual,Paid Search,20.6,2839.07,Churned,2023-06-01 00:00:00,Too expensive,2,6,2023-05-22 00:00:00,137
+CUST-10161,2023-04-03,Starter,Healthcare,United Kingdom,Europe,1-50,5,Monthly,Partner,17.3,98.62,Churned,2024-03-01 00:00:00,Poor support experience,11,9,2024-02-15 00:00:00,7
+CUST-10162,2023-04-04,Business,Logistics,Mexico,Latin America,51-200,57,Monthly,Paid Search,4.7,2137.27,Active,,,21,4,2024-12-17 00:00:00,80
+CUST-10163,2023-04-04,Business,Healthcare,Germany,Europe,201-1000,108,Annual,Partner,20.0,3163.8,Active,,,21,5,2024-12-17 00:00:00,311
+CUST-10164,2023-04-04,Growth,Education,United Kingdom,Europe,51-200,20,Annual,Referral,4.0,571.4,Active,,,21,7,2024-12-01 00:00:00,15
+CUST-10165,2023-04-04, growth  ,Technology,United States,North America,51-200,4,Monthly,Referral,5.0,232.6,Churned,2023-11-01 00:00:00,Switched to competitor,7,9,2023-10-27 00:00:00,4
+CUST-10166,2023-04-05,Growth,Logistics,Canada,North America,1-50,2,Monthly,Paid Search,15.0,186.4,Churned,2024-05-01 00:00:00,Switched to competitor,13,7,2024-04-16 00:00:00,3
+CUST-10167,2023-04-05,Growth,Retail,Brazil,Latin America,51-200,21,Monthly,Paid Search,4.2,591.6,Active,,,21,8,2024-12-12 00:00:00,28
+CUST-10168,2023-04-05,Growth,Retail,India,Asia Pacific,1-50,5,Monthly,Paid Search,7.4,250.86,Active,,,21,10,2024-12-26 00:00:00,5
+CUST-10169,2023-04-06,Enterprise,Healthcare,United States,North America,1-50,31,Monthly,Paid Search,16.5,2063.82,Churned,2024-11-01 00:00:00,Business priorities changed,19,5,2024-10-05 00:00:00,46
+CUST-10170,2023-04-06,Growth,Retail,United Kingdom,Europe,51-200,4,Monthly,Organic,0.0,237.0,Active,,,21,6,2024-12-11 00:00:00,3
+CUST-10171,2023-04-06,Growth,Manufacturing,United States,North America,1-50,3,Monthly,Referral,1.2,214.21,Active,,,21,8,2024-12-03 00:00:00,4
+CUST-10172,2023-04-06,Enterprise,Media,United Kingdom,Europe,1-50,19,Monthly,Events,11.5,1655.67,Churned,01/10/2024,Missing features,18,8,2024-09-11 00:00:00,16
+CUST-10173,2023-04-07,Starter,Education,Brazil,Latin America,201-1000,34,Monthly,Outbound Sales,8.8,421.1,Active,,,21,10,2024-12-21 00:00:00,74
+CUST-10174,2023-04-07,Business,Financial Services,United States,North America,1-50,10,monthly,Referral,7.6,694.68,Active,,,21,9,2024-12-21 00:00:00,17
+CUST-10175,2023-04-07,Business,Media,United States,North America,1000+,464,Annual,Paid Search,14.6,13079.19,Active,,,21,10,2024-12-09 00:00:00,275
+CUST-10176,2023-04-07,Starter,Healthcare,Canada,North America,1-50,8,Annual,Outbound Sales,10.1,135.3,Active,,,21,,2024-12-07 00:00:00,11
+CUST-10177,2023-04-08,Business,Healthcare,United Kingdom,Europe,201-1000,136,Monthly,Organic,2.1,4659.61,Active,,,21,8,2024-12-09 00:00:00,87
+CUST-10178,2023-04-09,Business,Manufacturing,United States,North America,51-200,44,Monthly,Partner,11.8,1640.86,Active,,,21,6,2024-12-20 00:00:00,72
+CUST-10179,2023-04-09,Business,Financial Services,India,Asia Pacific,51-200,15,Monthly,Partner,13.6,813.72,Churned,2024-01-01 00:00:00,Switched to competitor,9,4,2023-12-09 00:00:00,24
+CUST-10180,2023-04-10,Business,Technology,Germany,Europe,1-50,15,Monthly,Paid Search,5.5,852.6,Active,,,21,6,2024-12-04 00:00:00,22
+CUST-10181,2023-04-11,Starter,Financial Services,United Kingdom,Europe,201-1000,11,Annual,Referral,9.5,168.46,Active,,,21,9,2024-12-10 00:00:00,23
+CUST-10182,2023-04-11,Growth,Healthcare,United States,North America,1-50,5,Monthly,Referral,13.2,244.48,Churned,2023-10-01 00:00:00,Switched to competitor,6,,,6
+CUST-10183,2023-04-11,Starter,Manufacturing,Japan,Asia Pacific,1-50,1,Monthly,Events,11.8,59.58,Active,,,21,10,2024-12-02 00:00:00,1
+CUST-10184,2023-04-13,Starter,Healthcare,United States,North America,1000+,71,Annual,Organic,5.6,853.29,Active,,,21,6,2024-12-21 00:00:00,59
+CUST-10185,2023-04-14,Starter,Healthcare,United States,North America,51-200,11,Monthly,Partner,22.8,150.9,Active,,,21,10,2024-12-14 00:00:00,21
+CUST-10186,2023-04-14,Growth,Retail,Singapore,Asia Pacific,51-200,12,Annual,Partner,26.2,343.83,Active,,,21,8,2024-12-03 00:00:00,15
+CUST-10187,2023-04-15,Business,Education,Spain,Europe,201-1000,42,Monthly,Referral,13.1,1566.94,Active,,,21,4,2024-12-21 00:00:00,64
+CUST-10188,2023-04-15,Starter,Retail,Australia,Asia Pacific,1-50,10,Monthly,Partner,8.3,159.04,Churned,2023-10-01 00:00:00,Too expensive,6,6,2023-09-14 00:00:00,10
+CUST-10189,2023-04-16,Enterprise,Financial Services,Germany,Europe,1-50,11,Monthly,Paid Search,12.3,1333.12,Active,,,21,8,2024-12-04 00:00:00,24
+CUST-10190,2023-04-16,Starter,Healthcare,United States,North America,51-200,11,Monthly,Referral,6.6,172.29,Churned,2023-09-01 00:00:00,Too expensive,5,6,2023-08-26 00:00:00,12
+CUST-10191,2023-04-16,Starter,Financial Services,United States,North America,1-50,2,Monthly,Events,10.3,70.53,Churned,2024-10-01 00:00:00,Business priorities changed,18,7,2024-09-20 00:00:00,1
+CUST-10192,2023-04-17,Starter,Manufacturing,Spain,Europe,51-200,6,Annual,Outbound Sales,9.8,113.94,Churned,2023-09-01 00:00:00,Too expensive,5,8,2023-08-14 00:00:00,8
+CUST-10193,2023-04-17,Business,Technology,United States,North America,1-50,5,Monthly,Partner,18.0,530.2,Churned,2024-06-01 00:00:00,Poor support experience,14,3,2024-05-11 00:00:00,6
+CUST-10194,2023-04-18,Business,Financial Services,Spain,Europe,1-50,6,Monthly,Referral,2.0,587.16,Churned,2023-06-01 00:00:00,Missing features,2,8,2023-05-01 00:00:00,7
+CUST-10195,2023-04-18,Growth,Technology,Brazil,Latin America,51-200,7,Monthly,Organic,1.5,300.69,Active,,,21,10,2024-12-02 00:00:00,11
+CUST-10196,2023-04-18,Starter,Media,Brazil,Latin America,1-50,4,Monthly,Paid Search,5.2,94.5,Churned,2024-06-01 00:00:00,Low adoption / unused seats,14,,2024-05-24 00:00:00,4
+CUST-10197,2023-04-18,Starter,Retail,Brazil,Latin America,201-1000,13,Annual,Paid Search,6.5,194.86,Churned,2023-09-01 00:00:00,Missing features,5,10,2023-08-17 00:00:00,16
+CUST-10198,2023-04-20,Business,Education,United States,North America,201-1000,74,Annual,Referral,9.0,2553.88,Active,,,21,10,2024-12-18 00:00:00,82
+CUST-10199,2023-04-20,Growth,Healthcare,Australia,Asia Pacific,51-200,10,Monthly,Events,14.0,338.2,Active,,,21,7,2024-12-06 00:00:00,25
+CUST-10200,2023-04-20,Growth,Retail,Germany,Europe,1-50,3,Annual,Partner,13.1,206.35,Active,,,21,9,2024-12-15 00:00:00,3
+CUST-10201,2023-04-21,Enterprise,Technology,Japan,Asia Pacific,1-50,15,Monthly,Referral,9.5,1509.88,Active,,,21,10,2024-12-16 00:00:00,25
+CUST-10202,2023-04-22,Growth,Technology,United Kingdom,Europe,1-50,4,monthly,Paid Search,4.8,232.78,Active,,,21,7,2024-12-03 00:00:00,3
+CUST-10203,2023-04-22,Growth,Education,Germany,Europe,201-1000,34,Monthly,Organic,5.7,854.36,Churned,2023-11-01 00:00:00,,7,5,2023-10-07 00:00:00,38
+CUST-10204,2023-04-22,Business,Manufacturing,Spain,Europe,1000+,289,Monthly,Organic,12.0,8537.24,Active,,,21,9,2024-12-08 00:00:00,668
+CUST-10205,2023-04-22,Starter,Education,Germany,Europe,51-200,5,Monthly,Outbound Sales,11.3,102.22,Churned,2023-09-01 00:00:00,Low adoption / unused seats,5,9,2023-08-16 00:00:00,4
+CUST-10206,2023-04-23,Business,Education,Mexico,Latin America,1-50,7,Monthly,Paid Search,7.4,606.42,Churned,2023-07-01 00:00:00,,3,10,2023-06-15 00:00:00,9
+CUST-10207,2023-04-23,Business,Healthcare,Mexico,Latin America,1-50,5,Monthly,Paid Search,3.2,553.88,Active,,,21,9,2024-12-09 00:00:00,9
+CUST-10208,2023-04-23,Business,Healthcare,Canada,North America,201-1000,52,Monthly,Outbound Sales,17.1,1778.46,Churned,2023-12-01 00:00:00,Low adoption / unused seats,8,,2023-11-15 00:00:00,47
+CUST-10209,2023-04-24,Business,Logistics,United States,North America,51-200,25,Monthly,Paid Search,1.6,1186.2,Active,,,21,5,2024-12-26 00:00:00,123
+CUST-10210,2023-04-24,Starter,Retail,United States,North America,201-1000,13,Monthly,Paid Search,12.9,184.88,Churned,2023-05-01 00:00:00,Low adoption / unused seats,1,7,2023-04-17 00:00:00,14
+CUST-10211,2023-04-25,Starter,Healthcare,Germany,Europe,1-50,3,Monthly,Partner,11.6,80.82,Active,,,21,10,2024-12-25 00:00:00,2
+CUST-10212,2023-04-25,Growth,Logistics,Mexico,Latin America,1000+,104,Annual,Organic,13.5,2128.12,Churned,2024-07-01 00:00:00,Low adoption / unused seats,15,5,,67
+CUST-10213,2023-04-26,Starter,Financial Services,Brazil,Latin America,1-50,8,Monthly,Paid Search,6.3,138.95,Churned,2024-07-01 00:00:00,Poor support experience,15,5,2024-06-19 00:00:00,16
+CUST-10214,2023-04-26,Growth,Technology,United States,North America,1-50,10,Monthly,Events,12.4,341.72,Churned,2023-06-01 00:00:00,Low adoption / unused seats,2,6,2023-05-12 00:00:00,10
+CUST-10215,2023-04-26,Growth,Logistics,India,Asia Pacific,51-200,52,Monthly,Paid Search,9.9,1179.74,Churned,2023-11-01 00:00:00,Too expensive,7,9,2023-10-05 00:00:00,54
+CUST-10216,2023-04-27,Growth,Healthcare,United States,North America,51-200,9,Monthly,Partner,19.3,308.79,Churned,2024-03-01 00:00:00,Missing features,11,7,2024-02-10 00:00:00,7
+CUST-10217,2023-04-27,Growth,Retail,Germany,Europe,51-200,29,Annual,Partner,11.7,712.35,Active,,,21,3,2024-12-10 00:00:00,27
+CUST-10218,2023-04-28,Starter,Logistics,India,Asia Pacific,1-50,4,Monthly,Events,11.9,91.29,Churned,2023-10-01 00:00:00,Missing features,6,7,2023-09-07 00:00:00,4
+CUST-10219,2023-04-28,Business,Financial Services,Spain,Europe,1-50,14,Monthly,Paid Search,1.7,839.38,Churned,2024-01-01 00:00:00,Missing features,9,7,2023-12-23 00:00:00,12
+CUST-10220,2023-04-28,Business,Technology,United Kingdom,Europe,1000+,174,Monthly,Organic,3.3,5783.26,Active,,,21,4,2024-12-19 00:00:00,113
+CUST-10221,2023-04-28,Business,Retail,United States,North America,201-1000,19,Annual,Referral,7.5,961.4,Active,,,21,7,2024-12-11 00:00:00,25
+CUST-10222,2023-05-01,Enterprise,Healthcare,Germany,Europe,51-200,74,Monthly,Referral,8.1,3959.27,Active,,,20,5,2024-12-22 00:00:00,88
+CUST-10223,2023-05-01,Starter,Healthcare,United States,North America,1-50,5,Monthly,Organic,0.0,109.0,Churned,2023-11-01 00:00:00,Missing features,6,,2023-10-27 00:00:00,5
+CUST-10224,2023-05-02,Business,Manufacturing,India,Asia Pacific,1-50,7,Monthly,Referral,6.1,609.34,Churned,2024-04-01 00:00:00,Missing features,11,,2024-03-26 00:00:00,6
+CUST-10225,2023-05-02,Starter,Technology,United States,North America,1-50,1,Monthly,Organic,0.0,61.0,Active,,,20,7,2024-12-14 00:00:00,1
+CUST-10226,2023-05-03,Business,Financial Services,Brazil,Latin America,51-200,10,Monthly,Paid Search,5.3,702.04,Active,,,20,3,2024-12-22 00:00:00,19
+CUST-10227,2023-05-04,Business,Retail,United Kingdom,Europe,1000+,295,Annual,Outbound Sales,17.8,8158.68,Active,,,20,7,2024-12-27 00:00:00,384
+CUST-10228,2023-05-04,Business,Technology,Germany,Europe,1-50,11,Monthly,Outbound Sales,11.3,711.22,Active,,,20,5,,6
+CUST-10229,2023-05-04,Growth,Technology,France,Europe,1000+,183,Annual,Referral,9.9,3776.43,Active,,,20,8,2024-12-19 00:00:00,161
+CUST-10230,2023-05-05,Business,Healthcare,Mexico,Latin America,1-50,7,Monthly,Partner,14.0,591.64,Churned,2023-10-01 00:00:00,Switched to competitor,5,3,2023-09-04 00:00:00,8
+CUST-10231,2023-05-05,Starter,Financial Services,Australia,Asia Pacific,1-50,1,Monthly,Partner,15.8,59.1,Active,,,20,10,2024-12-09 00:00:00,1
+CUST-10232,2023-05-05, growth  ,Manufacturing,United States,North America,51-200,6,Monthly,Partner,15.7,260.28,Churned,2024-07-01 00:00:00,Low adoption / unused seats,14,7,,5
+CUST-10233,2023-05-05,Growth,Manufacturing,United Kingdom,Europe,201-1000,n/a,Annual,Partner,20.1,711.5,Churned,2024-04-01 00:00:00,Company downsizing,11,7,2024-03-15 00:00:00,30
+CUST-10234,2023-05-06,Growth,Education,United Kingdom,Europe,1-50,5,Monthly,Paid Search,13.1,244.59,Active,,,20,7,2024-12-09 00:00:00,7
+CUST-10235,2023-05-07,Business,Technology,Canada,North America,51-200,28,Annual,Paid Search,18.9,1125.66,Churned,2023-06-01 00:00:00,Poor support experience,1,9,2023-05-03 00:00:00,31
+CUST-10236,2023-05-07,Starter,Manufacturing,United States,North America,51-200,5,Annual,Paid Search,3.0,107.2,Churned,01/11/2024,Too expensive,18,8,2024-10-19 00:00:00,3
+CUST-10237,2023-05-09,Starter,Healthcare,United Kingdom,Europe,1-50,2,Monthly,Organic,0.0,$73.00,Churned,2023-06-01 00:00:00,,1,7,2023-05-04 00:00:00,2
+CUST-10238,2023-05-09,Business,Financial Services,Germany,Europe,1-50,4,Monthly,Referral,3.3,522.78,Active,,,20,10,2024-12-15 00:00:00,7
+CUST-10239,2023-05-09,Business,Technology,United States,North America,51-200,21,Annual,Referral,1.1,1063.61,Active,,,20,,2024-12-19 00:00:00,17
+CUST-10240,2023-05-09,Growth,Manufacturing,United States,North America,201-1000,61,Annual,Referral,4.7,1427.93,Active,,,20,6,2024-12-15 00:00:00,42
+CUST-10241,2023-05-10,Starter,Retail,India,Asia Pacific,1000+,89,Annual,Outbound Sales,16.8,937.58,Active,,,20,6,2024-12-25 00:00:00,47
+CUST-10242,2023-05-11,Growth,Healthcare,France,Europe,1-50,8,Monthly,Referral,1.9,321.66,Churned,2024-08-01 00:00:00,Switched to competitor,15,6,2024-07-22 00:00:00,13
+CUST-10243,2023-05-11,Business,Healthcare,United States,North America,1000+,163,Annual,Organic,8.4,5176.86,Churned,2024-06-01 00:00:00,Missing features,13,6,2024-05-14 00:00:00,172
+CUST-10244,2023-05-12,Starter,Logistics,United States,North America,51-200,13,monthly,Partner,20.8,172.55,Churned,2024-08-01 00:00:00,Missing features,15,5,2024-07-09 00:00:00,16
+CUST-10245,2023-05-12,Business,Retail,Germany,Europe,1-50,2,Monthly,Referral,0.0,463.0,Churned,2024-03-01 00:00:00,Low adoption / unused seats,10,8,2024-02-08 00:00:00,2
+CUST-10246,2023-05-12,Enterprise,Manufacturing,United Kingdom,Europe,201-1000,90,Annual,Organic,5.2,4738.4,Active,,,20,9,2024-12-02 00:00:00,104
+CUST-10247,2023-05-13,Business,Education,United Kingdom,Europe,1-50,12,Monthly,Partner,13.8,730.01,Churned,2024-01-01 00:00:00,Company downsizing,8,6,2023-12-14 00:00:00,10
+CUST-10248,2023-05-14,Enterprise,Manufacturing,France,Europe,1-50,7,Monthly,Paid Search,3.5,1202.97,Churned,2023-07-01 00:00:00,Poor support experience,2,6,,7
+CUST-10249,2023-05-14,Growth,Healthcare,Japan,Asia Pacific,1-50,3,Monthly,Partner,17.2,203.65,Churned,2024-10-01 00:00:00,Missing features,17,8,2024-09-24 00:00:00,2
+CUST-10250,2023-05-14,Growth,Technology,United States,North America,1-50,9,Monthly,Paid Search,14.3,318.69,Churned,2023-06-01 00:00:00,Too expensive,1,,2023-05-19 00:00:00,10
+CUST-10251,2023-05-14,Starter,Healthcare,United States,North America,51-200,19,Monthly,Referral,7.9,258.99,Churned,2023-08-01 00:00:00,Low adoption / unused seats,3,,2023-07-05 00:00:00,20
+CUST-10252,2023-05-14,Starter,Healthcare,Canada,North America,1-50,2,Monthly,Outbound Sales,14.3,69.57,Churned,2024-02-01 00:00:00,Business priorities changed,9,9,2024-01-27 00:00:00,2
+CUST-10253,2023-05-15,Growth,Technology,Singapore,Asia Pacific,51-200,16,Annual,Organic,2.3,492.9,Active,,,20,9,2024-12-22 00:00:00,16
+CUST-10254,2023-05-16,Growth,Technology,United States,North America,1-50,2,Annual,Paid Search,4.3,191.11,Active,,,20,10,2024-12-19 00:00:00,2
+CUST-10255,2023-05-16,Growth,Manufacturing,India,Asia Pacific,1000+,58,Annual,Referral,10.1,1296.12,Active,,,20,7,2024-12-06 00:00:00,49
+CUST-10256,2023-05-16,Growth,Manufacturing,United States,North America,51-200,18,Monthly,Organic,0.0,545.0,Churned,2024-04-01 00:00:00,Too expensive,11,8,2024-03-02 00:00:00,15
+CUST-10257,2023-05-17,Enterprise,Financial Services,Spain,Europe,51-200,180,Monthly,Paid Search,13.6,7897.4,Active,,,20,5,2024-12-14 00:00:00,187
+CUST-10258,2023-05-17,Growth,Education,Germany,Europe,1-50,3,Monthly,Organic,0.0,215.0,Churned,2024-03-01 00:00:00,Poor support experience,10,9,,2
+CUST-10259,2023-05-17,Starter,Retail,United States,North America,1-50,5,Monthly,Events,5.9,105.46,Active,,,20,,2024-12-19 00:00:00,6
+CUST-10260,2023-05-17,Business,Logistics,India,Asia Pacific,1000+,440,Annual,Organic,7.3,13451.16,Active,,,20,6,2024-12-20 00:00:00,564
+CUST-10261,2023-05-18,Growth,Healthcare,India,Asia Pacific,201-1000,34,Annual,Partner,18.7,757.12,Churned,2024-01-01 00:00:00,Too expensive,8,8,2023-12-21 00:00:00,29
+CUST-10262,2023-05-18,Growth,Technology,Germany,Europe,201-1000,30,Annual,Events,19.3,681.62,Churned,2024-09-01 00:00:00,Missing features,16,,2024-08-15 00:00:00,31
+CUST-10263,2023-05-18,Business,Healthcare,United States,North America,51-200,20,Annual,Partner,15.2,$941.72,Active,,,20,5,2024-12-17 00:00:00,17
+CUST-10264,2023-05-18,Business,Technology,Spain,Europe,51-200,25,Monthly,Paid Search,10.5,1115.0,Active,,,20,,2024-12-23 00:00:00,28
+CUST-10265,2023-05-19,Growth,Retail,United Kingdom,EMEA ,51-200,6,Annual,Outbound Sales,9.8,268.06,Active,,,20,4,2024-12-03 00:00:00,3
+CUST-10266,2023-05-19,Enterprise,Retail,Japan,Asia Pacific,201-1000,69,Annual,Events,20.5,3367.47,Churned,2023-08-01 00:00:00,Low adoption / unused seats,3,,2023-07-01 00:00:00,59
+CUST-10267,2023-05-20,Growth,Retail,Canada,North America,51-200,5,Monthly,Organic,9.4,248.66,Active,,,20,7,2024-12-10 00:00:00,8
+CUST-10268,2023-05-20,Starter,Retail,Canada,North America,1-50,4,Monthly,Paid Search,5.8,$94.22,Churned,2023-07-01 00:00:00,Switched to competitor,2,,2023-06-21 00:00:00,4
+CUST-10269,2023-05-20,Growth,Financial Services,United States,North America,1-50,4,Annual,Partner,17.9,$221.25,Churned,2024-05-01 00:00:00,Poor support experience,12,5,2024-04-01 00:00:00,6
+CUST-10270,2023-05-20,Starter,Financial Services,United Kingdom,Europe,201-1000,7,Monthly,Partner,18.5,117.46,Churned,2023-08-01 00:00:00,Poor support experience,3,4,2023-07-05 00:00:00,7
+CUST-10271,2023-05-20,Enterprise,Healthcare,Germany,Europe,51-200,101,Annual,Events,9.9,4994.05,Churned,01/06/2024,Too expensive,13,6,2024-05-10 00:00:00,74
+CUST-10272,2023-05-21,Growth,Healthcare,France,Europe,1000+,79,Annual,Paid Search,14.0,1643.68,Active,,,20,5,2024-12-16 00:00:00,117
+CUST-10273,2023-05-21,Enterprise,Technology,Germany,Europe,51-200,14,Monthly,Referral,5.0,1497.5,Active,,,20,6,2024-12-24 00:00:00,44
+CUST-10274,2023-05-21,Business,Technology,United States,North America,1000+,271,Annual,Partner,25.9,6824.95,Active,,,20,9,2024-12-10 00:00:00,171
+CUST-10275,2023-05-22,Starter,Education,Mexico,Latin America,1000+,57,Annual,Organic,4.8,700.17,Active,,,20,,2024-12-25 00:00:00,69
+CUST-10276,2023-05-22,Starter,Education,Spain,Europe,51-200,9,Annual,Organic,3.9,152.79,Churned,01/06/2023,Switched to competitor,1,6,2023-05-25 00:00:00,9
+CUST-10277,2023-05-23,Growth,Education,United States,North America,201-1000,33,Annual,Referral,9.7,804.58,Active,,,20,3,2024-12-22 00:00:00,27
+CUST-10278,2023-05-23,Business,Education,United States,North America,1-50,9,Monthly,Paid Search,5.9,670.01,Churned,2023-08-01 00:00:00,Too expensive,3,3,2023-07-08 00:00:00,9
+CUST-10279,2023-05-23,Business,Healthcare,United Kingdom,Europe,51-200,18,Monthly,Organic,1.1,968.66,Active,,,20,7,2024-12-03 00:00:00,11
+CUST-10280,2023-05-23,Growth,Healthcare,India,Asia Pacific,1-50,10,Monthly,Paid Search,7.8,351.84,Churned,2024-08-01 00:00:00,Low adoption / unused seats,15,6,,13
+CUST-10281,2023-05-23,Business,Technology,Singapore,Asia Pacific,201-1000,47,Monthly,Organic,2.1,1871.42,Active,,,20,,2024-12-24 00:00:00,98
+CUST-10282,2023-05-24,Starter,Technology,India,Asia Pacific,1-50,1,Monthly,Organic,1.3,60.84,Active,,,20,10,2024-12-25 00:00:00,1
+CUST-10283,2023-05-24,Starter,Retail,United States,North America,1-50,2,Monthly,Organic,0.0,73.0,Churned,2024-10-01 00:00:00,Too expensive,17,8,2024-09-06 00:00:00,2
+CUST-10284,2023-05-25,Starter,Media,Brazil,Latin America,1000+,105,Monthly,Outbound Sales,24.7,997.78,Churned,2024-08-01 00:00:00,Too expensive,15,,2024-07-05 00:00:00,209
+CUST-10285,2023-05-25,Growth,Retail,United Kingdom,Europe,1-50,2,Monthly,Paid Search,5.7,190.49,Churned,2023-06-01 00:00:00,Low adoption / unused seats,1,5,2023-05-06 00:00:00,2
+CUST-10286,2023-05-25,Business,Technology,India,Asia Pacific,1-50,7,Monthly,Organic,4.0,614.04,Churned,2023-06-01 00:00:00,Switched to competitor,1,9,2023-05-27 00:00:00,7
+CUST-10287,2023-05-26,Growth,Financial Services,Spain,Europe,201-1000,61,Annual,Partner,18.0,1249.44,Churned,2024-10-01 00:00:00,Business priorities changed,17,,2024-09-23 00:00:00,90
+CUST-10288,2023-05-26,Growth,Technology,Spain,Europe,1-50,8,Monthly,Referral,5.8,314.79,Active,,,20,7,2024-12-01 00:00:00,5
+CUST-10289,2023-05-26, starter  ,Retail,United States,North America,1-50,2,Monthly,Outbound Sales,11.6,70.22,Churned,2023-07-01 00:00:00,,2,5,2023-06-07 00:00:00,2
+CUST-10290,2023-05-28,Starter,Media,United States,North America,51-200,14,Annual,Organic,2.1,213.47,Active,,,20,8,2024-12-16 00:00:00,8
+CUST-10291,2023-05-28,Starter,Financial Services,Mexico,Latin America,51-200,12,Annual,Referral,9.4,179.46,Churned,2023-09-01 00:00:00,Too expensive,4,4,2023-08-22 00:00:00,11
+CUST-10292,2023-06-01,Growth,Healthcare,United States,North America,1-50,6,Monthly,Partner,9.7,268.2,Active,,,19,10,2024-12-18 00:00:00,2
+CUST-10293,2023-06-01,Growth,Healthcare,France,Europe,1-50,2,Monthly,Outbound Sales,7.1,189.88,Active,,,19,,2024-12-09 00:00:00,3
+CUST-10294,2023-06-01,Business,Technology,India,Asia Pacific,51-200,36,Monthly,Organic,8.6,1451.93,Active,,,19,9,2024-12-07 00:00:00,50
+CUST-10295,2023-06-01,Growth,Healthcare,Germany,Europe,1-50,2,Monthly,Organic,0.3,192.87,Active,,,19,7,2024-12-19 00:00:00,4
+CUST-10296,2023-06-01,Starter,Education,Germany,Europe,1-50,2,Monthly,Referral,2.2,72.47,Active,,,19,6,2024-12-06 00:00:00,3
+CUST-10297,2023-06-02,Starter,Financial Services,France,Europe,1-50,2,Monthly,Organic,0.0,73.0,Churned,2023-09-01 00:00:00,Too expensive,3,,2023-08-16 00:00:00,2
+CUST-10298,2023-06-02,Business,Retail,United States,North America,51-200,15,Monthly,Organic,0.0,879.0,Active,,,19,8,2024-12-01 00:00:00,13
+CUST-10299,2023-06-02,Business,Financial Services,Brazil,Latin America,1-50,24,Annual,Paid Search,7.8,1107.1,Active,,,19,9,2024-12-22 00:00:00,51
+CUST-10300,2023-06-03,Growth,Technology,Canada,North America,1-50,4,Monthly,Partner,14.7,224.06,Churned,2024-01-01 00:00:00,Too expensive,7,2,2023-12-05 00:00:00,6
+CUST-10301,2023-06-04,Growth,Technology,Australia,Asia Pacific,1-50,4,Annual,Organic,0.0,237.0,Active,,,19,,2024-12-16 00:00:00,3
+CUST-10302,2023-06-04,Starter,Technology,United Kingdom,Europe,1-50,2,Monthly,Referral,10.7,70.43,Active,,,19,8,2024-12-27 00:00:00,2
+CUST-10303,2023-06-04,Enterprise,Healthcare,Japan,EMEA ,1-50,11,Monthly,Events,7.1,1358.86,Active,,,19,10,2024-12-08 00:00:00,19
+CUST-10304,2023-06-04, business  ,Education,United Kingdom,Europe,51-200,39,Annual,Organic,0.0,1647.0,Active,,,19,6,2024-12-02 00:00:00,43
+CUST-10305,2023-06-04,Starter,Logistics,United States,North America,51-200,10,Annual,Organic,1.0,167.8,Churned,2024-07-01 00:00:00,,13,8,,14
+CUST-10306,2023-06-04,Business,Retail,United States,North America,1000+,78,Annual,Referral,17.6,2455.7,Active,,,19,7,2024-12-08 00:00:00,86
+CUST-10307,2023-06-04,Starter,Manufacturing,United Kingdom,Europe,1-50,2,Monthly,Organic,3.3,72.21,Churned,2023-12-01 00:00:00,Too expensive,6,6,2023-11-13 00:00:00,3
+CUST-10308,2023-06-04,Starter,Logistics,France,Europe,51-200,7,Monthly,Referral,9.1,125.36,Churned,2023-07-01 00:00:00,Too expensive,1,,2023-06-11 00:00:00,7
+CUST-10309,2023-06-05,Enterprise,Retail,France,Europe,1-50,39,Monthly,Outbound Sales,5.1,2564.49,Churned,2024-03-01 00:00:00,,9,,2024-02-27 00:00:00,55
+CUST-10310,2023-06-05,Starter,Technology,United States,North America,51-200,8,Annual,Paid Search,6.8,138.47,Churned,2024-04-01 00:00:00,Low adoption / unused seats,10,10,2024-03-13 00:00:00,10
+CUST-10311,2023-06-06,Starter,Healthcare,United States,North America,51-200,5,Monthly,Paid Search,9.7,103.18,Churned,2023-08-01 00:00:00,Poor support experience,2,8,2023-07-01 00:00:00,5
+CUST-10312,2023-06-06,Growth,Manufacturing,Germany,Europe,51-200,29,Annual,Organic,2.3,772.33,Active,,,19,7,2024-12-01 00:00:00,28
+CUST-10313,2023-06-06,Starter,Education,Germany,Europe,201-1000,105,Monthly,Events,16.1,1106.14,Active,,,19,,2024-12-05 00:00:00,81
+CUST-10314,2023-06-06,Starter,Manufacturing,United States,North America,1-50,3,Annual,Outbound Sales,17.4,78.74,Churned,2023-09-01 00:00:00,Too expensive,3,8,,3
+CUST-10315,2023-06-07,Starter,Technology,Brazil,Latin America,51-200,11,Monthly,Paid Search,6.5,172.42,Active,,,19,9,2024-12-27 00:00:00,8
+CUST-10316,2023-06-07,Growth,Financial Services,United States,North America,1-50,5,Monthly,Organic,6.7,251.63,Churned,2023-10-01 00:00:00,Low adoption / unused seats,4,5,2023-09-27 00:00:00,6
+CUST-10317,2023-06-08,Enterprise,Education,United States,North America,1000+,526,Annual,Outbound Sales,22.0,19361.6,Active,,,19,8,2024-12-01 00:00:00,747
+CUST-10318,2023-06-08,Growth,Technology,Australia,Asia Pacific,51-200,15,Annual,Organic,0.7,476.69,Active,,,19,8,2024-12-11 00:00:00,11
+CUST-10319,2023-06-08,Business,Manufacturing,Canada,North America,1-50,n/a,Monthly,Paid Search,12.0,596.12,Active,,,19,,2024-12-08 00:00:00,7
+CUST-10320,2023-06-08,Business,Retail,Singapore,Asia Pacific,51-200,23,Annual,Organic,1.1,1126.9,Active,,,19,7,2024-12-05 00:00:00,35
+CUST-10321,2023-06-08,Business,Retail,Australia,Asia Pacific,201-1000,61,Annual,Partner,20.2,1956.7,Churned,2024-11-01 00:00:00,Low adoption / unused seats,17,5,2024-10-08 00:00:00,135
+CUST-10322,2023-06-09,Starter,Technology,United States,North America,1-50,6,Monthly,Outbound Sales,11.9,112.43,Churned,2023-10-01 00:00:00,Switched to competitor,4,4,2023-09-10 00:00:00,8
+CUST-10323,2023-06-09,Starter,Technology,Australia,Asia Pacific,51-200,14,Monthly,Events,14.1,193.31,Active,,,19,8,2024-12-16 00:00:00,13
+CUST-10324,2023-06-10,Enterprise,Financial Services,Mexico,Latin America,1000+,847,Annual,Referral,11.2,34745.12,Active,,,19,6,2024-12-16 00:00:00,798
+CUST-10325,2023-06-11,Starter,Education,India,Asia Pacific,1-50,3,Monthly,Organic,0.0,85.0,Active,,,19,10,2024-12-18 00:00:00,4
+CUST-10326,2023-06-11,Business,Financial Services,Singapore,Asia Pacific,1-50,9,Monthly,Paid Search,3.9,675.77,Active,,,19,10,2024-12-04 00:00:00,15
+CUST-10327,2023-06-12,Starter,Retail,United Kingdom,Europe,1-50,2,Monthly,Paid Search,3.5,72.16,Churned,2023-09-01 00:00:00,,3,7,2023-08-23 00:00:00,3
+CUST-10328,2023-06-12,Growth,Media,United States,North America,51-200,8,Annual,Referral,6.1,314.26,Churned,2024-02-01 00:00:00,Low adoption / unused seats,8,,2024-01-24 00:00:00,8
+CUST-10329,2023-06-13,Enterprise,Retail,United States,North America,1-50,50,Monthly,Outbound Sales,11.2,2897.0,Active,,,19,8,2024-12-20 00:00:00,68
+CUST-10330,2023-06-14,Starter,Retail,Brazil,Latin America,1-50,1,Annual,Events,12.5,59.5,Churned,2023-09-01 00:00:00,Low adoption / unused seats,3,8,2023-08-19 00:00:00,1
+CUST-10331,2023-06-15,Growth,Financial Services,United States,North America,201-1000,30,Monthly,Events,19.7,678.98,Active,,,19,10,2024-12-25 00:00:00,26
+CUST-10332,2023-06-15,Growth,Financial Services,United States,North America,51-200,9,Annual,Paid Search,11.3,324.63,Active,,,19,4,2024-12-06 00:00:00,11
+CUST-10333,2023-06-16,Growth,Financial Services,United States,North America,1-50,3,Monthly,Outbound Sales,16.2,204.31,Churned,2023-07-01 00:00:00,Too expensive,1,10,2023-06-04 00:00:00,3
+CUST-10334,2023-06-16,Business,Logistics,Mexico,Latin America,51-200,28,Annual,Events,7.6,1226.9,Active,,,19,10,2024-12-26 00:00:00,22
+CUST-10335,2023-06-16,Business,Technology,United Kingdom,Europe,51-200,17,Annual,Events,20.9,829.3,Churned,2024-09-01 00:00:00,Too expensive,15,,2024-08-11 00:00:00,18
+CUST-10336,2023-06-17,Business,Education,France,Europe,201-1000,97,Annual,Organic,11.6,3142.94,Active,,,19,8,,159
+CUST-10337,2023-06-18,Starter,Financial Services,United States,North America,201-1000,12,Monthly,Outbound Sales,11.0,177.16,Active,,,19,,2024-12-04 00:00:00,15
+CUST-10338,2023-06-19,Business,Healthcare,United States,North America,51-200,36,Annual,Events,9.5,1441.56,Active,,,19,8,2024-12-22 00:00:00,24
+CUST-10339,2023-06-20,Business,Education,Canada,North America,1000+,117,Monthly,Partner,27.4,3117.14,Churned,2023-08-01 00:00:00,Switched to competitor,2,5,2023-07-27 00:00:00,111
+CUST-10340,2023-06-20,Enterprise,Healthcare,United States,North America,51-200,14,monthly,Referral,6.6,1487.42,Active,,,19,6,2024-12-18 00:00:00,7
+CUST-10341,2023-06-20,Starter,Healthcare,United States,North America,1000+,66,Monthly,Partner,28.7,613.7,Active,,,19,8,2024-12-09 00:00:00,43
+CUST-10342,2023-06-20,Growth,Financial Services,United States,North America,51-200,8,Monthly,Organic,0.0,325.0,Active,,,19,8,2024-12-11 00:00:00,14
+CUST-10343,2023-06-21,Business,Technology,Canada,North America,1-50,4,Monthly,Partner,12.0,511.64,Churned,2024-03-01 00:00:00,Poor support experience,9,8,2024-02-16 00:00:00,3
+CUST-10344,2023-06-21,Enterprise,Education,Germany,Europe,201-1000,302,Monthly,Organic,1.5,14285.15,Active,,,19,7,2024-12-20 00:00:00,495
+CUST-10345,2023-06-21,Business,Education,India,Asia Pacific,51-200,17,Monthly,Partner,15.6,858.14,Active,,,19,5,,13
+CUST-10346,2023-06-22,Starter,Media,United States,North America,201-1000,36,Annual,Partner,22.4,384.23,Active,,,19,7,2024-12-11 00:00:00,44
+CUST-10347,2023-06-22,Growth,Manufacturing,United States,North America,1-50,4,Annual,Referral,0.5,236.56,Churned,2024-02-01 00:00:00,Too expensive,8,,2024-01-13 00:00:00,4
+CUST-10348,2023-06-22,Business,Technology,Spain,Europe,1-50,6,Annual,Organic,0.2,590.62,Active,,,19,10,2024-12-24 00:00:00,12
+CUST-10349,2023-06-23,Starter,Logistics,United Kingdom,Europe,51-200,16,Annual,Partner,11.3,219.3,Active,,,19,7,2024-12-08 00:00:00,29
+CUST-10350,2023-06-23,Starter,Media,United States,North America,1-50,2,Monthly,Partner,9.8,70.65,Active,,,19,5,2024-12-07 00:00:00,3
+CUST-10351,2023-06-23,Starter,Technology,India,Asia Pacific,201-1000,19,Annual,Partner,15.4,241.89,Churned,2024-12-01 00:00:00,Too expensive,18,3,2024-11-12 00:00:00,16
+CUST-10352,2023-06-23,Starter,Technology,United Kingdom,Europe,1-50,4,Annual,Referral,5.2,94.5,Churned,2024-09-01 00:00:00,Switched to competitor,15,5,2024-08-21 00:00:00,3
+CUST-10353,2023-06-24,Business,Retail,United States,North America,201-1000,65,Monthly,Paid Search,9.9,2273.08,Active,,,19,9,2024-12-06 00:00:00,45
+CUST-10354,2023-06-24,Growth,Manufacturing,United States,North America,1-50,5,Monthly,Referral,4.5,254.05,Churned,2024-07-01 00:00:00,Poor support experience,13,10,2024-06-24 00:00:00,5
+CUST-10355,2023-06-24,Business,Education,United States,North America,1-50,3,Monthly,Referral,0.0,495.0,Active,,,19,8,2024-12-08 00:00:00,3
+CUST-10356,2023-06-26,Enterprise,Logistics,United Kingdom,Europe,1-50,20,monthly,Partner,8.3,1724.3,Active,,,19,7,2024-12-09 00:00:00,12
+CUST-10357,2023-06-26,Starter,Technology,Australia,Asia Pacific,1-50,1,Monthly,Organic,2.2,60.74,Active,,,19,6,2024-12-25 00:00:00,1
+CUST-10358,2023-06-27,Growth,Financial Services,Germany,Europe,1-50,4,monthly,Events,13.1,225.47,Active,,,19,8,2024-12-25 00:00:00,7
+CUST-10359,2023-06-27,Business,Manufacturing,France,Europe,51-200,31,Monthly,Events,12.2,1269.98,Active,,,19,5,,28
+CUST-10360,2023-06-27,Starter,Financial Services,United States,North America,51-200,5,Monthly,Paid Search,16.0,99.4,Churned,2023-07-01 00:00:00,Too expensive,1,7,2023-06-14 00:00:00,5
+CUST-10361,2023-06-27,Growth,Manufacturing,Germany,Europe,1-50,3,Monthly,Events,9.7,208.6,Active,,,19,7,2024-12-18 00:00:00,3
+CUST-10362,2023-06-27,Growth,Retail,Germany,Europe,51-200,15,Annual,Paid Search,6.5,457.55,Churned,2023-09-01 00:00:00,Too expensive,3,7,2023-08-08 00:00:00,17
+CUST-10363,2023-06-28,Business,Logistics,Canada,North America,201-1000,71,Annual,Events,17.3,2277.94,Active,,,19,6,2024-12-20 00:00:00,62
+CUST-10364,2023-06-28,Business,Manufacturing,United States,North America,1000+,326,Annual,Organic,7.2,10079.9,Active,,,19,9,2024-12-21 00:00:00,362
+CUST-10365,2023-07-01,Starter,Financial Services,United States,North America,1-50,2,Monthly,Organic,0.0,73.0,Churned,2023-12-01 00:00:00,Switched to competitor,5,8,2023-11-11 00:00:00,2
+CUST-10366,2023-07-01,Starter,Media,Canada,North America,1-50,4,Annual,Outbound Sales,18.1,88.31,Churned,2024-01-01 00:00:00,,6,7,2023-12-25 00:00:00,3
+CUST-10367,2023-07-01, starter  ,Retail,United States,North America,51-200,17,Monthly,Paid Search,12.8,226.89,Churned,2023-08-01 00:00:00,Missing features,1,10,2023-07-18 00:00:00,16
+CUST-10368,2023-07-02,Business,Manufacturing,India,Asia Pacific,1-50,12,Monthly,Events,6.6,757.66,Active,,,18,10,2024-12-18 00:00:00,23
+CUST-10369,2023-07-02,Enterprise,Healthcare,United States,North America,1-50,14,Monthly,Organic,1.0,1522.7,Active,,,18,,2024-12-15 00:00:00,12
+CUST-10370,2023-07-02,Growth,Manufacturing,Brazil,Latin America,51-200,19,Annual,Partner,12.3,515.59,Active,,,18,10,2024-12-17 00:00:00,18
+CUST-10371,2023-07-02,Business,Manufacturing,Germany,Europe,201-1000,26,monthly,Events,16.3,1095.38,Churned,2024-05-01 00:00:00,Poor support experience,10,9,2024-04-12 00:00:00,29
+CUST-10372,2023-07-03,Growth,Retail,Canada,North America,1-50,4,Monthly,Referral,9.5,228.64,Active,,,18,8,2024-12-25 00:00:00,4
+CUST-10373,2023-07-03,Starter,Financial Services,France,Europe,1-50,1,Monthly,Organic,0.0,61.0,Active,,,18,,2024-12-07 00:00:00,1
+CUST-10374,2023-07-03,Growth,Logistics,Canada,North America,1-50,2,Monthly,Referral,5.3,190.67,Churned,2024-06-01 00:00:00,Missing features,11,10,2024-05-25 00:00:00,2
+CUST-10375,2023-07-04,Growth,Retail,United Kingdom,Europe,51-200,35,monthly,Referral,3.7,890.51,Active,,,18,6,2024-12-08 00:00:00,30
+CUST-10376,2023-07-05,Starter,Technology,Germany,Europe,1-50,3,Annual,Paid Search,11.5,80.86,Active,,,18,10,2024-12-21 00:00:00,2
+CUST-10377,2023-07-05,Growth,Healthcare,United States,North America,51-200,8,Monthly,Referral,6.7,313.21,Churned,2023-11-01 00:00:00,Too expensive,4,10,2023-10-27 00:00:00,7
+CUST-10378,2023-07-05,Business,Media,United Kingdom,Europe,1000+,394,Annual,Organic,10.6,11670.55,Churned,2023-11-01 00:00:00,Switched to competitor,4,7,2023-10-22 00:00:00,384
+CUST-10379,2023-07-05,Starter,Healthcare,India,Asia Pacific,51-200,7,Monthly,Outbound Sales,6.6,127.46,Active,,,18,9,2024-12-03 00:00:00,9
+CUST-10380,2023-07-05,Enterprise,Education,Australia,Asia Pacific,51-200,64,Annual,Partner,23.6,3099.32,Active,,,18,10,2024-12-19 00:00:00,78
+CUST-10381,2023-07-05,Business,Financial Services,United Kingdom,Europe,1-50,6,Monthly,Referral,4.2,582.94,Active,,,18,7,2024-12-18 00:00:00,8
+CUST-10382,2023-07-05,Starter,Financial Services,United States,North America,51-200,5,Monthly,Events,14.9,100.06,Churned,2024-12-01 00:00:00,Too expensive,17,7,2024-11-26 00:00:00,7
+CUST-10383,2023-07-06,Growth,Financial Services,United States,North America,51-200,12,Annual,Outbound Sales,11.7,382.11,Churned,2024-11-01 00:00:00,Low adoption / unused seats,16,8,2024-10-23 00:00:00,11
+CUST-10384,2023-07-06,Starter,Retail,Germany,Europe,1-50,4,Monthly,Partner,13.9,90.33,Active,,,18,5,2024-12-02 00:00:00,4
+CUST-10385,2023-07-07,Starter,Education,India,Asia Pacific,51-200,7,Monthly,Referral,6.7,127.37,Churned,2023-09-01 00:00:00,Low adoption / unused seats,2,,2023-08-24 00:00:00,7
+CUST-10386,2023-07-08,Growth,Technology,United States,North America,201-1000,24,Monthly,Paid Search,11.5,616.28,Churned,2024-03-01 00:00:00,,8,4,2024-02-14 00:00:00,28
+CUST-10387,2023-07-08,Growth,Technology,United Kingdom,Europe,1-50,3,Annual,Paid Search,11.7,207.28,Active,,,18,4,2024-12-12 00:00:00,2
+CUST-10388,2023-07-08,Growth,Financial Services,Japan,Asia Pacific,1-50,4,Monthly,Organic,0.0,237.0,Churned,2024-04-01 00:00:00,Missing features,9,7,2024-03-09 00:00:00,3
+CUST-10389,2023-07-08,Growth,Healthcare,Mexico,Latin America,51-200,15,Monthly,Outbound Sales,13.5,434.45,Churned,2023-12-01 00:00:00,Too expensive,5,9,2023-11-22 00:00:00,15
+CUST-10390,2023-07-09,Enterprise,Healthcare,United States,North America,51-200,27,Monthly,Organic,2.9,2078.76,Churned,2024-04-01 00:00:00,Low adoption / unused seats,9,5,2024-03-16 00:00:00,33
+CUST-10391,2023-07-09,Enterprise,Education,United States,North America,51-200,19,Annual,Organic,0.6,1748.87,Active,,,18,7,,21
+CUST-10392,2023-07-09,Business,Media,India,Asia Pacific,51-200,80,Annual,Paid Search,15.6,2559.64,Churned,01/08/2023,Switched to competitor,1,7,2023-07-15 00:00:00,83
+CUST-10393,2023-07-11,Starter,Technology,Singapore,Asia Pacific,51-200,2,Annual,Events,19.9,68.22,Active,,,18,5,2024-12-24 00:00:00,2
+CUST-10394,2023-07-11,Starter,Technology,Mexico,Latin America,1-50,1,Monthly,Outbound Sales,14.3,59.28,Active,,,18,5,2024-12-15 00:00:00,1
+CUST-10395,2023-07-12,Business,Manufacturing,United States,North America,1000+,261,Annual,Partner,19.2,7147.42,Churned,2023-12-01 00:00:00,Poor support experience,5,4,2023-11-16 00:00:00,311
+CUST-10396,2023-07-13,Growth,Healthcare,France,Europe,201-1000,33,Annual,Paid Search,13.5,776.99,Churned,2024-05-01 00:00:00,Company downsizing,10,9,2024-04-12 00:00:00,29
+CUST-10397,2023-07-13,Growth,Education,Canada,North America,51-200,17,Annual,Organic,6.0,500.56,Active,,,18,4,2024-12-25 00:00:00,16
+CUST-10398,2023-07-13,Starter,Healthcare,United Kingdom,Europe,1000+,238,Annual,Referral,8.1,2673.66,Active,,,18,7,2024-12-17 00:00:00,426
+CUST-10399,2023-07-13,Business,Technology,United States,North America,1-50,10,Monthly,Paid Search,9.3,689.24,Active,,,18,5,2024-12-03 00:00:00,16
+CUST-10400,2023-07-14,Growth,Financial Services,United Kingdom,Europe,51-200,4,Monthly,Outbound Sales,15.0,223.8,Churned,2023-08-01 00:00:00,Business priorities changed,1,6,2023-07-21 00:00:00,4
+CUST-10401,2023-07-14,Starter,Financial Services,Germany,Europe,1-50,1,Monthly,Organic,0.0,61.0,Active,,,18,9,2024-12-08 00:00:00,1
+CUST-10402,2023-07-15,Growth,Technology,Japan,Asia Pacific,51-200,14,Monthly,Organic,0.0,457.0,Active,,,18,8,2024-12-22 00:00:00,26
+CUST-10403,2023-07-16,Starter,Financial Services,United States,North America,51-200,18,Annual,Outbound Sales,12.7,237.57,Churned,2024-02-01 00:00:00,Low adoption / unused seats,7,7,2024-01-23 00:00:00,23
+CUST-10404,2023-07-16,Growth,Financial Services,United States,North America,51-200,16,Monthly,Paid Search,17.7,438.7,Churned,2023-08-01 00:00:00,Missing features,1,6,2023-07-16 00:00:00,16
+CUST-10405,2023-07-16,Starter,Technology,France,Europe,51-200,15,Monthly,Events,8.4,213.88,Churned,2023-10-01 00:00:00,Too expensive,3,9,2023-09-22 00:00:00,16
+CUST-10406,2023-07-16,Growth,Technology,United States,North America,1-50,5,Monthly,Organic,0.0,259.0,Active,,,18,5,2024-12-22 00:00:00,10
+CUST-10407,2023-07-17,Enterprise,Technology,Singapore,Asia Pacific,201-1000,51,Annual,Paid Search,18.1,2778.6,Churned,2024-02-01 00:00:00,Low adoption / unused seats,7,9,2024-01-21 00:00:00,47
+CUST-10408,2023-07-17,Enterprise,Logistics,Singapore,Asia Pacific,1-50,47,Monthly,Organic,1.4,2984.39,Churned,2023-11-01 00:00:00,Missing features,4,6,2023-10-06 00:00:00,49
+CUST-10409,2023-07-17,Starter,Retail,Australia,Asia Pacific,1-50,2,Monthly,Paid Search,4.5,$71.92,Churned,2023-08-01 00:00:00,Company downsizing,1,7,2023-07-21 00:00:00,2
+CUST-10410,2023-07-18,Enterprise,Media,India,Asia Pacific,1-50,13,Monthly,Paid Search,7.0,1443.05,Churned,2024-05-01 00:00:00,Too expensive,10,,2024-04-06 00:00:00,13
+CUST-10411,2023-07-18,Business,Technology,France,Europe,1000+,161,Annual,Outbound Sales,21.4,4448.47,Churned,2024-03-01 00:00:00,Low adoption / unused seats,8,5,2024-02-22 00:00:00,134
+CUST-10412,2023-07-18,Starter,Financial Services,United Kingdom,Europe,1-50,5,Monthly,Organic,0.0,109.0,Active,,,18,8,,9
+CUST-10413,2023-07-19,Enterprise,Technology,Japan,Asia Pacific,51-200,36,Monthly,Paid Search,14.9,2277.62,Active,,,18,9,,49
+CUST-10414,2023-07-20,Starter,Retail,India,Asia Pacific,1-50,3,Monthly,Outbound Sales,10.8,81.11,Active,,,18,5,2024-12-13 00:00:00,3
+CUST-10415,2023-07-20,Business,Technology,United States,North America,1-50,4,Monthly,Organic,0.0,527.0,Active,,,18,6,2024-12-26 00:00:00,5
+CUST-10416,2023-07-20,Starter,Manufacturing,United States,North America,1-50,2,Annual,Paid Search,5.3,71.73,Churned,2024-11-01 00:00:00,Too expensive,16,8,2024-10-06 00:00:00,1
+CUST-10417,2023-07-20,Starter,Education,Brazil,Latin America,51-200,15,Monthly,Referral,9.3,212.26,Active,,,18,6,2024-12-26 00:00:00,21
+CUST-10418,2023-07-21,Enterprise,Technology,United Kingdom,Europe,1-50,19,Monthly,Paid Search,2.0,1736.9,Active,,,18,3,2024-12-27 00:00:00,14
+CUST-10419,2023-07-21,Starter,Education,France,Europe,1000+,195,Annual,Events,12.7,2091.82,Active,,,18,5,,212
+CUST-10420,2023-07-21,Growth,Retail,Canada,North America,1-50,11,Monthly,Outbound Sales,12.0,361.96,Churned,2023-10-01 00:00:00,Too expensive,3,3,2023-09-13 00:00:00,10
+CUST-10421,2023-07-22,Growth,Retail,Canada,North America,1-50,9,Annual,Events,10.7,325.81,Churned,2024-03-01 00:00:00,,8,8,2024-02-13 00:00:00,8
+CUST-10422,2023-07-22,Business,Education,India,Asia Pacific,1000+,258,Annual,Paid Search,18.7,7111.13,Active,,,18,,2024-12-23 00:00:00,429
+CUST-10423,2023-07-23,Growth,Manufacturing,Australia,Asia Pacific,1000+,105,Annual,Paid Search,22.5,1939.25,Active,,,18,9,2024-12-05 00:00:00,106
+CUST-10424,2023-07-23,Starter,Financial Services,United Kingdom,Europe,51-200,10,Annual,Referral,0.0,169.0,Active,,,18,10,2024-12-18 00:00:00,10
+CUST-10425,2023-07-23,Enterprise,Healthcare,India,north america,1-50,10,Monthly,Organic,8.6,1310.3,Churned,2024-07-01 00:00:00,Too expensive,12,7,2024-06-22 00:00:00,9
+CUST-10426,2023-07-23,Growth,Retail,United States,North America,1-50,4,Monthly,Paid Search,10.4,227.85,Churned,2023-10-01 00:00:00,Poor support experience,3,4,2023-09-06 00:00:00,4
+CUST-10427,2023-07-24,Growth,Financial Services,India,Asia Pacific,1-50,3,Monthly,Partner,9.4,208.8,Churned,2023-10-01 00:00:00,Poor support experience,3,6,2023-09-19 00:00:00,2
+CUST-10428,2023-07-24,Business,Financial Services,United Kingdom,Europe,1-50,5,Monthly,Referral,11.2,541.08,Active,,,18,8,2024-12-22 00:00:00,9
+CUST-10429,2023-07-25,Business,Healthcare,France,Europe,51-200,58,Monthly,Partner,22.1,1844.82,Churned,2023-08-01 00:00:00,Poor support experience,1,,2023-07-22 00:00:00,57
+CUST-10430,2023-07-25,Growth,Healthcare,United States,North America,51-200,11,Monthly,Referral,10.9,364.62,Churned,2023-10-01 00:00:00,,3,4,2023-09-21 00:00:00,14
+CUST-10431,2023-07-26,Starter,Technology,United States,North America,1-50,5,Monthly,Partner,18.5,97.9,Churned,2023-09-01 00:00:00,Low adoption / unused seats,2,,2023-08-11 00:00:00,5
+CUST-10432,2023-07-26,Starter,Financial Services,Australia,Asia Pacific,51-200,10,Monthly,Partner,14.5,151.6,Churned,2023-12-01 00:00:00,Too expensive,5,4,2023-11-05 00:00:00,11
+CUST-10433,2023-07-26,Starter,Healthcare,Japan,Asia Pacific,51-200,6,Monthly,Paid Search,10.5,113.44,Churned,2024-07-01 00:00:00,Low adoption / unused seats,12,5,2024-06-13 00:00:00,5
+CUST-10434,2023-07-27,Enterprise,Healthcare,Japan,Asia Pacific,51-200,84,Monthly,Partner,9.9,4304.78,Active,,,18,,2024-12-19 00:00:00,188
+CUST-10435,2023-07-27,Starter,Education,United States,North America,51-200,12,Monthly,Referral,1.7,190.55,Active,,,18,10,2024-12-01 00:00:00,14
+CUST-10436,2023-07-27,Starter,Healthcare,Singapore,Asia Pacific,51-200,19,Monthly,Outbound Sales,14.4,244.17,Active,,,18,9,2024-12-25 00:00:00,25
+CUST-10437,2023-07-28,Starter,Manufacturing,Mexico,Latin America,51-200,18,Monthly,Partner,13.5,235.84,Active,,,18,6,2024-12-11 00:00:00,25
+CUST-10438,2023-08-01,Growth,Financial Services,Brazil,Latin America,51-200,18,Annual,Referral,11.5,499.46,Active,,,17,,2024-12-08 00:00:00,30
+CUST-10439,2023-08-01,Growth,Technology,United States,North America,1-50,7,Monthly,Referral,7.1,292.07,Churned,2024-05-01 00:00:00,Poor support experience,9,8,2024-04-25 00:00:00,7
+CUST-10440,2023-08-02,Business,Retail,United Kingdom,Europe,1000+,181,Monthly,Paid Search,13.2,5426.46,Active,,,17,,2024-12-23 00:00:00,260
+CUST-10441,2023-08-02,Starter,Healthcare,India,Asia Pacific,201-1000,15,Annual,Organic,1.2,226.84,Active,,,17,4,2024-12-08 00:00:00,6
+CUST-10442,2023-08-02,Business,Healthcare,United States,North America,1000+,251,Annual,Organic,7.6,7820.57,Active,,,17,7,,187
+CUST-10443,2023-08-02,Starter,Education,Mexico,Latin America,1000+,53,Monthly,Events,21.2,550.17,Active,,,17,10,2024-12-13 00:00:00,77
+CUST-10444,2023-08-03,Starter,Financial Services,Brazil,Latin America,1-50,2,Monthly,Paid Search,4.7,71.87,Active,,,17,7,2024-12-21 00:00:00,1
+CUST-10445,2023-08-03,Starter,Technology,Japan,Asia Pacific,51-200,19,Monthly,Outbound Sales,12.8,247.82,Churned,2024-01-01 00:00:00,,5,6,2023-12-02 00:00:00,20
+CUST-10446,2023-08-03,Enterprise,Technology,India,north america,51-200,38,Monthly,Outbound Sales,18.4,2294.36,Active,,,17,8,2024-12-16 00:00:00,30
+CUST-10447,2023-08-03,Business,Retail,United States,North America,201-1000,41,Monthly,Paid Search,8.5,1599.48,Active,,,17,4,2024-12-16 00:00:00,36
+CUST-10448,2023-08-03,Starter,Manufacturing,United States,North America,51-200,8,Monthly,Organic,0.0,145.0,Churned,2023-09-01 00:00:00,Business priorities changed,1,7,,9
+CUST-10449,2023-08-03,Growth,Logistics,Australia,Asia Pacific,201-1000,20,Monthly,Paid Search,8.9,549.84,Churned,2024-12-01 00:00:00,,16,4,2024-11-11 00:00:00,32
+CUST-10450,2023-08-04,Business,Media,United Kingdom,Europe,51-200,14,Monthly,Organic,0.0,847.0,Churned,2023-10-01 00:00:00,Too expensive,2,6,2023-09-14 00:00:00,14
+CUST-10451,2023-08-05,Business,Manufacturing,United States,North America,51-200,21,Annual,Paid Search,9.8,1005.14,Active,,,17,8,2024-12-03 00:00:00,23
+CUST-10452,2023-08-05,Starter,Retail,United Kingdom,Europe,51-200,5,Monthly,Organic,0.0,109.0,Active,,,17,7,2024-12-09 00:00:00,8
+CUST-10453,2023-08-06,Enterprise,Healthcare,India,Asia Pacific,1-50,13,Monthly,Partner,12.2,1412.63,Churned,2024-05-01 00:00:00,Switched to competitor,9,3,2024-04-14 00:00:00,12
+CUST-10454,2023-08-06,Starter,Logistics,Australia,Asia Pacific,1-50,3,Monthly,Organic,0.0,85.0,Churned,2023-11-01 00:00:00,,3,9,2023-10-11 00:00:00,3
+CUST-10455,2023-08-06,Growth,Technology,Germany,Europe,201-1000,28,Annual,Outbound Sales,16.7,662.13,Churned,2024-05-01 00:00:00,Too expensive,9,6,2024-04-07 00:00:00,30
+CUST-10456,2023-08-06,Business,Technology,United States,North America,51-200,20,Annual,Organic,0.0,1039.0,Active,,,17,,,14
+CUST-10457,2023-08-07,Enterprise,Retail,United States,North America,51-200,29,Annual,Outbound Sales,18.1,1967.79,Active,,,17,6,2024-12-21 00:00:00,40
+CUST-10458,2023-08-07,Starter,Financial Services,Singapore,Asia Pacific,51-200,10,Annual,Events,8.5,158.8,Churned,2023-12-01 00:00:00,Low adoption / unused seats,4,10,2023-11-05 00:00:00,9
+CUST-10459,2023-08-07,Starter,Manufacturing,Brazil,Latin America,51-200,19,Monthly,Partner,16.6,239.15,Churned,01/12/2023,Too expensive,4,10,2023-11-26 00:00:00,20
+CUST-10460,2023-08-08,Enterprise,Retail,Singapore,Asia Pacific,1000+,275,Annual,Partner,28.6,9734.75,Active,,,17,3,2024-12-04 00:00:00,612
+CUST-10461,2023-08-08,Starter,Manufacturing,Australia,Asia Pacific,201-1000,15,Annual,Paid Search,11.9,207.58,Active,,,17,7,2024-12-03 00:00:00,18
+CUST-10462,2023-08-08,Growth,Technology,United States,North America,51-200,15,Annual,Organic,0.0,479.0,Active,,,17,,2024-12-17 00:00:00,15
+CUST-10463,2023-08-08,Growth,Technology,United States,North America,51-200,9,Monthly,Partner,18.4,310.57,Active,,,17,7,2024-12-11 00:00:00,16
+CUST-10464,2023-08-09,Growth,Financial Services,Canada,North America,51-200,11,Monthly,Events,8.0,371.64,Active,,,17,,2024-12-27 00:00:00,16
+CUST-10465,2023-08-09,Growth,Technology,United Kingdom,Europe,51-200,33,Monthly,Outbound Sales,6.5,827.81,Active,,,17,10,2024-12-05 00:00:00,12
+CUST-10466,2023-08-10,Enterprise,Healthcare,United Kingdom,Europe,51-200,25,Monthly,Partner,19.4,1805.75,Churned,2024-09-01 00:00:00,Switched to competitor,13,8,2024-08-17 00:00:00,20
+CUST-10467,2023-08-10,Business,Manufacturing,Brazil,Latin America,201-1000,154,Annual,Paid Search,19.1,4385.75,Churned,2023-12-01 00:00:00,Low adoption / unused seats,4,8,2023-11-25 00:00:00,159
+CUST-10468,2023-08-10,Business,Manufacturing,Spain,Europe,1-50,3,Annual,Partner,12.7,482.81,Active,,,17,8,2024-12-23 00:00:00,4
+CUST-10469,2023-08-10,Growth,Financial Services,United States,North America,1-50,6,Monthly,Organic,0.0,281.0,Churned,2024-04-01 00:00:00,Missing features,8,,2024-03-08 00:00:00,5
+CUST-10470,2023-08-11,Growth,Healthcare,United Kingdom,Europe,201-1000,23,Annual,Organic,6.6,621.6,Churned,2024-07-01 00:00:00,Business priorities changed,11,6,2024-06-01 00:00:00,31
+CUST-10471,2023-08-11,Enterprise,Healthcare,United States,North America,1000+,232,Annual,Paid Search,14.9,9783.44,Churned,2023-09-01 00:00:00,,1,4,2023-08-25 00:00:00,217
+CUST-10472,2023-08-11,Enterprise,Retail,United States,North America,1-50,14,Annual,Paid Search,11.2,1458.44,Active,,,17,9,,12
+CUST-10473,2023-08-12,Growth,Healthcare,Germany,Europe,51-200,26,Monthly,Organic,0.0,721.0,Active,,,17,6,2024-12-08 00:00:00,53
+CUST-10474,2023-08-12,Business,Education,United States,North America,201-1000,58,Annual,Outbound Sales,11.5,2041.56,Active,,,17,7,2024-12-01 00:00:00,51
+CUST-10475,2023-08-13,Business,Technology,Spain,Europe,51-200,18,Monthly,Paid Search,7.4,932.38,Active,,,17,3,2024-12-14 00:00:00,26
+CUST-10476,2023-08-13,Growth,Education,United States,North America,1-50,2,Monthly,Referral,8.5,189.26,Churned,2024-10-01 00:00:00,Missing features,14,7,2024-09-18 00:00:00,2
+CUST-10477,2023-08-14,Business,Logistics,United States,North America,1-50,7,Monthly,Partner,18.2,582.23,Churned,2023-10-01 00:00:00,Switched to competitor,2,6,2023-09-13 00:00:00,7
+CUST-10478,2023-08-14,Enterprise,Financial Services,Germany,Europe,201-1000,171,Annual,Referral,7.8,7993.79,Active,,,17,,,179
+CUST-10479,2023-08-14,Starter,Financial Services,Brazil,Latin America,1-50,2,Monthly,Partner,23.3,67.41,Churned,2024-04-01 00:00:00,,8,8,2024-03-09 00:00:00,3
+CUST-10480,2023-08-14,Growth,Financial Services,India,Asia Pacific,51-200,16,Monthly,Paid Search,0.0,501.0,Active,,,17,,2024-12-16 00:00:00,23
+CUST-10481,2023-08-15,Growth,Retail,Spain,Europe,51-200,14,Annual,Referral,7.9,432.67,Churned,2023-11-01 00:00:00,Low adoption / unused seats,3,8,2023-10-25 00:00:00,13
+CUST-10482,2023-08-16,Starter,Manufacturing,United States,North America,51-200,16,Monthly,Organic,5.4,230.63,Active,,,17,7,2024-12-25 00:00:00,15
+CUST-10483,2023-08-17,Starter,Manufacturing,United States,North America,1-50,7,Monthly,Events,16.2,119.39,Churned,2024-11-01 00:00:00,Missing features,15,8,2024-10-22 00:00:00,11
+CUST-10484,2023-08-17,Growth,Financial Services,Australia,Asia Pacific,51-200,15,Annual,Referral,2.7,470.09,Active,,,17,4,2024-12-22 00:00:00,29
+CUST-10485,2023-08-17,Starter,Logistics,France,Europe,1-50,2,Monthly,Outbound Sales,14.6,69.5,Churned,2023-11-01 00:00:00,,3,6,2023-10-12 00:00:00,2
+CUST-10486,2023-08-18,Growth,Retail,United Kingdom,Europe,201-1000,33,Monthly,Partner,17.2,750.13,Active,,,17,6,2024-12-04 00:00:00,34
+CUST-10487,2023-08-18,Starter,Retail,Mexico,Latin America,1-50,2,Monthly,Referral,4.3,71.97,Active,,,17,6,2024-12-01 00:00:00,2
+CUST-10488,2023-08-18,Growth,Technology,India,Asia Pacific,201-1000,33,Monthly,Paid Search,7.6,819.82,Active,,,17,8,2024-12-16 00:00:00,35
+CUST-10489,2023-08-20,Starter,Technology,United States,North America,1-50,6,Annual,Organic,0.0,121.0,Churned,2023-12-01 00:00:00,Switched to competitor,4,5,2023-11-07 00:00:00,6
+CUST-10490,2023-08-20,Growth,Healthcare,United States,North America,201-1000,83,Annual,Referral,14.3,1713.88,Churned,2024-01-01 00:00:00,Missing features,5,7,2023-12-26 00:00:00,91
+CUST-10491,2023-08-21,Business,Logistics,United States,North America,51-200,20,Monthly,Outbound Sales,22.2,896.92,Active,,,17,,2024-12-05 00:00:00,20
+CUST-10492,2023-08-21,Business,Manufacturing,United Kingdom,Europe,1-50,6,Monthly,Outbound Sales,11.2,$569.50,Churned,2024-07-01 00:00:00,Switched to competitor,11,7,2024-06-13 00:00:00,14
+CUST-10493,2023-08-21,Business,Healthcare,Australia,Asia Pacific,1-50,6,Monthly,Organic,3.7,583.9,Active,,,17,,2024-12-06 00:00:00,9
+CUST-10494,2023-08-21,Growth,Logistics,Australia,Asia Pacific,1000+,138,Monthly,Organic,4.9,3036.24,Active,,,17,6,,106
+CUST-10495,2023-08-21,Growth,Technology,United States,North America,1000+,78,Annual,Paid Search,17.8,1559.55,Churned,2023-12-01 00:00:00,Switched to competitor,4,4,2023-11-23 00:00:00,104
+CUST-10496,2023-08-22,Starter,Financial Services,Singapore,Asia Pacific,1000+,125,Annual,Paid Search,16.9,1295.5,Churned,2023-09-01 00:00:00,Missing features,1,8,2023-08-05 00:00:00,129
+CUST-10497,2023-08-22,Starter,Technology,Mexico,Latin America,201-1000,30,Annual,Referral,3.3,397.12,Active,,,17,9,,43
+CUST-10498,2023-08-22,Starter,Financial Services,Germany,Europe,51-200,5,Annual,Paid Search,14.6,100.24,Churned,01/11/2024,Missing features,15,7,2024-10-04 00:00:00,5
+CUST-10499,2023-08-23,Starter,Financial Services,Mexico,Latin America,1-50,5,Monthly,Organic,0.0,109.0,Churned,2024-09-01 00:00:00,Missing features,13,8,2024-08-11 00:00:00,5
+CUST-10500,2023-08-23,Starter,Manufacturing,United States,North America,201-1000,10,Monthly,Events,10.8,156.04,Active,,,17,5,2024-12-06 00:00:00,20
+CUST-10501,2023-08-23,Starter,Technology,United Kingdom,Europe,1-50,1,Monthly,Organic,5.4,60.35,Active,,,17,8,2024-12-19 00:00:00,1
+CUST-10502,2023-08-24,Growth,Logistics,Australia,Asia Pacific,1-50,2,Annual,Referral,4.4,191.06,Active,,,17,8,2024-12-18 00:00:00,4
+CUST-10503,2023-08-24,Growth,Technology,Australia,Asia Pacific,51-200,16,Monthly,Referral,6.5,478.12,Active,,,17,9,2024-12-25 00:00:00,14
+CUST-10504,2023-08-24,Starter,Retail,Canada,North America,201-1000,21,Monthly,Paid Search,14.2,265.22,Churned,2024-08-01 00:00:00,Switched to competitor,12,8,,22
+CUST-10505,2023-08-25,Starter,Manufacturing,Mexico,Latin America,51-200,5,Monthly,Partner,12.2,101.68,Churned,2023-10-01 00:00:00,Switched to competitor,2,6,2023-09-02 00:00:00,5
+CUST-10506,2023-08-26,Business,Manufacturing,United States,North America,1-50,4,Monthly,Organic,0.0,527.0,Active,,,17,5,2024-12-26 00:00:00,5
+CUST-10507,2023-08-26,Growth,Logistics,Canada,North America,1000+,90,Annual,Events,22.5,1683.5,Active,,,17,10,,96
+CUST-10508,2023-08-27,Starter,Education,United States,North America,1-50,6,Annual,Organic,0.0,121.0,Churned,2024-10-01 00:00:00,Poor support experience,14,4,2024-09-10 00:00:00,4
+CUST-10509,2023-08-27,Growth,Manufacturing,United States,North America,1-50,3,Monthly,Outbound Sales,11.0,207.74,Active,,,17,9,2024-12-06 00:00:00,2
+CUST-10510,2023-08-28,Business,Technology,Singapore,Asia Pacific,51-200,19,Monthly,Paid Search,12.8,929.18,Churned,2023-11-01 00:00:00,,3,,2023-10-05 00:00:00,22
+CUST-10511,2023-08-28,Growth,Education,India,EMEA ,1-50,3,Monthly,Referral,1.4,214.08,Churned,2023-10-01 00:00:00,Company downsizing,2,7,,3
+CUST-10512,2023-09-01,Starter,Retail,United Kingdom,Europe,201-1000,32,Monthly,Outbound Sales,13.5,381.16,Active,,,16,8,2024-12-03 00:00:00,15
+CUST-10513,2023-09-01,Starter,Logistics,France,Europe,1-50,2,Monthly,Referral,3.2,72.23,Churned,01/11/2023,Missing features,2,2,2023-10-26 00:00:00,2
+CUST-10514,2023-09-02,Starter,Media,France,Europe,201-1000,28,Monthly,Paid Search,13.0,341.32,Active,,,16,7,2024-12-01 00:00:00,26
+CUST-10515,2023-09-03,Growth,Financial Services,Canada,North America,51-200,19,monthly,Referral,4.2,549.44,Active,,,16,7,2024-12-04 00:00:00,28
+CUST-10516,2023-09-03,Starter,Financial Services,Australia,Asia Pacific,1-50,3,Monthly,Organic,1.3,84.53,Active,,,16,9,2024-12-14 00:00:00,2
+CUST-10517,2023-09-04,Growth,Financial Services,Australia,Asia Pacific,51-200,32,Annual,Referral,1.4,843.14,Active,,,16,4,,21
+CUST-10518,2023-09-04,Business,Technology,India,Asia Pacific,1000+,103,Annual,Organic,9.9,3368.7,Active,,,16,,2024-12-14 00:00:00,67
+CUST-10519,2023-09-05,Growth,Technology,India,Asia Pacific,201-1000,44,Monthly,Organic,4.9,1069.57,Active,,,16,10,2024-12-12 00:00:00,60
+CUST-10520,2023-09-05,Business,Retail,Spain,Europe,51-200,17,Monthly,Events,5.9,910.9,Churned,2024-06-01 00:00:00,Switched to competitor,9,7,2024-05-20 00:00:00,13
+CUST-10521,2023-09-05,Business,Logistics,Australia,Asia Pacific,1-50,8,Annual,Paid Search,2.3,649.11,Active,,,16,8,,10
+CUST-10522,2023-09-06,Starter,Retail,Mexico,Latin America,1-50,3,Annual,Partner,14.4,79.82,Active,,,16,10,2024-12-13 00:00:00,6
+CUST-10523,2023-09-06,Starter,Media,France,Europe,1-50,4,Monthly,Events,8.7,92.82,Active,,,16,7,2024-12-23 00:00:00,3
+CUST-10524,2023-09-07,Enterprise,Technology,United States,North America,201-1000,91,Annual,Paid Search,13.2,4453.46,Active,,,16,,2024-12-08 00:00:00,177
+CUST-10525,2023-09-07,Starter,Retail,United States,North America,51-200,10,Monthly,Partner,21.6,143.08,Churned,2024-03-01 00:00:00,Poor support experience,6,10,2024-02-04 00:00:00,9
+CUST-10526,2023-09-09,Enterprise,Healthcare,Canada,North America,51-200,22,Annual,Referral,10.8,1782.08,Active,,,16,6,2024-12-01 00:00:00,17
+CUST-10527,2023-09-09,Growth,Education,India,Asia Pacific,1-50,6,Monthly,Partner,23.0,250.64,Active,,,16,9,2024-12-01 00:00:00,10
+CUST-10528,2023-09-10,Growth,Healthcare,Canada,North America,51-200,14,Annual,Organic,3.0,447.76,Active,,,16,7,2024-12-07 00:00:00,18
+CUST-10529,2023-09-10,Growth,Technology,United States,North America,1-50,7,Monthly,Paid Search,6.7,292.68,Active,,,16,7,2024-12-24 00:00:00,5
+CUST-10530,2023-09-10,Growth,Technology,United States,North America,1-50,2,Monthly,Partner,14.6,186.58,Churned,2024-11-01 00:00:00,Missing features,14,,2024-10-27 00:00:00,2
+CUST-10531,2023-09-10,Enterprise,Technology,Canada,North America,51-200,22,Monthly,Organic,5.0,1839.5,Active,,,16,6,2024-12-23 00:00:00,19
+CUST-10532,2023-09-11,Growth,Technology,Canada,North America,1-50,3,Monthly,Outbound Sales,12.3,206.88,Active,,,16,,2024-12-27 00:00:00,3
+CUST-10533,2023-09-11,Starter,Financial Services,India,Asia Pacific,1-50,3,Monthly,Paid Search,13.2,80.25,Churned,2023-11-01 00:00:00,Low adoption / unused seats,2,5,2023-10-18 00:00:00,3
+CUST-10534,2023-09-11,Starter,Retail,Singapore,Asia Pacific,1-50,2,Monthly,Organic,0.2,72.95,Active,,,16,7,2024-12-11 00:00:00,3
+CUST-10535,2023-09-12,Growth,Financial Services,United States,North America,1-50,3,Monthly,Organic,3.9,212.43,Active,,,16,9,2024-12-17 00:00:00,3
+CUST-10536,2023-09-13,Enterprise,Healthcare,Brazil,Latin America,1-50,9,Monthly,Paid Search,12.1,1254.99,Active,,,16,7,2024-12-27 00:00:00,17
+CUST-10537,2023-09-13,Business,Education,United States,North America,1-50,3,Monthly,Outbound Sales,8.8,486.55,Active,,,16,6,2024-12-12 00:00:00,3
+CUST-10538,2023-09-13,Starter,Logistics,Australia,Asia Pacific,1-50,3,Monthly,Organic,0.0,85.0,Active,,,16,8,2024-12-23 00:00:00,3
+CUST-10539,2023-09-13,Starter,Manufacturing,United States,North America,201-1000,25,Monthly,Events,22.7,280.9,Active,,,16,9,2024-12-26 00:00:00,30
+CUST-10540,2023-09-13,Starter,Financial Services,Germany,Europe,201-1000,25,Annual,Paid Search,13.8,307.6,Churned,2024-05-01 00:00:00,Too expensive,8,8,2024-04-07 00:00:00,32
+CUST-10541,2023-09-13,Starter,Financial Services,Canada,North America,1-50,3,Annual,Partner,21.7,77.19,Churned,2024-02-01 00:00:00,Missing features,5,6,2024-01-09 00:00:00,3
+CUST-10542,2023-09-13,Growth,Retail,Japan,Asia Pacific,201-1000,83,Annual,Events,17.0,1664.58,Active,,,16,,2024-12-21 00:00:00,103
+CUST-10543,2023-09-14,Starter,Manufacturing,United States,North America,51-200,5,Monthly,Partner,9.1,103.54,Active,,,16,,,9
+CUST-10544,2023-09-14,Growth,Retail,India,Asia Pacific,51-200,17,Monthly,Organic,0.0,523.0,Churned,2023-11-01 00:00:00,,2,10,2023-10-20 00:00:00,18
+CUST-10545,2023-09-14,Business,Healthcare,United States,North America,1-50,9,Monthly,Paid Search,5.1,672.31,Active,,,16,6,2024-12-24 00:00:00,7
+CUST-10546,2023-09-15,Starter,Financial Services,Canada,North America,1000+,64,Annual,Referral,15.7,696.42,Active,,,16,3,2024-12-21 00:00:00,65
+CUST-10547,2023-09-15,Growth,Retail,France,Europe,51-200,2,Annual,Partner,13.5,187.06,Churned,2024-02-01 00:00:00,Missing features,5,10,2024-01-26 00:00:00,2
+CUST-10548,2023-09-16,Business,Retail,India,Asia Pacific,1-50,9,Monthly,Organic,5.7,670.58,Active,,,16,6,2024-12-17 00:00:00,14
+CUST-10549,2023-09-16,Starter,Logistics,Spain,Europe,1-50,2,Annual,Referral,1.5,72.64,Active,,,16,2,2024-12-19 00:00:00,1
+CUST-10550,2023-09-16,Growth,Technology,United States,North America,1-50,8,Monthly,Organic,0.8,323.59,Active,,,16,9,2024-12-15 00:00:00,8
+CUST-10551,2023-09-16,Starter,Technology,India,Asia Pacific,201-1000,24,Monthly,Partner,22.1,273.35,Active,,,16,9,,31
+CUST-10552,2023-09-18,Starter,Education,Japan,Asia Pacific,1-50,1,Monthly,Organic,0.0,61.0,Active,,,16,,2024-12-06 00:00:00,1
+CUST-10553,2023-09-18,Enterprise,Healthcare,India,Asia Pacific,1-50,12,Annual,Organic,5.1,1411.46,Active,,,16,10,2024-12-26 00:00:00,20
+CUST-10554,2023-09-18,Starter,Financial Services,Germany,Europe,51-200,6,Monthly,Referral,10.1,113.73,Churned,2023-12-01 00:00:00,Too expensive,3,3,2023-11-12 00:00:00,6
+CUST-10555,2023-09-19,Starter,Technology,United States,North America,1-50,3,Monthly,Partner,12.4,80.54,Churned,2023-11-01 00:00:00,Switched to competitor,2,5,2023-10-06 00:00:00,3
+CUST-10556,2023-09-19,Starter,Technology,France,Europe,1-50,2,Monthly,Partner,20.9,67.98,Active,,,16,7,2024-12-13 00:00:00,2
+CUST-10557,2023-09-19,Starter,Logistics,Japan,Asia Pacific,1-50,3,Monthly,Paid Search,8.1,82.08,Active,,,16,8,2024-12-18 00:00:00,3
+CUST-10558,2023-09-20,Enterprise,Financial Services,Mexico,Latin America,1-50,31,Monthly,Organic,4.4,2232.62,Active,,,16,6,2024-12-02 00:00:00,31
+CUST-10559,2023-09-20,Starter,Manufacturing,Brazil,Latin America,1-50,4,Monthly,Referral,4.7,94.74,Churned,2023-11-01 00:00:00,Poor support experience,2,8,2023-10-12 00:00:00,4
+CUST-10560,2023-09-20,Business,Manufacturing,France,Europe,51-200,10,Annual,Partner,12.7,678.36,Churned,2024-12-01 00:00:00,Switched to competitor,15,5,2024-11-13 00:00:00,17
+CUST-10561,2023-09-21,Business,Education,France,Europe,201-1000,91,Monthly,Referral,13.5,2917.88,Active,,,16,9,2024-12-12 00:00:00,87
+CUST-10562,2023-09-21,Starter,Manufacturing,United States,North America,51-200,16,Annual,Organic,7.6,226.41,Churned,2023-10-01 00:00:00,Missing features,1,6,2023-09-20 00:00:00,17
+CUST-10563,2023-09-21,Business,Manufacturing,France,Europe,1000+,445,Annual,Organic,12.8,12816.28,Active,,,16,8,2024-12-27 00:00:00,546
+CUST-10564,2023-09-22,Starter,Financial Services,India,Asia Pacific,1-50,7,Monthly,Referral,7.1,127.04,Churned,2023-11-01 00:00:00,Missing features,2,5,2023-10-27 00:00:00,8
+CUST-10565,2023-09-22,Growth,Logistics,United States,North America,51-200,9,Annual,Partner,14.5,318.29,Active,,,16,,2024-12-12 00:00:00,12
+CUST-10566,2023-09-22,Starter,Media,United Kingdom,Europe,201-1000,12,Annual,Organic,10.7,177.59,Active,,,16,9,2024-12-25 00:00:00,8
+CUST-10567,2023-09-23,Starter,Retail,Spain,Europe,51-200,10,Monthly,Partner,12.8,153.64,Churned,2024-11-01 00:00:00,Low adoption / unused seats,14,5,2024-10-19 00:00:00,6
+CUST-10568,2023-09-23,Starter,Retail,United Kingdom,Europe,51-200,7,Monthly,Organic,3.4,130.14,Active,,,16,7,2024-12-07 00:00:00,6
+CUST-10569,2023-09-24,Growth,Healthcare,France,Europe,1-50,6,Monthly,Organic,0.0,281.0,Active,,,16,9,2024-12-16 00:00:00,10
+CUST-10570,2023-09-24,Starter,Technology,Singapore,Asia Pacific,51-200,9,Monthly,Partner,18.5,137.02,Active,,,16,7,2024-12-02 00:00:00,6
+CUST-10571,2023-09-24,Starter,Retail,United Kingdom,Europe,51-200,11,Monthly,Partner,14.0,162.52,Active,,,16,6,2024-12-02 00:00:00,10
+CUST-10572,2023-09-25,Starter,Technology,India,Asia Pacific,51-200,6,Annual,Organic,0.0,121.0,Active,,,16,2,2024-12-21 00:00:00,6
+CUST-10573,2023-09-25,Enterprise,Logistics,United States,North America,1000+,420,Annual,Events,12.2,17493.2,Churned,2023-10-01 00:00:00,Business priorities changed,1,4,2023-09-06 00:00:00,424
+CUST-10574,2023-09-26,Growth,Retail,Germany,Europe,201-1000,35,Annual,Paid Search,13.8,812.74,Active,,,16,6,2024-12-10 00:00:00,23
+CUST-10575,2023-09-26,Starter,Education,Germany,Europe,51-200,11,Monthly,Outbound Sales,13.8,162.78,Active,,,16,10,2024-12-07 00:00:00,10
+CUST-10576,2023-09-26,Enterprise,Logistics,United States,North America,1-50,9,Monthly,Referral,0.7,1301.16,Active,,,16,5,2024-12-05 00:00:00,8
+CUST-10577,2023-09-27,Enterprise,Retail,United States,North America,1-50,49,Annual,Organic,0.0,3104.0,Active,,,16,9,2024-12-17 00:00:00,81
+CUST-10578,2023-09-27,Business,Technology,United Kingdom,Europe,1-50,8,Monthly,Organic,0.0,655.0,Active,,,16,5,2024-12-18 00:00:00,7
+CUST-10579,2023-09-27,Business,Financial Services,Germany,Europe,1-50,4,Monthly,Paid Search,6.8,518.3,Active,,,16,7,2024-12-24 00:00:00,3
+CUST-10580,2023-09-28,Starter,Retail,India,Asia Pacific,1-50,5,Monthly,Partner,11.5,102.1,Active,,,16,3,2024-12-19 00:00:00,5
+CUST-10581,2023-09-28,Business,Technology,Spain,Europe,1-50,8,Annual,Organic,0.0,655.0,Active,,,16,,2024-12-06 00:00:00,6
+CUST-10582,2023-09-28,Starter,Financial Services,United Kingdom,Europe,51-200,8,Annual,Paid Search,5.9,139.34,Churned,2023-10-01 00:00:00,Switched to competitor,1,9,2023-09-17 00:00:00,8
+CUST-10583,2023-09-28,Growth,Education,Australia,Asia Pacific,1-50,1,Annual,Organic,0.0,171.0,Active,,,16,7,2024-12-23 00:00:00,2
+CUST-10584,2023-09-28,Growth,Manufacturing,United States,North America,51-200,3,Annual,Organic,0.5,214.67,Active,,,16,5,2024-12-04 00:00:00,4
+CUST-10585,2023-10-01,Starter,Technology,Australia,Asia Pacific,1-50,2,Annual,Partner,12.8,69.93,Active,,,15,,2024-12-07 00:00:00,3
+CUST-10586,2023-10-02,Business,Financial Services,Canada,North America,1-50,21,Monthly,Organic,1.7,1059.58,Active,,,15,9,2024-12-06 00:00:00,16
+CUST-10587,2023-10-02,Starter,Education,France,Europe,1000+,63,Annual,Organic,10.4,726.38,Active,,,15,8,2024-12-10 00:00:00,69
+CUST-10588,2023-10-03,Starter,Manufacturing,Canada,North America,51-200,8,Monthly,Paid Search,9.6,135.78,Active,,,15,6,2024-12-06 00:00:00,8
+CUST-10589,2023-10-03,Business,Healthcare,Brazil,Latin America,1-50,6,Annual,Referral,8.2,575.26,Active,,,15,5,2024-12-20 00:00:00,6
+CUST-10590,2023-10-03,Starter,Education,Brazil,Latin America,1-50,2,Monthly,Outbound Sales,19.3,68.37,Active,,,15,,2024-12-11 00:00:00,3
+CUST-10591,2023-10-04,Growth,Technology,United States,North America,51-200,14,Annual,Partner,18.4,400.33,Active,,,15,6,2024-12-02 00:00:00,11
+CUST-10592,2023-10-04,Growth,Manufacturing,Singapore,Asia Pacific,201-1000,17,Annual,Referral,12.8,475.13,Active,,,15,5,2024-12-02 00:00:00,16
+CUST-10593,2023-10-05,Starter,Financial Services,India,Asia Pacific,1000+,124,Annual,Paid Search,16.6,1289.99,Active,,,15,8,2024-12-06 00:00:00,103
+CUST-10594,2023-10-06,Business,Manufacturing,United States,North America,1000+,340,Monthly,Referral,21.7,8918.04,Active,,,15,8,2024-12-12 00:00:00,266
+CUST-10595,2023-10-07,Growth,Financial Services,United States,North America,201-1000,33,Annual,Organic,13.4,777.72,Active,,,15,5,2024-12-14 00:00:00,22
+CUST-10596,2023-10-08,Growth,Financial Services,United States,North America,1000+,139,Monthly,Outbound Sales,12.8,2815.58,Active,,,15,6,2024-12-13 00:00:00,237
+CUST-10597,2023-10-08,Growth,Manufacturing,Singapore,Asia Pacific,1-50,15,Monthly,Outbound Sales,17.0,422.9,Active,,,15,,2024-12-15 00:00:00,19
+CUST-10598,2023-10-08,Business,Logistics,Australia,Asia Pacific,1-50,13,Monthly,Partner,10.6,770.9,Active,,,15,8,,13
+CUST-10599,2023-10-08,Business,Education,India,Asia Pacific,1-50,8,Annual,Organic,0.0,655.0,Active,,,15,10,2024-12-27 00:00:00,10
+CUST-10600,2023-10-09,Starter,Manufacturing,France,Europe,51-200,2,Monthly,Referral,5.3,71.73,Active,,,15,8,2024-12-17 00:00:00,3
+CUST-10601,2023-10-11,Growth,Retail,India,Asia Pacific,51-200,13,Annual,Referral,1.1,431.85,Active,,,15,8,2024-12-25 00:00:00,14
+CUST-10602,2023-10-11,Starter,Retail,United States,North America,201-1000,22,Annual,Referral,10.1,286.34,Active,,,15,,2024-12-05 00:00:00,28
+CUST-10603,2023-10-12,Growth,Financial Services,Australia,Asia Pacific,51-200,13,Monthly,Outbound Sales,13.5,396.39,Active,,,15,7,2024-12-19 00:00:00,13
+CUST-10604,2023-10-12,Starter,Logistics,United States,North America,51-200,8,Monthly,Events,10.9,134.54,Churned,2024-02-01 00:00:00,Missing features,4,,2024-01-13 00:00:00,8
+CUST-10605,2023-10-12,Business,Healthcare,United States,North America,201-1000,84,Annual,Organic,8.4,2861.21,Active,,,15,7,2024-12-18 00:00:00,78
+CUST-10606,2023-10-13,Growth,Media,United States,North America,1-50,2,Monthly,Events,3.6,191.42,Churned,01/05/2024,Switched to competitor,7,3,2024-04-17 00:00:00,2
+CUST-10607,2023-10-13,Business,Media,United Kingdom,Europe,1-50,14,Monthly,Referral,3.4,831.77,Active,,,15,8,2024-12-14 00:00:00,22
+CUST-10608,2023-10-13,Business,Retail,United States,North America,201-1000,49,Annual,Events,19.9,1654.97,Active,,,15,7,2024-12-07 00:00:00,57
+CUST-10609,2023-10-14,Growth,Technology,Spain,Europe,51-200,24,Monthly,Referral,4.0,655.88,Active,,,15,8,2024-12-23 00:00:00,29
+CUST-10610,2023-10-14,Starter,Technology,United States,North America,51-200,18,Monthly,Paid Search,4.0,256.36,Churned,2024-07-01 00:00:00,Missing features,9,7,2024-06-05 00:00:00,13
+CUST-10611,2023-10-14,Starter,Media,Germany,Europe,1-50,n/a,Monthly,Organic,0.0,61.0,Churned,2023-12-01 00:00:00,Low adoption / unused seats,2,7,2023-11-11 00:00:00,1
+CUST-10612,2023-10-14,Growth,Financial Services,Germany,Europe,51-200,23,Annual,Events,8.4,612.5,Active,,,15,9,2024-12-01 00:00:00,23
+CUST-10613,2023-10-14,Growth,Logistics,United States,North America,1-50,8,Monthly,Organic,0.0,325.0,Active,,,15,7,2024-12-10 00:00:00,5
+CUST-10614,2023-10-15,Business,Retail,United States,North America,1-50,9,Monthly,Organic,0.0,687.0,Churned,01/04/2024,Too expensive,6,9,2024-03-22 00:00:00,12
+CUST-10615,2023-10-15,Growth,Education,India,Asia Pacific,1-50,1,Annual,Partner,7.8,169.28,Churned,01/12/2024,Switched to competitor,14,6,2024-11-09 00:00:00,1
+CUST-10616,2023-10-16,Growth,Education,Brazil,Latin America,51-200,28,Monthly,Paid Search,10.1,702.78,Active,,,15,8,2024-12-16 00:00:00,23
+CUST-10617,2023-10-17,Growth,Technology,Germany,Europe,1-50,2,Monthly,Partner,22.6,183.06,Churned,2023-11-01 00:00:00,Low adoption / unused seats,1,7,2023-10-23 00:00:00,2
+CUST-10618,2023-10-17,Starter,Technology,United States,North America,1-50,3,Monthly,Organic,0.0,85.0,Churned,2024-03-01 00:00:00,Switched to competitor,5,10,2024-02-16 00:00:00,3
+CUST-10619,2023-10-17,Starter,Technology,United States,North America,201-1000,47,Annual,Partner,18.1,510.92,Active,,,15,7,2024-12-09 00:00:00,33
+CUST-10620,2023-10-18,Starter,Healthcare,United Kingdom,Europe,201-1000,29,Annual,Referral,8.6,367.07,Active,,,15,7,2024-12-24 00:00:00,24
+CUST-10621,2023-10-18,Starter,Technology,Singapore,Asia Pacific,51-200,14,Monthly,Outbound Sales,17.3,187.94,Active,,,15,9,2024-12-05 00:00:00,8
+CUST-10622,2023-10-18,Starter,Technology,United States,North America,1-50,4,Monthly,Paid Search,21.2,86.82,Churned,2023-12-01 00:00:00,Too expensive,2,8,,4
+CUST-10623,2023-10-18,Starter,Technology,Spain,Europe,1000+,106,Monthly,Outbound Sales,25.3,999.18,Churned,2024-02-01 00:00:00,Too expensive,4,,2024-01-03 00:00:00,110
+CUST-10624,2023-10-18,Enterprise,Retail,Germany,Europe,1-50,19,Monthly,Referral,0.0,1754.0,Active,,,15,6,2024-12-04 00:00:00,18
+CUST-10625,2023-10-19,Starter,Retail,Singapore,Asia Pacific,201-1000,20,Monthly,Organic,13.1,257.56,Active,,,15,5,2024-12-08 00:00:00,25
+CUST-10626,2023-10-19,Starter,Technology,Australia,Asia Pacific,51-200,4,Monthly,Events,18.0,88.36,Churned,2024-01-01 00:00:00,Low adoption / unused seats,3,9,2023-12-09 00:00:00,4
+CUST-10627,2023-10-19,Business,Retail,United States,North America,51-200,29,Monthly,Partner,18.7,1153.46,Active,,,15,9,2024-12-01 00:00:00,21
+CUST-10628,2023-10-19,Growth,Media,United States,North America,51-200,10,Monthly,Referral,0.0,369.0,Active,,,15,,2024-12-18 00:00:00,14
+CUST-10629,2023-10-19,Growth,Media,United Kingdom,Europe,1-50,3,Monthly,Referral,4.6,211.96,Churned,2024-10-01 00:00:00,Too expensive,12,9,2024-09-12 00:00:00,3
+CUST-10630,2023-10-19,Starter,Healthcare,Singapore,Asia Pacific,51-200,5,Monthly,Outbound Sales,17.6,98.44,Active,,,15,,2024-12-06 00:00:00,4
+CUST-10631,2023-10-19, enterprise  ,Financial Services,United States,North America,1-50,16,Monthly,Organic,1.7,1606.76,Churned,2024-06-01 00:00:00,Low adoption / unused seats,8,,2024-05-08 00:00:00,14
+CUST-10632,2023-10-19,Enterprise,Logistics,India,Asia Pacific,51-200,43,Monthly,Events,16.4,2516.66,Churned,2024-05-01 00:00:00,Poor support experience,7,4,2024-04-18 00:00:00,51
+CUST-10633,2023-10-21,Growth,Technology,Brazil,Latin America,1000+,58,Annual,Referral,10.8,1287.19,Active,,,15,,2024-12-11 00:00:00,41
+CUST-10634,2023-10-21,Growth,Logistics,United States,North America,201-1000,75,Monthly,Organic,10.4,1627.4,Active,,,15,,2024-12-12 00:00:00,76
+CUST-10635,2023-10-22,Enterprise,Retail,United States,North America,51-200,39,Annual,Paid Search,10.6,2467.97,Active,,,15,8,2024-12-23 00:00:00,42
+CUST-10636,2023-10-22,Starter,Healthcare,Japan,Asia Pacific,201-1000,18,Annual,Paid Search,11.3,240.59,Active,,,15,7,2024-12-09 00:00:00,15
+CUST-10637,2023-10-22,Business,Healthcare,United States,North America,1-50,8,Annual,Events,4.8,642.71,Active,,,15,9,2024-12-24 00:00:00,6
+CUST-10638,2023-10-22,Enterprise,Financial Services,United States,North America,1-50,25,Monthly,Partner,13.5,1872.12,Active,,,15,,2024-12-02 00:00:00,26
+CUST-10639,2023-10-22,Growth,Manufacturing,Mexico,Latin America,201-1000,36,Annual,Paid Search,12.8,839.62,Active,,,15,,2024-12-14 00:00:00,53
+CUST-10640,2023-10-22,Growth,Media,United Kingdom,Europe,1-50,5,Monthly,Organic,0.0,259.0,Active,,,15,7,,5
+CUST-10641,2023-10-22,Starter,Healthcare,Singapore,Asia Pacific,51-200,9,Monthly,Events,8.8,147.5,Active,,,15,6,2024-12-08 00:00:00,12
+CUST-10642,2023-10-23,Starter,Technology,India,Asia Pacific,201-1000,14,Monthly,Partner,21.3,181.22,Active,,,15,7,2024-12-17 00:00:00,18
+CUST-10643,2023-10-23,Growth,Media,Canada,North America,51-200,23,Monthly,Organic,0.4,652.98,Active,,,15,7,2024-12-04 00:00:00,31
+CUST-10644,2023-10-23,Growth,Logistics,United Kingdom,Europe,51-200,5,Monthly,Paid Search,1.7,257.13,Active,,,15,6,2024-12-10 00:00:00,6
+CUST-10645,2023-10-23,Growth,Financial Services,Japan,Asia Pacific,51-200,13,monthly,Paid Search,2.7,427.28,Active,,,15,6,2024-12-19 00:00:00,23
+CUST-10646,2023-10-24,Starter,Technology,Singapore,Asia Pacific,1-50,5,Monthly,Events,2.2,107.68,Churned,2024-02-01 00:00:00,Too expensive,4,4,2024-01-21 00:00:00,4
+CUST-10647,2023-10-25,Business,Technology,United Kingdom,Europe,51-200,14,monthly,Organic,2.6,835.35,Churned,01/12/2023,Switched to competitor,2,7,2023-11-04 00:00:00,15
+CUST-10648,2023-10-25,Enterprise,Healthcare,United States,North America,1000+,176,Annual,Partner,19.7,7258.76,Active,,,15,10,2024-12-06 00:00:00,140
+CUST-10649,2023-10-26,Growth,Retail,India,Asia Pacific,1-50,9,Annual,Referral,7.0,333.14,Active,,,15,7,2024-12-09 00:00:00,10
+CUST-10650,2023-10-26,Growth,Logistics,Singapore,Asia Pacific,201-1000,30,Annual,Paid Search,17.4,694.16,Active,,,15,6,2024-12-16 00:00:00,38
+CUST-10651,2023-10-26,Business,Financial Services,Japan,Asia Pacific,51-200,18,Monthly,Organic,7.6,931.22,Churned,01/10/2024,Poor support experience,12,10,2024-09-24 00:00:00,37
+CUST-10652,2023-10-26,Business,Healthcare,Japan,Asia Pacific,201-1000,64,Annual,Outbound Sales,21.7,2002.58,Active,,,15,9,2024-12-18 00:00:00,49
+CUST-10653,2023-10-27,Business,Education,France,Europe,1-50,4,Monthly,Organic,0.0,527.0,Active,,,15,7,2024-12-20 00:00:00,3
+CUST-10654,2023-10-28,Growth,Healthcare,Germany,Europe,1-50,6,Monthly,Paid Search,13.9,262.65,Churned,2024-03-01 00:00:00,,5,8,2024-02-09 00:00:00,5
+CUST-10655,2023-10-28,Growth,Media,United States,North America,201-1000,36,Annual,Referral,5.7,895.86,Active,,,15,3,2024-12-22 00:00:00,48
+CUST-10656,2023-10-28, growth  ,Financial Services,United States,North America,1-50,4,Monthly,Outbound Sales,12.8,225.74,Churned,2024-10-01 00:00:00,Low adoption / unused seats,12,,2024-09-22 00:00:00,6
+CUST-10657,2023-11-01,Growth,Technology,United Kingdom,Europe,201-1000,26,Monthly,Paid Search,9.7,665.52,Churned,2023-12-01 00:00:00,Poor support experience,1,5,2023-11-12 00:00:00,26
+CUST-10658,2023-11-01,Starter,Financial Services,Brazil,Latin America,51-200,14,Monthly,Referral,7.9,203.73,Active,,,14,7,2024-12-18 00:00:00,16
+CUST-10659,2023-11-01,Growth,Retail,United States,North America,1-50,8,Monthly,Partner,13.8,300.71,Churned,2024-08-01 00:00:00,Missing features,9,10,2024-07-22 00:00:00,6
+CUST-10660,2023-11-02,Growth,Financial Services,United States,North America,1000+,96,Annual,Referral,14.5,1954.76,Churned,2024-10-01 00:00:00,Poor support experience,11,7,2024-09-19 00:00:00,107
+CUST-10661,2023-11-02,Starter,Technology,Canada,North America,51-200,8,Monthly,Referral,11.3,134.15,Active,,,14,9,2024-12-17 00:00:00,11
+CUST-10662,2023-11-02,Business,Media,United States,North America,1-50,6,Monthly,Organic,0.0,$591.00,Active,,,14,7,,6
+CUST-10663,2023-11-03,Starter,Healthcare,Germany,Europe,51-200,3,Monthly,Paid Search,4.9,83.24,Churned,2024-02-01 00:00:00,Company downsizing,3,7,2024-01-07 00:00:00,3
+CUST-10664,2023-11-03,Starter,Retail,United States,North America,1-50,1,Monthly,Organic,0.8,60.9,Active,,,14,6,2024-12-06 00:00:00,1
+CUST-10665,2023-11-03,Starter,Financial Services,Spain,Europe,51-200,16,Monthly,Referral,8.0,225.64,Active,,,14,10,2024-12-18 00:00:00,25
+CUST-10666,2023-11-04,Starter,Education,United States,North America,1-50,2,Monthly,Organic,4.5,71.92,Active,,,14,7,,2
+CUST-10667,2023-11-04,Enterprise,Manufacturing,Australia,Asia Pacific,51-200,35,Monthly,Paid Search,9.8,2319.65,Churned,2024-07-01 00:00:00,Too expensive,8,7,,28
+CUST-10668,2023-11-04,Growth,Technology,India,Asia Pacific,1-50,3,Monthly,Referral,2.4,213.42,Active,,,14,6,,3
+CUST-10669,2023-11-04,Growth,Financial Services,United Kingdom,Europe,51-200,25,Monthly,Organic,0.0,699.0,Churned,2024-08-01 00:00:00,Switched to competitor,9,10,2024-07-05 00:00:00,32
+CUST-10670,2023-11-04, starter  ,Technology,United States,North America,51-200,21,monthly,Paid Search,12.7,269.0,Churned,01/04/2024,Poor support experience,5,10,2024-03-18 00:00:00,29
+CUST-10671,2023-11-05,Business,Manufacturing,Canada,North America,51-200,73,Monthly,Organic,0.0,2735.0,Active,,,14,,2024-12-19 00:00:00,92
+CUST-10672,2023-11-06,Growth,Manufacturing,Australia,Asia Pacific,51-200,28,Monthly,Organic,0.0,765.0,Churned,2024-01-01 00:00:00,Too expensive,2,5,2023-12-21 00:00:00,27
+CUST-10673,2023-11-06,Business,Retail,United States,North America,51-200,47,Monthly,Paid Search,15.2,1674.39,Active,,,14,6,,58
+CUST-10674,2023-11-06,Starter,Technology,United States,North America,1-50,2,Monthly,Paid Search,9.7,70.67,Churned,2024-03-01 00:00:00,Poor support experience,4,6,2024-02-15 00:00:00,2
+CUST-10675,2023-11-07,Starter,Healthcare,United States,North America,1-50,1,Monthly,Paid Search,3.8,60.54,Active,,,14,,,1
+CUST-10676,2023-11-07,Enterprise,Education,United Kingdom,Europe,1-50,17,Monthly,Partner,11.8,1573.73,Active,,,14,5,2024-12-23 00:00:00,24
+CUST-10677,2023-11-07,Starter,Technology,Mexico,Latin America,201-1000,3,Monthly,Referral,9.7,81.51,Active,,,14,10,,3
+CUST-10678,2023-11-08,Starter,Financial Services,Australia,Asia Pacific,51-200,6,Monthly,Referral,4.5,117.76,Active,,,14,,2024-12-17 00:00:00,6
+CUST-10679,2023-11-08,Growth,Retail,Brazil,Latin America,1-50,6,monthly,Outbound Sales,3.1,276.91,Active,,,14,7,2024-12-22 00:00:00,7
+CUST-10680,2023-11-08,Starter,Financial Services,United States,North America,1000+,25,Monthly,Referral,8.9,322.3,Active,,,14,9,2024-12-12 00:00:00,19
+CUST-10681,2023-11-08,Growth,Retail,France,Europe,201-1000,45,Monthly,Partner,18.7,953.87,Active,,,14,4,2024-12-08 00:00:00,31
+CUST-10682,2023-11-09,Enterprise,Financial Services,Germany,Europe,1-50,13,Monthly,Referral,2.7,1468.2,Active,,,14,8,2024-12-03 00:00:00,7
+CUST-10683,2023-11-10,Enterprise,Manufacturing,United Kingdom,Europe,1-50,13,Monthly,Partner,14.5,1399.17,Active,,,14,9,2024-12-05 00:00:00,14
+CUST-10684,2023-11-10,Business,Financial Services,India,Asia Pacific,1-50,33,Monthly,Outbound Sales,10.1,1348.34,Active,,,14,7,,37
+CUST-10685,2023-11-10,Starter,Retail,United Kingdom,Europe,1-50,4,Monthly,Events,9.3,92.54,Churned,2024-11-01 00:00:00,Poor support experience,12,6,2024-10-22 00:00:00,6
+CUST-10686,2023-11-10,Enterprise,Technology,Spain,Europe,201-1000,125,Annual,Paid Search,12.9,5798.38,Churned,2024-04-01 00:00:00,,5,6,2024-03-26 00:00:00,102
+CUST-10687,2023-11-10,Starter,Technology,United States,North America,1-50,2,Monthly,Referral,0.0,73.0,Churned,2024-08-01 00:00:00,Missing features,9,10,2024-07-21 00:00:00,3
+CUST-10688,2023-11-11,Growth,Logistics,India,Asia Pacific,51-200,11,Annual,Organic,0.0,391.0,Active,,,14,6,2024-12-22 00:00:00,9
+CUST-10689,2023-11-12,Business,Education,India,Asia Pacific,201-1000,59,Monthly,Referral,8.0,2135.96,Active,,,14,5,2024-12-12 00:00:00,44
+CUST-10690,2023-11-12,Starter,Manufacturing,United States,North America,201-1000,15,Monthly,Paid Search,13.6,204.52,Active,,,14,7,2024-12-26 00:00:00,17
+CUST-10691,2023-11-12,Enterprise,Financial Services,France,Europe,1-50,21,Monthly,Referral,0.0,1844.0,Active,,,14,10,2024-12-25 00:00:00,29
+CUST-10692,2023-11-13,Starter,Manufacturing,France,Europe,1-50,3,Monthly,Paid Search,8.5,81.94,Churned,2024-01-01 00:00:00,Switched to competitor,2,10,2023-12-22 00:00:00,3
+CUST-10693,2023-11-14,Business,Financial Services,India,Asia Pacific,1-50,14,Monthly,Outbound Sales,13.8,785.18,Active,,,14,5,2024-12-06 00:00:00,14
+CUST-10694,2023-11-14,Starter,Logistics,Brazil,Latin America,51-200,6,Monthly,Partner,24.0,103.72,Active,,,14,6,2024-12-20 00:00:00,13
+CUST-10695,2023-11-14,Growth,Financial Services,Japan,Asia Pacific,1-50,14,Monthly,Referral,8.3,431.44,Active,,,14,6,2024-12-01 00:00:00,11
+CUST-10696,2023-11-14,Growth,Technology,India,Asia Pacific,1-50,5,Annual,Paid Search,0.0,259.0,Active,,,14,,2024-12-20 00:00:00,4
+CUST-10697,2023-11-15,Enterprise,Manufacturing,Canada,North America,1-50,13,Annual,Events,20.4,1364.66,Active,,,14,7,2024-12-03 00:00:00,20
+CUST-10698,2023-11-16,Enterprise,Technology,Japan,Asia Pacific,201-1000,39,Annual,Events,12.9,2427.61,Active,,,14,,2024-12-07 00:00:00,30
+CUST-10699,2023-11-16,Growth,Manufacturing,Germany,Europe,1-50,32,Monthly,Organic,0.0,853.0,Churned,2024-11-01 00:00:00,Switched to competitor,12,7,2024-10-04 00:00:00,34
+CUST-10700,2023-11-16,Enterprise,Retail,India,Asia Pacific,51-200,39,Annual,Referral,1.3,"$2,631.18",Churned,2024-05-01 00:00:00,Missing features,6,,2024-04-14 00:00:00,38
+CUST-10701,2023-11-16,Starter,Financial Services,United States,North America,1-50,2,Monthly,Organic,3.6,72.14,Active,,,14,7,2024-12-10 00:00:00,3
+CUST-10702,2023-11-16,Starter,Retail,Australia,Asia Pacific,51-200,7,Monthly,Outbound Sales,16.8,118.89,Active,,,14,7,2024-12-10 00:00:00,4
+CUST-10703,2023-11-16,Starter,Technology,India,Asia Pacific,51-200,16,Monthly,Referral,7.2,227.18,Active,,,14,5,2024-12-16 00:00:00,8
+CUST-10704,2023-11-16,Starter,Technology,United Kingdom,Europe,1-50,4,Monthly,Paid Search,15.5,89.56,Churned,2024-06-01 00:00:00,Low adoption / unused seats,7,8,2024-05-02 00:00:00,4
+CUST-10705,2023-11-17,Starter,Technology,Brazil,Latin America,1-50,3,Monthly,Referral,5.3,83.09,Active,,,14,,2024-12-13 00:00:00,3
+CUST-10706,2023-11-19,Growth,Manufacturing,Spain,Europe,1000+,102,Annual,Organic,10.0,2168.6,Churned,2024-01-01 00:00:00,,2,,2023-12-11 00:00:00,105
+CUST-10707,2023-11-19,Starter,Technology,Germany,Europe,51-200,3,Annual,Paid Search,14.5,79.78,Churned,2024-01-01 00:00:00,Too expensive,2,1,2023-12-20 00:00:00,3
+CUST-10708,2023-11-19,Business,Retail,India,Asia Pacific,1000+,219,Monthly,Outbound Sales,27.8,5458.78,Active,,,14,8,2024-12-24 00:00:00,265
+CUST-10709,2023-11-20,Business,Education,United Kingdom,Europe,201-1000,41,Monthly,Organic,0.0,1711.0,Active,,,14,,2024-12-27 00:00:00,46
+CUST-10710,2023-11-20,Enterprise,Financial Services,United States,North America,1000+,540,Annual,Referral,16.0,21311.0,Active,,,14,7,2024-12-23 00:00:00,641
+CUST-10711,2023-11-21,Growth,Manufacturing,Canada,North America,201-1000,48,Annual,Paid Search,9.6,1103.62,Active,,,14,6,2024-12-02 00:00:00,122
+CUST-10712,2023-11-21,Business,Technology,Mexico,Latin America,1000+,222,Monthly,Outbound Sales,20.3,"$6,060.89",Active,,,14,9,2024-12-19 00:00:00,257
+CUST-10713,2023-11-22,Growth,Manufacturing,France,Europe,201-1000,56,Annual,Events,10.1,1256.57,Churned,2024-12-01 00:00:00,Too expensive,13,7,,63
+CUST-10714,2023-11-22,Starter,Education,Canada,North America,1-50,2,Annual,Organic,0.0,73.0,Active,,,14,5,2024-12-26 00:00:00,3
+CUST-10715,2023-11-22,Starter,Manufacturing,India,Asia Pacific,1-50,2,Monthly,Paid Search,10.4,70.5,Churned,2024-01-01 00:00:00,Low adoption / unused seats,2,10,2023-12-17 00:00:00,2
+CUST-10716,2023-11-23,Growth,Manufacturing,India,Asia Pacific,51-200,23,Monthly,Organic,9.7,605.92,Churned,2024-02-01 00:00:00,,3,7,2024-01-10 00:00:00,24
+CUST-10717,2023-11-23,Growth,Financial Services,United States,North America,1-50,6,Monthly,Referral,6.8,272.02,Churned,2024-11-01 00:00:00,Missing features,12,3,2024-10-22 00:00:00,11
+CUST-10718,2023-11-24,Growth,Healthcare,Australia,Asia Pacific,1-50,7,monthly,Organic,0.0,303.0,Churned,2023-12-01 00:00:00,Low adoption / unused seats,1,6,2023-11-15 00:00:00,7
+CUST-10719,2023-11-25,Starter,Technology,United States,North America,51-200,5,Annual,Referral,2.2,107.68,Active,,,14,,2024-12-18 00:00:00,6
+CUST-10720,2023-11-26,Starter,Manufacturing,United States,North America,1-50,2,Monthly,Outbound Sales,13.3,69.81,Active,,,14,,2024-12-20 00:00:00,3
+CUST-10721,2023-11-26,Starter,Financial Services,United Kingdom,Europe,1-50,1,Monthly,Referral,1.0,60.88,Churned,2024-01-01 00:00:00,,2,,,1
+CUST-10722,2023-11-26,Starter,Education,United States,North America,51-200,4,Annual,Partner,14.9,89.85,Churned,2024-03-01 00:00:00,Switched to competitor,4,8,2024-02-04 00:00:00,4
+CUST-10723,2023-11-26,Growth,Healthcare,United States,North America,1-50,7,Monthly,Referral,10.0,287.6,Active,,,14,,2024-12-05 00:00:00,8
+CUST-10724,2023-11-27,Starter,Financial Services,Mexico,Latin America,1-50,2,Monthly,Organic,0.5,72.88,Churned,2024-04-01 00:00:00,Too expensive,5,7,2024-03-19 00:00:00,2
+CUST-10725,2023-11-28,Starter,Education,United Kingdom,Europe,1-50,4,Monthly,Events,9.5,92.44,Churned,2024-12-01 00:00:00,Too expensive,13,8,2024-11-04 00:00:00,5
+CUST-10726,2023-12-01,Starter,Financial Services,Japan,Asia Pacific,201-1000,9,Monthly,Organic,10.4,145.77,Churned,2024-01-01 00:00:00,Too expensive,1,8,2023-12-08 00:00:00,9
+CUST-10727,2023-12-03,Starter,Education,United Kingdom,Europe,1-50,1,Monthly,Partner,11.9,59.57,Churned,2024-01-01 00:00:00,Poor support experience,1,4,2023-12-11 00:00:00,1
+CUST-10728,2023-12-03,Business,Financial Services,Germany,Europe,1-50,50000,Annual,Organic,1.8,461.85,Churned,2024-08-01 00:00:00,Too expensive,8,7,2024-07-21 00:00:00,2
+CUST-10729,2023-12-03,Enterprise,Manufacturing,United States,North America,1-50,26,Monthly,Paid Search,15.3,1889.99,Active,,,13,9,2024-12-01 00:00:00,30
+CUST-10730,2023-12-04,Business,Retail,Brazil,Latin America,51-200,8,Monthly,Partner,16.7,612.25,Active,,,13,8,2024-12-22 00:00:00,12
+CUST-10731,2023-12-04,Starter,Retail,Germany,Europe,51-200,10,Monthly,Events,12.0,154.6,Active,,,13,3,2024-12-15 00:00:00,6
+CUST-10732,2023-12-05,Starter,Logistics,United Kingdom,Europe,1-50,1,Annual,Paid Search,5.9,60.29,Active,,,13,10,2024-12-10 00:00:00,1
+CUST-10733,2023-12-06,Growth,Retail,United States,North America,1-50,5,Annual,Events,6.6,251.74,Active,,,13,7,2024-12-23 00:00:00,3
+CUST-10734,2023-12-06,Starter,Retail,United States,North America,1-50,2,Monthly,Paid Search,6.1,71.54,Active,,,13,5,2024-12-03 00:00:00,3
+CUST-10735,2023-12-07,Starter,Logistics,Australia,Asia Pacific,1000+,117,Annual,Referral,8.4,1335.06,Active,,,13,7,2024-12-22 00:00:00,140
+CUST-10736,2023-12-07,Enterprise,Financial Services,Spain,Europe,51-200,50000,Annual,Referral,9.4,6239.87,Active,,,13,7,2024-12-21 00:00:00,158
+CUST-10737,2023-12-07,Business,Manufacturing,Mexico,Latin America,51-200,41,Monthly,Referral,2.8,1674.26,Active,,,13,7,2024-12-26 00:00:00,42
+CUST-10738,2023-12-07,Starter,Technology,Germany,Europe,1-50,2,Annual,Partner,13.4,69.78,Active,,,13,6,2024-12-01 00:00:00,2
+CUST-10739,2023-12-09,Business,Retail,United Kingdom,Europe,201-1000,58,Monthly,Paid Search,16.8,1943.19,Churned,2024-03-01 00:00:00,Poor support experience,3,6,2024-02-08 00:00:00,51
+CUST-10740,2023-12-09,Starter,Retail,France,Europe,51-200,9,Monthly,Partner,16.3,139.4,Active,,,13,5,2024-12-22 00:00:00,8
+CUST-10741,2023-12-10,Growth,Technology,Australia,Asia Pacific,201-1000,36,Annual,Partner,15.0,822.2,Active,,,13,5,,41
+CUST-10742,2023-12-10,Business,Technology,Canada,North America,1-50,7,Monthly,Partner,16.9,585.14,Active,,,13,9,2024-12-16 00:00:00,6
+CUST-10743,2023-12-10,Growth,Retail,Germany,Europe,201-1000,37,Annual,Outbound Sales,14.2,847.41,Churned,2024-12-01 00:00:00,Company downsizing,12,4,,41
+CUST-10744,2023-12-10,Starter,Retail,Germany,Europe,51-200,8,Annual,Outbound Sales,12.3,133.19,Churned,2024-06-01 00:00:00,Low adoption / unused seats,6,2,2024-05-01 00:00:00,8
+CUST-10745,2023-12-10,Growth,Retail,United States,North America,201-1000,67,Annual,Organic,0.9,1609.73,Active,,,13,5,2024-12-23 00:00:00,32
+CUST-10746,2023-12-10,Business,Education,Germany,Europe,51-200,26,Monthly,Organic,5.4,1186.07,Active,,,13,,2024-12-03 00:00:00,14
+CUST-10747,2023-12-11,Enterprise,Technology,Brazil,Latin America,1-50,18,Annual,Events,12.7,1606.13,Active,,,13,7,2024-12-06 00:00:00,21
+CUST-10748,2023-12-11,Business,Technology,India,north america,201-1000,25,Annual,Events,12.3,1100.6,Churned,2024-10-01 00:00:00,Switched to competitor,10,6,2024-09-23 00:00:00,39
+CUST-10749,2023-12-11,Business,Manufacturing,United States,North America,51-200,17,Monthly,Partner,21.1,828.22,Active,,,13,10,2024-12-27 00:00:00,15
+CUST-10750,2023-12-13,Starter,Financial Services,Japan,Asia Pacific,1-50,1,Monthly,Organic,2.5,60.7,Active,,,13,,2024-12-02 00:00:00,1
+CUST-10751,2023-12-14,Starter,Financial Services,United States,North America,51-200,7,Annual,Outbound Sales,13.8,121.41,Active,,,13,7,2024-12-20 00:00:00,5
+CUST-10752,2023-12-14,Starter,Healthcare,France,Europe,1-50,1,Monthly,Partner,9.1,59.91,Active,,,13,8,2024-12-07 00:00:00,1
+CUST-10753,2023-12-14,Business,Technology,India,Asia Pacific,1-50,3,Monthly,Events,8.5,486.84,Active,,,13,7,2024-12-14 00:00:00,3
+CUST-10754,2023-12-14,Starter,Media,India,Asia Pacific,201-1000,38,Annual,Partner,16.1,431.58,Active,,,13,9,2024-12-25 00:00:00,31
+CUST-10755,2023-12-15,Starter,Healthcare,United States,North America,1-50,4,Annual,Organic,6.1,94.07,Active,,,13,9,2024-12-11 00:00:00,7
+CUST-10756,2023-12-15,Starter,Logistics,Japan,Asia Pacific,51-200,5,Annual,Referral,8.0,104.2,Active,,,13,6,2024-12-02 00:00:00,5
+CUST-10757,2023-12-15,Business,Manufacturing,Spain,Europe,201-1000,161,Annual,Organic,18.2,4613.34,Active,,,13,7,,205
+CUST-10758,2023-12-16,Business,Manufacturing,United Kingdom,Europe,1-50,20,Monthly,Paid Search,11.0,968.6,Churned,2024-06-01 00:00:00,,6,6,2024-05-25 00:00:00,20
+CUST-10759,2023-12-16, growth  ,Technology,United Kingdom,Europe,51-200,12,Annual,Paid Search,11.7,382.11,Active,,,13,10,2024-12-15 00:00:00,15
+CUST-10760,2023-12-16,Starter,Retail,United Kingdom,Europe,1-50,1,Monthly,Partner,10.8,59.7,Active,,,13,4,2024-12-17 00:00:00,2
+CUST-10761,2023-12-17,Growth,Healthcare,Brazil,Latin America,51-200,8,Monthly,Organic,3.5,318.84,Active,,,13,7,2024-12-02 00:00:00,8
+CUST-10762,2023-12-17,Business,Education,India,Asia Pacific,201-1000,66,Annual,Organic,12.1,2255.45,Churned,2024-02-01 00:00:00,Too expensive,2,7,2024-01-06 00:00:00,74
+CUST-10763,2023-12-17,Growth,Healthcare,France,Europe,201-1000,17,Annual,Paid Search,5.3,503.18,Active,,,13,8,2024-12-08 00:00:00,28
+CUST-10764,2023-12-17,Growth,Education,United Kingdom,Europe,1-50,1,Monthly,Organic,2.1,170.54,Active,,,13,9,2024-12-14 00:00:00,2
+CUST-10765,2023-12-17,Enterprise,Technology,India,Asia Pacific,51-200,52,Monthly,Paid Search,8.1,3049.46,Active,,,13,,2024-12-19 00:00:00,46
+CUST-10766,2023-12-18,Starter,Education,Germany,Europe,1-50,2,Monthly,Outbound Sales,8.2,71.03,Active,,,13,,2024-12-27 00:00:00,2
+CUST-10767,2023-12-18, starter  ,Healthcare,United States,North America,51-200,8,Monthly,Partner,14.9,130.7,Active,,,13,5,2024-12-17 00:00:00,6
+CUST-10768,2023-12-18,Business,Financial Services,India,Asia Pacific,51-200,51,Annual,Referral,0.0,2031.0,Active,,,13,9,2024-12-22 00:00:00,27
+CUST-10769,2023-12-19,Starter,Logistics,Germany,Europe,1-50,5,monthly,Partner,18.6,97.84,Churned,2024-06-01 00:00:00,Low adoption / unused seats,6,,2024-05-01 00:00:00,5
+CUST-10770,2023-12-19,Starter,Financial Services,Germany,Europe,51-200,6,Annual,Organic,5.1,117.33,Active,,,13,6,2024-12-21 00:00:00,5
+CUST-10771,2023-12-19,Starter,Manufacturing,United States,North America,51-200,10,Monthly,Paid Search,13.5,152.8,Active,,,13,4,2024-12-12 00:00:00,13
+CUST-10772,2023-12-20,Starter,Financial Services,India,Asia Pacific,1-50,3,Monthly,Paid Search,8.2,82.05,Active,,,13,5,2024-12-07 00:00:00,4
+CUST-10773,2023-12-21,Growth,Technology,United Kingdom,Europe,51-200,3,Annual,Partner,17.9,203.19,Active,,,13,8,2024-12-19 00:00:00,3
+CUST-10774,2023-12-22,Growth,Retail,India,north america,1-50,5,Annual,Referral,5.5,252.95,Active,,,13,9,2024-12-09 00:00:00,5
+CUST-10775,2023-12-22,Enterprise,Retail,United States,North America,1-50,17,Monthly,Outbound Sales,19.6,1514.06,Active,,,13,,2024-12-11 00:00:00,24
+CUST-10776,2023-12-22,Business,Technology,Canada,North America,201-1000,67,Monthly,Organic,12.5,2275.0,Active,,,13,6,2024-12-12 00:00:00,73
+CUST-10777,2023-12-23,Starter,Financial Services,France,Europe,1000+,96,Annual,Organic,11.1,1073.13,Active,,,13,3,2024-12-04 00:00:00,103
+CUST-10778,2023-12-24,Starter,Retail,Singapore,Asia Pacific,1000+,n/a,Monthly,Outbound Sales,22.6,1878.74,Churned,2024-04-01 00:00:00,,4,9,2024-03-20 00:00:00,189
+CUST-10779,2023-12-24,Growth,Retail,Japan,Asia Pacific,1000+,80,Monthly,Partner,18.4,1585.16,Active,,,13,10,2024-12-17 00:00:00,115
+CUST-10780,2023-12-24,Growth,Healthcare,Mexico,Latin America,1-50,3,Annual,Partner,8.7,209.26,Active,,,13,6,2024-12-16 00:00:00,2
+CUST-10781,2023-12-25,Starter,Technology,Canada,North America,1000+,83,Annual,Organic,13.8,907.55,Active,,,13,9,2024-12-21 00:00:00,83
+CUST-10782,2023-12-25,Starter,Technology,United Kingdom,EMEA ,1-50,4,Monthly,Referral,0.0,97.0,Churned,2024-07-01 00:00:00,Too expensive,7,4,2024-06-02 00:00:00,6
+CUST-10783,2023-12-25,Starter,Retail,United Kingdom,Europe,1-50,4,Monthly,Organic,4.0,-95.08,Churned,2024-06-01 00:00:00,Switched to competitor,6,8,2024-05-08 00:00:00,5
+CUST-10784,2023-12-25,Starter,Healthcare,France,Europe,1-50,2,Monthly,Events,12.2,70.07,Churned,2024-06-01 00:00:00,Missing features,6,6,2024-05-12 00:00:00,2
+CUST-10785,2023-12-26,Business,Education,United States,North America,51-200,60,Monthly,Paid Search,6.4,2196.12,Active,,,13,7,2024-12-12 00:00:00,73
+CUST-10786,2023-12-26,Starter,Manufacturing,United Kingdom,Europe,51-200,3,monthly,Paid Search,9.5,81.58,Active,,,13,9,2024-12-25 00:00:00,5
+CUST-10787,2023-12-26,Growth,Financial Services,Australia,Asia Pacific,1-50,4,Monthly,Paid Search,15.4,223.45,Churned,2024-02-01 00:00:00,Missing features,2,7,2024-01-09 00:00:00,4
+CUST-10788,2023-12-27,Starter,Technology,United Kingdom,Europe,1-50,11,Monthly,Events,13.3,163.44,Churned,2024-01-01 00:00:00,Too expensive,1,8,2023-12-12 00:00:00,12
+CUST-10789,2023-12-27,Starter,Logistics,United States,North America,51-200,6,Monthly,Paid Search,8.4,114.95,Churned,2024-02-01 00:00:00,Too expensive,2,6,2024-01-23 00:00:00,7
+CUST-10790,2023-12-28,Starter,Retail,United Kingdom,Europe,1-50,1,Monthly,Organic,3.8,60.54,Active,,,13,8,2024-12-09 00:00:00,1
+CUST-10791,2023-12-28,Starter,Technology,United Kingdom,Europe,51-200,10,Annual,Paid Search,5.8,162.04,Churned,2024-01-01 00:00:00,Too expensive,1,,2023-12-13 00:00:00,10
+CUST-10792,2023-12-28,Growth,Technology,Canada,North America,51-200,11,Monthly,Referral,4.5,380.11,Active,,,13,3,2024-12-08 00:00:00,11
+CUST-10793,2024-01-02,Business,Retail,United Kingdom,Europe,51-200,43,Annual,Paid Search,7.8,1667.67,Active,,,12,7,2024-12-09 00:00:00,62
+CUST-10794,2024-01-02,Starter,Education,United States,North America,51-200,5,Monthly,Outbound Sales,22.2,95.68,Active,,,12,7,2024-12-14 00:00:00,6
+CUST-10795,2024-01-03,Enterprise,Education,Brazil,Latin America,201-1000,331,Annual,Referral,10.8,14185.34,Active,,,12,7,2024-12-07 00:00:00,219
+CUST-10796,2024-01-03,Growth,Healthcare,Brazil,Latin America,1-50,9,Monthly,Outbound Sales,13.4,320.47,Active,,,12,7,2024-12-16 00:00:00,10
+CUST-10797,2024-01-04,Growth,Healthcare,Canada,EMEA ,51-200,9,Annual,Outbound Sales,11.7,323.83,Churned,01/11/2024,Company downsizing,10,9,2024-10-15 00:00:00,11
+CUST-10798,2024-01-05,Growth,Financial Services,United States,North America,1-50,5,Monthly,Referral,2.4,256.36,Churned,2024-02-01 00:00:00,Company downsizing,1,8,2024-01-11 00:00:00,5
+CUST-10799,2024-01-05,Business,Retail,Singapore,Asia Pacific,1-50,18,Monthly,Partner,11.8,907.03,Churned,2024-03-01 00:00:00,Missing features,2,5,2024-02-05 00:00:00,16
+CUST-10800,2024-01-06,Starter,Technology,United States,North America,1-50,4,Monthly,Organic,0.0,97.0,Churned,2024-06-01 00:00:00,Missing features,5,,2024-05-27 00:00:00,4
+CUST-10801,2024-01-06,Growth,Retail,Germany,Europe,1-50,14,Monthly,Outbound Sales,16.7,405.56,Active,,,12,9,2024-12-11 00:00:00,9
+CUST-10802,2024-01-06,Starter,Manufacturing,United States,North America,201-1000,55,Annual,Partner,20.7,572.38,Churned,2024-04-01 00:00:00,Too expensive,3,9,,51
+CUST-10803,2024-01-07,Business,Healthcare,India,Asia Pacific,1-50,6,Monthly,Paid Search,10.2,571.42,Active,,,12,4,2024-12-11 00:00:00,5
+CUST-10804,2024-01-07,Growth,Retail,France,Europe,201-1000,22,Annual,Referral,8.4,592.34,Active,,,12,7,2024-12-19 00:00:00,23
+CUST-10805,2024-01-07,Starter,Retail,Canada,North America,201-1000,16,Annual,Referral,11.8,218.34,Active,,,12,,2024-12-05 00:00:00,13
+CUST-10806,2024-01-08,Enterprise,Financial Services,United States,North America,1-50,28,Monthly,Paid Search,12.1,2006.54,Active,,,12,5,,19
+CUST-10807,2024-01-08,Enterprise,Technology,United States,North America,51-200,94,Monthly,Paid Search,8.4,4773.68,Active,,,12,9,2024-12-15 00:00:00,154
+CUST-10808,2024-01-09,Enterprise,Media,Brazil,Latin America,51-200,147,Monthly,Outbound Sales,14.5,6554.82,Active,,,12,,2024-12-12 00:00:00,179
+CUST-10809,2024-01-09,Growth,Manufacturing,Canada,North America,51-200,12,Monthly,Paid Search,18.2,364.95,Churned,2024-11-01 00:00:00,Low adoption / unused seats,10,7,2024-10-06 00:00:00,13
+CUST-10810,2024-01-09,Growth,Healthcare,Canada,North America,1-50,3,Monthly,Partner,16.1,204.37,Churned,2024-10-01 00:00:00,Switched to competitor,9,6,2024-09-19 00:00:00,3
+CUST-10811,2024-01-10,Growth,Healthcare,India,Asia Pacific,51-200,13,Annual,Partner,19.1,380.37,Active,,,12,,2024-12-02 00:00:00,13
+CUST-10812,2024-01-10,Starter,Technology,United States,North America,1-50,3,Monthly,Partner,15.2,79.53,Active,,,12,,2024-12-25 00:00:00,2
+CUST-10813,2024-01-10,Growth,Retail,Australia,Asia Pacific,201-1000,20,Annual,Partner,23.8,484.28,Churned,2024-02-01 00:00:00,Poor support experience,1,7,2024-01-26 00:00:00,20
+CUST-10814,2024-01-10,Growth,Financial Services,Germany,Europe,1-50,8,Monthly,Events,6.4,313.74,Active,,,12,,2024-12-23 00:00:00,10
+CUST-10815,2024-01-11,Starter,Logistics,United States,North America,1-50,n/a,Monthly,Outbound Sales,12.0,59.56,Active,,,12,6,2024-12-25 00:00:00,1
+CUST-10816,2024-01-11,Starter,Technology,Brazil,Latin America,1-50,3,Monthly,Events,6.9,82.52,Churned,2024-12-01 00:00:00,Too expensive,11,9,2024-11-09 00:00:00,5
+CUST-10817,2024-01-12,Starter,Healthcare,United States,North America,1-50,2,Monthly,Referral,12.7,69.95,Active,,,12,7,2024-12-17 00:00:00,2
+CUST-10818,2024-01-12,Business,Healthcare,United States,North America,1-50,20,Monthly,Referral,9.6,977.56,Active,,,12,6,2024-12-12 00:00:00,25
+CUST-10819,2024-01-13,Starter,Education,France,Europe,51-200,3,Monthly,Paid Search,12.5,80.5,Churned,2024-06-01 00:00:00,Too expensive,5,5,2024-05-20 00:00:00,3
+CUST-10820,2024-01-13,Starter,Technology,Canada,North America,1-50,3,Monthly,Paid Search,12.5,80.5,Active,,,12,4,2024-12-13 00:00:00,2
+CUST-10821,2024-01-14, enterprise  ,Manufacturing,United Kingdom,Europe,1000+,392,Monthly,Paid Search,12.0,16422.2,Active,,,12,7,2024-12-04 00:00:00,352
+CUST-10822,2024-01-14,Business,Financial Services,France,Europe,1-50,6,Annual,Paid Search,10.3,571.22,Active,,,12,9,2024-12-26 00:00:00,5
+CUST-10823,2024-01-15,Starter,Retail,Japan,Asia Pacific,51-200,13,Monthly,Partner,14.6,182.22,Active,,,12,5,2024-12-02 00:00:00,13
+CUST-10824,2024-01-15,Growth,Technology,Australia,Asia Pacific,201-1000,28,Monthly,Outbound Sales,8.9,710.18,Churned,2024-08-01 00:00:00,Poor support experience,7,,2024-07-21 00:00:00,36
+CUST-10825,2024-01-15,Business,Manufacturing,United States,North America,51-200,n/a,Monthly,Organic,2.1,1025.56,Active,,,12,,,25
+CUST-10826,2024-01-15,Starter,Healthcare,United States,North America,51-200,5,Annual,Paid Search,13.7,100.78,Churned,2024-02-01 00:00:00,Poor support experience,1,9,2024-01-07 00:00:00,5
+CUST-10827,2024-01-16,Starter,Manufacturing,United States,North America,1-50,4,Monthly,Paid Search,2.9,95.61,Churned,2024-03-01 00:00:00,Company downsizing,2,5,2024-02-07 00:00:00,4
+CUST-10828,2024-01-16,Business,Media,United States,North America,1-50,4,Annual,Events,12.0,511.64,Active,,,12,8,,3
+CUST-10829,2024-01-17,Growth,Manufacturing,Japan,Asia Pacific,1-50,4,Monthly,Paid Search,7.7,230.22,Active,,,12,8,2024-12-20 00:00:00,4
+CUST-10830,2024-01-18,Growth,Logistics,United Kingdom,Europe,51-200,9,Annual,Paid Search,10.0,327.2,Active,,,12,5,2024-12-13 00:00:00,14
+CUST-10831,2024-01-19,Starter,Manufacturing,United States,North America,1-50,4,Monthly,Organic,2.7,95.7,Churned,2024-05-01 00:00:00,Too expensive,4,6,2024-04-24 00:00:00,4
+CUST-10832,2024-01-19,Growth,Logistics,Germany,Europe,51-200,7,Monthly,Paid Search,12.3,284.06,Active,,,12,8,2024-12-15 00:00:00,5
+CUST-10833,2024-01-20,Starter,Technology,India,EMEA ,51-200,12,Monthly,Referral,11.9,175.86,Active,,,12,8,2024-12-01 00:00:00,10
+CUST-10834,2024-01-20,Starter,Healthcare,Germany,Europe,1-50,4,Monthly,Paid Search,2.5,95.8,Active,,,12,6,2024-12-16 00:00:00,4
+CUST-10835,2024-01-21,Starter,Healthcare,United States,North America,51-200,6,Monthly,Partner,16.8,108.9,Churned,2024-11-01 00:00:00,Missing features,10,6,2024-10-18 00:00:00,6
+CUST-10836,2024-01-22,Starter,Media,United States,North America,51-200,5,Monthly,Outbound Sales,19.4,97.36,Churned,2024-05-01 00:00:00,Poor support experience,4,8,2024-04-23 00:00:00,5
+CUST-10837,2024-01-22,Starter,Retail,United States,North America,51-200,25,Annual,Partner,14.1,306.7,Active,,,12,8,2024-12-25 00:00:00,33
+CUST-10838,2024-01-22,Enterprise,Healthcare,France,Europe,1-50,14,Monthly,Referral,4.0,1503.8,Churned,2024-06-01 00:00:00,Switched to competitor,5,10,2024-05-25 00:00:00,13
+CUST-10839,2024-01-22,Business,Retail,United Kingdom,Europe,1-50,8,Monthly,Outbound Sales,12.8,622.23,Active,,,12,6,2024-12-22 00:00:00,9
+CUST-10840,2024-01-22,Starter,Technology,Germany,Europe,1-50,1,Monthly,Organic,0.0,61.0,Active,,,12,7,2024-12-18 00:00:00,1
+CUST-10841,2024-01-23,Business,Retail,United States,North America,51-200,46,Annual,Referral,16.2,1632.54,Active,,,12,4,2024-12-11 00:00:00,68
+CUST-10842,2024-01-23,Starter,Manufacturing,United States,North America,1-50,2,Monthly,Organic,0.0,73.0,Active,,,12,6,2024-12-13 00:00:00,3
+CUST-10843,2024-01-23,Business,Retail,United States,North America,201-1000,163,Annual,Events,15.9,4785.66,Active,,,12,,2024-12-16 00:00:00,251
+CUST-10844,2024-01-24,Starter,Technology,Spain,Europe,51-200,4,Monthly,Paid Search,10.1,92.15,Churned,2024-10-01 00:00:00,Low adoption / unused seats,9,6,2024-09-19 00:00:00,5
+CUST-10845,2024-01-24,Growth,Manufacturing,Brazil,Latin America,51-200,16,Monthly,Referral,12.5,457.0,Active,,,12,9,2024-12-23 00:00:00,10
+CUST-10846,2024-01-24,Starter,Logistics,United Kingdom,Europe,201-1000,27,Annual,Organic,8.5,345.46,Active,,,12,5,2024-12-15 00:00:00,37
+CUST-10847,2024-01-24,Growth,Technology,India,Asia Pacific,1-50,5,Monthly,Partner,12.8,244.92,Active,,,12,6,2024-12-27 00:00:00,5
+CUST-10848,2024-01-25,Enterprise,Education,India,Asia Pacific,1-50,11,Annual,Partner,20.7,1291.54,Active,,,12,10,2024-12-23 00:00:00,11
+CUST-10849,2024-01-25,Starter,Healthcare,United States,North America,1-50,2,Monthly,Events,16.3,69.09,Churned,2024-05-01 00:00:00,Too expensive,4,10,2024-04-22 00:00:00,2
+CUST-10850,2024-01-25,Business,Technology,United States,North America,201-1000,31,Annual,Organic,0.0,1391.0,Active,,,12,7,2024-12-08 00:00:00,36
+CUST-10851,2024-01-25,Starter,Manufacturing,Singapore,Asia Pacific,1-50,5,Monthly,Referral,7.6,104.44,Active,,,12,7,2024-12-17 00:00:00,5
+CUST-10852,2024-01-25,Business,Education,United States,North America,1-50,7,Annual,Referral,2.2,618.07,Churned,2024-02-01 00:00:00,Too expensive,1,7,2024-01-12 00:00:00,7
+CUST-10853,2024-01-26,Starter,Education,Mexico,Latin America,51-200,16,Monthly,Organic,4.7,231.98,Active,,,12,7,2024-12-11 00:00:00,22
+CUST-10854,2024-01-27,Starter,Healthcare,Singapore,Asia Pacific,201-1000,21,Monthly,Partner,8.4,279.83,Active,,,12,,2024-12-07 00:00:00,30
+CUST-10855,2024-01-27,Starter,Education,India,Asia Pacific,1-50,1,Monthly,Outbound Sales,9.9,59.81,Active,,,12,4,2024-12-22 00:00:00,1
+CUST-10856,2024-02-02,Growth,Retail,India,Asia Pacific,1-50,3,Monthly,Referral,4.8,211.83,Active,,,11,5,2024-12-27 00:00:00,3
+CUST-10857,2024-02-02,Business,Technology,Germany,Europe,51-200,30,Monthly,Events,13.7,1227.48,Churned,2024-12-01 00:00:00,Missing features,10,8,2024-11-09 00:00:00,21
+CUST-10858,2024-02-02,Business,Healthcare,Singapore,Asia Pacific,201-1000,37,Annual,Outbound Sales,18.2,-1367.51,Active,,,11,,2024-12-07 00:00:00,35
+CUST-10859,2024-02-03,Starter,Healthcare,Germany,Europe,1-50,2,Annual,Referral,2.1,72.5,Active,,,11,7,2024-12-22 00:00:00,2
+CUST-10860,2024-02-03,Starter,Healthcare,France,Europe,201-1000,32,Monthly,Partner,27.6,327.02,Churned,2024-05-01 00:00:00,Poor support experience,3,5,2024-04-18 00:00:00,35
+CUST-10861,2024-02-03,Growth,Technology,Australia,Asia Pacific,51-200,18,Monthly,Paid Search,11.2,500.65,Active,,,11,10,2024-12-09 00:00:00,19
+CUST-10862,2024-02-04,Starter,Healthcare,Brazil,Latin America,51-200,5,Monthly,Events,12.9,101.26,Active,,,11,10,2024-12-26 00:00:00,7
+CUST-10863,2024-02-05,Starter,Technology,Germany,Europe,201-1000,17,Annual,Organic,0.0,253.0,Active,,,11,8,2024-12-10 00:00:00,18
+CUST-10864,2024-02-05,Growth,Media,France,Europe,1-50,6,Annual,Paid Search,5.7,273.48,Active,,,11,5,2024-12-23 00:00:00,6
+CUST-10865,2024-02-06,Growth,Retail,Spain,Europe,51-200,11,Monthly,Partner,10.9,364.62,Active,,,11,8,2024-12-26 00:00:00,15
+CUST-10866,2024-02-06,Growth,Technology,Brazil,Latin America,51-200,7,Annual,Referral,3.0,298.38,Active,,,11,6,2024-12-06 00:00:00,8
+CUST-10867,2024-02-07,Growth,Healthcare,Australia,Asia Pacific,201-1000,70,Annual,Organic,4.2,1624.32,Active,,,11,8,2024-12-18 00:00:00,63
+CUST-10868,2024-02-09,Business,Manufacturing,United States,North America,51-200,16,Annual,Paid Search,10.4,857.75,Active,,,11,8,2024-12-21 00:00:00,12
+CUST-10869,2024-02-09,Business,Logistics,Singapore,Asia Pacific,1-50,14,Monthly,Referral,8.9,807.13,Churned,2024-04-01 00:00:00,Low adoption / unused seats,2,6,2024-03-21 00:00:00,15
+CUST-10870,2024-02-10,Business,Manufacturing,United States,North America,1-50,6,Monthly,Referral,10.0,571.8,Churned,2024-03-01 00:00:00,Poor support experience,1,9,2024-02-03 00:00:00,6
+CUST-10871,2024-02-11,Starter,Technology,Canada,North America,1-50,3,Monthly,Paid Search,8.7,81.87,Active,,,11,7,2024-12-16 00:00:00,3
+CUST-10872,2024-02-11,Starter,Logistics,United States,North America,201-1000,21,Annual,Outbound Sales,14.5,264.46,Churned,2024-04-01 00:00:00,Switched to competitor,2,9,2024-03-03 00:00:00,18
+CUST-10873,2024-02-11,Starter,Education,United Kingdom,Europe,1-50,3,Annual,Organic,0.2,84.93,Churned,2024-06-01 00:00:00,Switched to competitor,4,4,2024-05-27 00:00:00,3
+CUST-10874,2024-02-11,Starter,Media,Germany,Europe,51-200,9,Annual,Outbound Sales,19.0,136.48,Active,,,11,7,2024-12-27 00:00:00,8
+CUST-10875,2024-02-12,Starter,Financial Services,Canada,North America,51-200,4,Annual,Referral,12.0,91.24,Active,,,11,8,2024-12-02 00:00:00,4
+CUST-10876,2024-02-12,Business,Education,France,Europe,1-50,13,Monthly,Partner,12.1,764.66,Active,,,11,7,2024-12-11 00:00:00,20
+CUST-10877,2024-02-12,Growth,Manufacturing,Brazil,Latin America,1-50,13,Monthly,Paid Search,15.8,389.81,Churned,2024-03-01 00:00:00,Missing features,1,6,2024-02-07 00:00:00,13
+CUST-10878,2024-02-12,Starter,Healthcare,United States,North America,1-50,2,Monthly,Events,12.2,70.07,Churned,2024-03-01 00:00:00,Missing features,1,7,2024-02-17 00:00:00,2
+CUST-10879,2024-02-13,Growth,Retail,United Kingdom,Europe,1-50,5,Monthly,Organic,0.0,259.0,Active,,,11,2,2024-12-23 00:00:00,6
+CUST-10880,2024-02-13,Growth,Education,Germany,Europe,51-200,5,Monthly,Events,9.6,248.44,Active,,,11,7,2024-12-20 00:00:00,7
+CUST-10881,2024-02-14,Starter,Manufacturing,Singapore,Asia Pacific,1-50,3,Monthly,Outbound Sales,3.6,83.7,Churned,2024-06-01 00:00:00,Company downsizing,4,,2024-05-21 00:00:00,4
+CUST-10882,2024-02-14,Growth,Education,India,Asia Pacific,201-1000,81,Monthly,Organic,2.6,1884.67,Active,,,11,4,2024-12-22 00:00:00,75
+CUST-10883,2024-02-14,Business,Technology,United States,North America,51-200,45,Monthly,Paid Search,14.7,1627.32,Active,,,11,8,2024-12-27 00:00:00,48
+CUST-10884,2024-02-15,Starter,Technology,United States,North America,1-50,4,Monthly,Organic,6.0,94.12,Active,,,11,6,2024-12-09 00:00:00,5
+CUST-10885,2024-02-16,Starter,Healthcare,United States,North America,1000+,54,Annual,Paid Search,15.3,597.86,Active,,,11,7,2024-12-15 00:00:00,65
+CUST-10886,2024-02-17,Starter,Technology,United States,North America,51-200,14,Monthly,Outbound Sales,14.1,193.31,Active,,,11,7,2024-12-02 00:00:00,16
+CUST-10887,2024-02-18,Enterprise,Media,United States,North America,1-50,47,Monthly,Partner,20.9,2571.97,Active,,,11,5,2024-12-03 00:00:00,67
+CUST-10888,2024-02-18,Starter,Technology,France,Europe,1-50,4,Monthly,Events,10.8,91.82,Active,,,11,8,2024-12-03 00:00:00,5
+CUST-10889,2024-02-18,Starter,Healthcare,United States,North America,201-1000,16,Monthly,Paid Search,13.6,214.89,Churned,2024-06-01 00:00:00,Switched to competitor,4,3,2024-05-25 00:00:00,17
+CUST-10890,2024-02-18,Starter,Technology,Japan,Asia Pacific,1-50,2,Monthly,Paid Search,17.0,68.92,Churned,2024-09-01 00:00:00,Low adoption / unused seats,7,7,2024-08-14 00:00:00,2
+CUST-10891,2024-02-19,Growth,Logistics,United States,North America,1-50,9,Monthly,Partner,20.1,307.2,Churned,2024-07-01 00:00:00,Low adoption / unused seats,5,7,2024-06-15 00:00:00,9
+CUST-10892,2024-02-20,Business,Retail,France,Europe,1-50,5,Monthly,Paid Search,8.4,545.56,Churned,2024-05-01 00:00:00,Missing features,3,6,2024-04-03 00:00:00,4
+CUST-10893,2024-02-20,Growth,Technology,Japan,Asia Pacific,1-50,14,Monthly,Organic,0.2,456.38,Active,,,11,7,2024-12-04 00:00:00,16
+CUST-10894,2024-02-21,Starter,Financial Services,Japan,Asia Pacific,1-50,1,Annual,Paid Search,8.4,59.99,Churned,2024-09-01 00:00:00,Switched to competitor,7,6,2024-08-12 00:00:00,1
+CUST-10895,2024-02-21,Starter,Media,Singapore,Asia Pacific,51-200,1,Monthly,Events,15.8,59.1,Churned,2024-06-01 00:00:00,Poor support experience,4,7,2024-05-11 00:00:00,1
+CUST-10896,2024-02-21,Starter,Healthcare,United Kingdom,Europe,1000+,102,Annual,Events,11.9,1127.34,Active,,,11,5,2024-12-27 00:00:00,60
+CUST-10897,2024-02-22,Starter,Retail,United States,North America,51-200,7,Monthly,Referral,12.4,122.58,Active,,,11,10,2024-12-19 00:00:00,9
+CUST-10898,2024-02-22,Business,Retail,Germany,Europe,1-50,6,Monthly,Outbound Sales,9.7,572.38,Churned,2024-07-01 00:00:00,Too expensive,5,7,2024-06-16 00:00:00,7
+CUST-10899,2024-02-22,Business,Media,United Kingdom,Europe,201-1000,28,Annual,Paid Search,9.7,1208.09,Active,,,11,5,2024-12-02 00:00:00,20
+CUST-10900,2024-02-22,Growth,Financial Services,United States,North America,1-50,4,Annual,Outbound Sales,17.2,221.86,Active,,,11,7,2024-12-13 00:00:00,3
+CUST-10901,2024-02-23,Starter,Financial Services,Japan,Asia Pacific,201-1000,53,Annual,Paid Search,10.5,618.22,Active,,,11,,2024-12-07 00:00:00,53
+CUST-10902,2024-02-23,Business,Education,United States,North America,51-200,11,Annual,Paid Search,10.9,712.63,Active,,,11,4,2024-12-25 00:00:00,14
+CUST-10903,2024-02-23,Starter,Manufacturing,Mexico,Latin America,1-50,4,Annual,Referral,6.1,94.07,Churned,2024-05-01 00:00:00,Too expensive,3,6,2024-04-09 00:00:00,4
+CUST-10904,2024-02-24,Enterprise,Technology,United States,North America,1-50,12,monthly,Outbound Sales,10.7,1381.22,Active,,,11,5,2024-12-10 00:00:00,20
+CUST-10905,2024-02-24,Growth,Education,France,Europe,1-50,6,Annual,Referral,1.4,279.15,Active,,,11,5,2024-12-06 00:00:00,7
+CUST-10906,2024-02-24,Business,Media,Brazil,Latin America,201-1000,61,monthly,Referral,4.6,2261.21,Active,,,11,,2024-12-01 00:00:00,52
+CUST-10907,2024-02-26,Starter,Manufacturing,United States,North America,201-1000,15,Monthly,Organic,7.8,214.96,Active,,,11,8,2024-12-09 00:00:00,15
+CUST-10908,2024-02-26,Starter,Retail,Japan,Asia Pacific,1-50,2,Annual,Paid Search,13.7,69.71,Active,,,11,8,2024-12-01 00:00:00,2
+CUST-10909,2024-02-26,Growth,Education,Germany,Europe,1000+,71,Monthly,Paid Search,13.4,1501.69,Active,,,11,4,2024-12-05 00:00:00,82
+CUST-10910,2024-02-26,Business,Retail,Germany,Europe,1-50,11,Monthly,Organic,0.0,751.0,Active,,,11,5,2024-12-10 00:00:00,12
+CUST-10911,2024-02-27,Starter,Financial Services,Germany,Europe,201-1000,20,Monthly,Organic,4.7,277.72,Active,,,11,9,2024-12-10 00:00:00,22
+CUST-10912,2024-02-27,Growth,Retail,Germany,Europe,1-50,4,Monthly,Events,13.9,224.77,Churned,2024-07-01 00:00:00,Low adoption / unused seats,5,7,2024-06-27 00:00:00,4
+CUST-10913,2024-02-28,Growth,Healthcare,Australia,Asia Pacific,1-50,3,Monthly,Paid Search,0.2,214.87,Churned,2024-06-01 00:00:00,Too expensive,4,7,2024-05-23 00:00:00,3
+CUST-10914,2024-02-28,Starter,Manufacturing,United Kingdom,Europe,1000+,54,Annual,Organic,6.6,654.23,Active,,,11,7,2024-12-19 00:00:00,55
+CUST-10915,2024-02-28,Starter,Education,United States,North America,1-50,4,Annual,Events,4.5,94.84,Churned,2024-05-01 00:00:00,Poor support experience,3,7,2024-04-22 00:00:00,5
+CUST-10916,2024-03-01,Growth,Manufacturing,United Kingdom,Europe,201-1000,67,Monthly,Partner,18.0,1357.68,Churned,2024-11-01 00:00:00,Missing features,8,8,2024-10-23 00:00:00,107
+CUST-10917,2024-03-01,Starter,Manufacturing,United Kingdom,Europe,1-50,5,Monthly,Referral,4.8,106.12,Active,,,10,9,2024-12-10 00:00:00,5
+CUST-10918,2024-03-01,Business,Technology,Germany,Europe,1-50,29,Monthly,Paid Search,0.0,1327.0,Active,,,10,4,2024-12-27 00:00:00,24
+CUST-10919,2024-03-01,Starter,Media,Germany,Europe,51-200,6,Monthly,Events,12.2,112.22,Active,,,10,9,2024-12-14 00:00:00,6
+CUST-10920,2024-03-03,Starter,Healthcare,Canada,North America,1-50,5,Monthly,Outbound Sales,12.1,101.74,Churned,2024-04-01 00:00:00,Low adoption / unused seats,1,6,2024-03-13 00:00:00,5
+CUST-10921,2024-03-03,Starter,Manufacturing,United Kingdom,Europe,1-50,2,Monthly,Referral,0.0,73.0,Active,,,10,8,2024-12-17 00:00:00,2
+CUST-10922,2024-03-03,Growth,Financial Services,Australia,Asia Pacific,51-200,10,Monthly,Organic,0.0,369.0,Active,,,10,5,2024-12-15 00:00:00,12
+CUST-10923,2024-03-03,Business,Education,United Kingdom,Europe,1-50,10,Monthly,Paid Search,4.6,704.28,Active,,,10,10,2024-12-12 00:00:00,12
+CUST-10924,2024-03-04,Starter,Media,Spain,Europe,51-200,6,Monthly,Paid Search,9.9,113.87,Churned,2024-11-01 00:00:00,Poor support experience,8,6,2024-10-27 00:00:00,7
+CUST-10925,2024-03-04,Starter,Technology,United States,North America,1000+,48,Annual,Partner,24.3,485.03,Active,,,10,10,2024-12-16 00:00:00,62
+CUST-10926,2024-03-06,Growth,Technology,India,Asia Pacific,51-200,12,Annual,Paid Search,7.7,392.67,Active,,,10,8,2024-12-15 00:00:00,15
+CUST-10927,2024-03-06,Growth,Manufacturing,India,Asia Pacific,1-50,3,Annual,Referral,10.3,208.2,Active,,,10,8,2024-12-01 00:00:00,2
+CUST-10928,2024-03-06,Business,Manufacturing,United States,North America,1-50,5,Monthly,Referral,7.2,547.48,Active,,,10,7,2024-12-09 00:00:00,5
+CUST-10929,2024-03-07,Starter,Retail,India,Asia Pacific,51-200,7,Monthly,Organic,1.3,131.91,Active,,,10,6,2024-12-05 00:00:00,7
+CUST-10930,2024-03-07,Starter,Healthcare,Japan,Asia Pacific,51-200,4,Annual,Outbound Sales,12.1,91.19,Churned,2024-07-01 00:00:00,Too expensive,4,3,2024-06-14 00:00:00,4
+CUST-10931,2024-03-08, enterprise  ,Education,United States,North America,201-1000,60,Annual,Paid Search,16.4,3156.2,Active,,,10,8,2024-12-16 00:00:00,59
+CUST-10932,2024-03-08,Business,Retail,United Kingdom,Europe,1-50,10,Monthly,Paid Search,11.8,681.24,Active,,,10,6,2024-12-03 00:00:00,13
+CUST-10933,2024-03-08,Growth,Healthcare,Spain,Europe,1-50,6,Monthly,Referral,6.0,273.08,Churned,2024-05-01 00:00:00,Too expensive,2,8,2024-04-04 00:00:00,6
+CUST-10934,2024-03-08,Business,Healthcare,United Kingdom,Europe,1-50,8,Annual,Organic,1.1,652.18,Active,,,10,,2024-12-17 00:00:00,7
+CUST-10935,2024-03-08,Growth,Financial Services,United States,North America,51-200,13,Monthly,Referral,3.7,424.42,Active,,,10,8,2024-12-20 00:00:00,15
+CUST-10936,2024-03-09,Enterprise,Manufacturing,United Kingdom,Europe,1-50,29,Monthly,Paid Search,9.2,2083.94,Active,,,10,8,2024-12-22 00:00:00,31
+CUST-10937,2024-03-09,Business,Logistics,United States,North America,1000+,247,Annual,Organic,8.3,7646.97,Active,,,10,,2024-12-27 00:00:00,212
+CUST-10938,2024-03-10,Growth,Logistics,Canada,North America,1-50,4,Monthly,Outbound Sales,16.1,222.83,Active,,,10,,2024-12-04 00:00:00,3
+CUST-10939,2024-03-11,Starter,Healthcare,United States,North America,51-200,5,Monthly,Events,9.3,103.42,Active,,,10,9,2024-12-23 00:00:00,7
+CUST-10940,2024-03-13,Growth,Technology,Germany,Europe,201-1000,26,Monthly,Referral,13.1,646.07,Active,,,10,7,2024-12-13 00:00:00,24
+CUST-10941,2024-03-13,Starter,Media,United States,North America,1-50,1,Monthly,Outbound Sales,7.1,60.15,Active,,,10,8,2024-12-26 00:00:00,1
+CUST-10942,2024-03-13,Starter,Education,France,Europe,1000+,33,Monthly,Outbound Sales,21.1,361.44,Churned,2024-08-01 00:00:00,Too expensive,5,7,2024-07-20 00:00:00,30
+CUST-10943,2024-03-13,Starter,Logistics,France,Europe,51-200,7,Monthly,Organic,0.0,133.0,Active,,,10,10,2024-12-06 00:00:00,11
+CUST-10944,2024-03-14,Starter,Healthcare,Australia,Asia Pacific,51-200,15,Annual,Partner,19.6,193.72,Active,,,10,,,18
+CUST-10945,2024-03-14,Starter,Financial Services,United States,North America,1-50,3,Annual,Organic,3.8,83.63,Active,,,10,10,2024-12-08 00:00:00,3
+CUST-10946,2024-03-14,Business,Financial Services,India,Asia Pacific,51-200,61,Monthly,Events,6.2,2229.98,Active,,,10,6,2024-12-08 00:00:00,54
+CUST-10947,2024-03-15,Starter,Retail,Canada,North America,1-50,1,Monthly,Organic,10.1,59.79,Active,,,10,10,2024-12-16 00:00:00,1
+CUST-10948,2024-03-16,Starter,Manufacturing,Mexico,Latin America,51-200,18,Monthly,Partner,15.4,231.74,Active,,,10,7,2024-12-04 00:00:00,29
+CUST-10949,2024-03-17,Starter,Technology,Brazil,Latin America,1-50,3,Monthly,Paid Search,6.7,82.59,Churned,2024-06-01 00:00:00,Missing features,3,,2024-05-11 00:00:00,3
+CUST-10950,2024-03-18,Starter,Technology,Germany,Europe,201-1000,14,Annual,Paid Search,17.1,188.27,Active,,,10,9,2024-12-23 00:00:00,9
+CUST-10951,2024-03-18,Growth,Retail,United States,North America,1-50,3,Annual,Partner,18.2,202.99,Churned,2024-12-01 00:00:00,Switched to competitor,9,7,2024-11-05 00:00:00,4
+CUST-10952,2024-03-19,Starter,Retail,United States,North America,51-200,4,Annual,Paid Search,9.4,$92.49,Churned,2024-05-01 00:00:00,Missing features,2,3,2024-04-10 00:00:00,4
+CUST-10953,2024-03-19,Growth,Education,Japan,Asia Pacific,1-50,3,Monthly,Organic,0.1,214.93,Active,,,10,5,2024-12-03 00:00:00,4
+CUST-10954,2024-03-19,Starter,Education,United States,North America,1-50,4,Monthly,Partner,10.3,92.06,Active,,,10,10,2024-12-05 00:00:00,6
+CUST-10955,2024-03-19,Starter,Technology,France,Europe,1000+,77,Annual,Organic,7.0,908.32,Active,,,10,,2024-12-12 00:00:00,90
+CUST-10956,2024-03-20,Growth,Manufacturing,Germany,Europe,1-50,5,Annual,Paid Search,11.3,246.57,Churned,2024-06-01 00:00:00,Too expensive,3,9,2024-05-09 00:00:00,5
+CUST-10957,2024-03-20,Starter,Education,Brazil,Latin America,51-200,9,Annual,Organic,1.1,155.81,Active,,,10,4,2024-12-06 00:00:00,7
+CUST-10958,2024-03-20,Starter,Financial Services,Brazil,Latin America,51-200,2,Monthly,Referral,4.1,72.02,Active,,,10,7,2024-12-21 00:00:00,2
+CUST-10959,2024-03-20,Growth,Education,Japan,Asia Pacific,201-1000,15,Monthly,Paid Search,10.1,445.67,Active,,,10,7,2024-12-26 00:00:00,13
+CUST-10960,2024-03-21,Business,Education,Brazil,Latin America,201-1000,38,Annual,Outbound Sales,10.3,1489.75,Active,,,10,7,2024-12-06 00:00:00,50
+CUST-10961,2024-03-21,Growth,Manufacturing,Brazil,Latin America,201-1000,48,Annual,Organic,5.3,1149.03,Active,,,10,4,2024-12-22 00:00:00,47
+CUST-10962,2024-03-21,Starter,Healthcare,Germany,Europe,1-50,2,Monthly,Outbound Sales,7.9,71.1,Churned,2024-04-01 00:00:00,Too expensive,1,9,2024-03-15 00:00:00,2
+CUST-10963,2024-03-21,Growth,Financial Services,France,Europe,201-1000,23,Monthly,Paid Search,4.8,630.71,Churned,2024-05-01 00:00:00,,2,6,2024-04-19 00:00:00,21
+CUST-10964,2024-03-24,Business,Manufacturing,United States,North America,1-50,15,Monthly,Partner,15.3,805.56,Churned,2024-09-01 00:00:00,Too expensive,6,,2024-08-05 00:00:00,14
+CUST-10965,2024-03-25,Starter,Technology,United States,North America,51-200,6,Monthly,Referral,9.6,114.09,Churned,2024-05-01 00:00:00,Too expensive,2,9,2024-04-10 00:00:00,6
+CUST-10966,2024-03-26,Business,Education,United States,North America,51-200,13,Monthly,Outbound Sales,10.0,773.4,Active,,,10,8,2024-12-21 00:00:00,14
+CUST-10967,2024-03-27,Growth,Technology,Brazil,Latin America,51-200,16,Monthly,Referral,6.7,477.42,Active,,,10,6,2024-12-25 00:00:00,16
+CUST-10968,2024-03-27,Growth,Healthcare,India,Asia Pacific,1000+,74,Annual,Organic,3.9,1713.51,Active,,,10,5,2024-12-21 00:00:00,101
+CUST-10969,2024-03-28,Starter,Media,India,Asia Pacific,51-200,13,Annual,Paid Search,12.2,185.97,Active,,,10,10,2024-12-06 00:00:00,16
+CUST-10970,2024-03-28,Growth,Manufacturing,Singapore,Asia Pacific,1-50,9,Monthly,Paid Search,10.0,327.2,Churned,01/05/2024,Poor support experience,2,8,2024-04-10 00:00:00,9
+CUST-10971,2024-03-28,Starter,Healthcare,United States,North America,51-200,5,Monthly,Partner,16.8,98.92,Active,,,10,4,,6
+CUST-10972,2024-04-02,Growth,Technology,United States,North America,1-50,3,Monthly,Outbound Sales,15.8,204.57,Active,,,9,3,2024-12-02 00:00:00,2
+CUST-10973,2024-04-03,Business,Healthcare,Brazil,Latin America,201-1000,45,Monthly,Organic,3.2,1792.92,Active,,,9,6,2024-12-06 00:00:00,53
+CUST-10974,2024-04-03,Enterprise,Retail,United States,North America,1-50,21,Monthly,Partner,15.7,1695.63,Active,,,9,7,2024-12-23 00:00:00,22
+CUST-10975,2024-04-04,Business,Technology,India,Asia Pacific,201-1000,104,Monthly,Events,20.4,3048.09,Active,,,9,10,2024-12-12 00:00:00,100
+CUST-10976,2024-04-04,Growth,Financial Services,Brazil,Latin America,51-200,54,monthly,Paid Search,10.0,1218.2,Active,,,9,6,2024-12-10 00:00:00,85
+CUST-10977,2024-04-05,Growth,Media,France,north america,1-50,4,Annual,Paid Search,8.5,229.52,Active,,,9,9,,4
+CUST-10978,2024-04-06,Business,Technology,United States,North America,1-50,3,Monthly,Referral,6.2,489.05,Active,,,9,6,2024-12-13 00:00:00,3
+CUST-10979,2024-04-06,Enterprise,Education,United States,North America,51-200,30,Monthly,Outbound Sales,14.0,2060.0,Active,,,9,8,2024-12-02 00:00:00,25
+CUST-10980,2024-04-06,Enterprise,Logistics,United States,North America,51-200,109,Monthly,Partner,21.0,4773.95,Active,,,9,,2024-12-04 00:00:00,126
+CUST-10981,2024-04-08,Growth,Education,United States,North America,201-1000,26,Monthly,Organic,3.4,701.55,Active,,,9,5,2024-12-01 00:00:00,33
+CUST-10982,2024-04-08,Starter,Retail,Singapore,Asia Pacific,51-200,4,Annual,Organic,2.5,95.8,Churned,2024-11-01 00:00:00,Low adoption / unused seats,7,10,,4
+CUST-10983,2024-04-09,Growth,Technology,Brazil,Latin America,201-1000,11,Annual,Organic,5.6,377.45,Churned,2024-07-01 00:00:00,Low adoption / unused seats,3,7,2024-06-25 00:00:00,11
+CUST-10984,2024-04-09,Growth,Logistics,Australia,Asia Pacific,1-50,4,Monthly,Referral,1.4,235.77,Active,,,9,9,2024-12-06 00:00:00,4
+CUST-10985,2024-04-09,Starter,Healthcare,France,Europe,51-200,12,Monthly,Paid Search,10.0,178.6,Active,,,9,7,,11
+CUST-10986,2024-04-09,Enterprise,Financial Services,India,Asia Pacific,1-50,6,Monthly,Outbound Sales,12.5,1135.25,Churned,2024-11-01 00:00:00,Too expensive,7,,2024-10-22 00:00:00,6
+CUST-10987,2024-04-10,Enterprise,Healthcare,Australia,Asia Pacific,1-50,25,Monthly,Paid Search,9.3,1919.38,Churned,2024-11-01 00:00:00,Too expensive,7,7,2024-10-09 00:00:00,30
+CUST-10988,2024-04-10,Growth,Education,United States,North America,51-200,18,Annual,Outbound Sales,13.8,490.35,Active,,,9,10,2024-12-02 00:00:00,15
+CUST-10989,2024-04-10,Growth,Technology,Brazil,Latin America,1-50,9,Monthly,Organic,3.8,339.48,Active,,,9,6,2024-12-15 00:00:00,9
+CUST-10990,2024-04-10,Business,Retail,Japan,Asia Pacific,1-50,5,Monthly,Paid Search,10.1,542.84,Active,,,9,8,2024-12-17 00:00:00,4
+CUST-10991,2024-04-10,Business,Technology,United States,North America,1000+,151,monthly,Paid Search,13.1,4598.01,Active,,,9,7,2024-12-01 00:00:00,120
+CUST-10992,2024-04-12,Growth,Technology,India,Asia Pacific,1-50,4,Monthly,Partner,18.3,220.9,Active,,,9,8,2024-12-13 00:00:00,4
+CUST-10993,2024-04-12,Starter,Healthcare,India,Asia Pacific,51-200,26,Monthly,Paid Search,9.9,330.11,Active,,,9,8,2024-12-14 00:00:00,28
+CUST-10994,2024-04-13,Starter,Financial Services,Australia,Asia Pacific,51-200,3,Monthly,Events,5.1,83.16,Churned,2024-08-01 00:00:00,Low adoption / unused seats,4,3,2024-07-20 00:00:00,3
+CUST-10995,2024-04-14,Growth,Retail,Mexico,Latin America,51-200,7,Annual,Organic,2.2,299.61,Active,,,9,5,2024-12-07 00:00:00,8
+CUST-10996,2024-04-14,Starter,Media,India,Asia Pacific,51-200,12,Monthly,Outbound Sales,10.3,178.17,Churned,2024-06-01 00:00:00,Low adoption / unused seats,2,,,13
+CUST-10997,2024-04-15,Starter,Education,India,Asia Pacific,201-1000,14,Annual,Partner,24.0,176.68,Active,,,9,9,2024-12-10 00:00:00,18
+CUST-10998,2024-04-15,Business,Technology,United States,North America,1-50,9,Monthly,Paid Search,14.2,646.1,Churned,2024-06-01 00:00:00,Missing features,2,7,2024-05-14 00:00:00,8
+CUST-10999,2024-04-15,Growth,Technology,United Kingdom,Europe,51-200,22,Annual,Outbound Sales,0.9,628.64,Active,,,9,5,,15
+CUST-11000,2024-04-15,Business,Technology,United Kingdom,Europe,51-200,21,Annual,Paid Search,10.7,999.1,Active,,,9,7,2024-12-06 00:00:00,18
+CUST-11001,2024-04-16,Growth,Financial Services,Mexico,Latin America,1000+,28,Annual,Referral,14.9,673.22,Active,,,9,4,2024-12-23 00:00:00,23
+CUST-11002,2024-04-16,Business,Financial Services,United States,North America,1-50,9,Annual,Partner,9.7,659.06,Active,,,9,9,2024-12-20 00:00:00,9
+CUST-11003,2024-04-17,Growth,Retail,United Kingdom,Europe,1-50,1,Monthly,Organic,1.0,170.78,Churned,2024-07-01 00:00:00,Missing features,3,5,2024-06-14 00:00:00,1
+CUST-11004,2024-04-18,Business,Technology,France,Europe,201-1000,45,Annual,Organic,0.0,1839.0,Active,,,9,5,,39
+CUST-11005,2024-04-19,Starter,Healthcare,United States,North America,1-50,2,Monthly,Outbound Sales,11.7,70.19,Churned,2024-05-01 00:00:00,,1,9,2024-04-21 00:00:00,2
+CUST-11006,2024-04-20,Growth,Financial Services,Spain,Europe,51-200,7,Monthly,Organic,4.0,296.84,Active,,,9,3,2024-12-05 00:00:00,9
+CUST-11007,2024-04-20,Starter,Technology,United States,North America,1-50,3,Monthly,Events,6.8,82.55,Active,,,9,,2024-12-15 00:00:00,4
+CUST-11008,2024-04-21,Business,Financial Services,United States,North America,51-200,16,Annual,Organic,7.0,875.16,Churned,01/06/2024,Too expensive,2,8,2024-05-01 00:00:00,17
+CUST-11009,2024-04-21,Starter,Technology,Germany,Europe,1-50,3,Monthly,Organic,0.0,85.0,Active,,,9,8,2024-12-03 00:00:00,3
+CUST-11010,2024-04-23,Growth,Healthcare,Brazil,Latin America,201-1000,21,Annual,Paid Search,17.0,532.46,Churned,2024-08-01 00:00:00,Poor support experience,4,6,2024-07-22 00:00:00,23
+CUST-11011,2024-04-24,Starter,Financial Services,United States,North America,1-50,1,Monthly,Referral,12.4,59.51,Active,,,9,7,2024-12-02 00:00:00,1
+CUST-11012,2024-04-25,Starter,Technology,Germany,Europe,51-200,6,Monthly,Referral,3.4,118.55,Active,,,9,8,,6
+CUST-11013,2024-04-25,Starter,Healthcare,Canada,North America,51-200,5,Monthly,Outbound Sales,16.3,99.22,Active,,,9,7,2024-12-21 00:00:00,6
+CUST-11014,2024-04-25,Enterprise,Technology,Spain,Europe,1000+,270,Annual,Paid Search,21.9,10388.15,Active,,,9,,2024-12-18 00:00:00,260
+CUST-11015,2024-04-25,Business,Manufacturing,India,Asia Pacific,1-50,17,Monthly,Partner,9.7,890.23,Active,,,9,8,2024-12-12 00:00:00,17
+CUST-11016,2024-04-26,Starter,Technology,India,Asia Pacific,1-50,6,Monthly,Outbound Sales,10.4,113.51,Active,,,9,,2024-12-06 00:00:00,6
+CUST-11017,2024-04-26,Enterprise,Healthcare,United States,North America,1-50,17,Monthly,Organic,1.4,1653.29,Active,,,9,10,2024-12-24 00:00:00,24
+CUST-11018,2024-04-26,Growth,Retail,Germany,Europe,51-200,44,Annual,Events,3.5,1083.12,Active,,,9,9,2024-12-01 00:00:00,40
+CUST-11019,2024-04-26,Starter,Education,France,Europe,1-50,6,Monthly,Paid Search,8.8,114.66,Active,,,9,9,2024-12-22 00:00:00,7
+CUST-11020,2024-04-27,Growth,Financial Services,India,Asia Pacific,1-50,9,Monthly,Paid Search,5.9,335.32,Active,,,9,5,2024-12-17 00:00:00,8
+CUST-11021,2024-04-27,Starter,Technology,Mexico,Latin America,201-1000,13,Annual,Referral,9.0,190.96,Active,,,9,10,2024-12-27 00:00:00,14
+CUST-11022,2024-04-27,Starter,Technology,United States,North America,51-200,24,Annual,Referral,3.5,326.92,Active,,,9,,2024-12-04 00:00:00,20
+CUST-11023,2024-05-01,Business,Technology,United Kingdom,Europe,1-50,10,Monthly,Referral,7.5,695.0,Active,,,8,7,2024-12-16 00:00:00,10
+CUST-11024,2024-05-01,Starter,Manufacturing,Australia,Asia Pacific,51-200,4,Monthly,Paid Search,15.3,89.66,Churned,2024-10-01 00:00:00,Poor support experience,5,7,2024-09-25 00:00:00,5
+CUST-11025,2024-05-02,Business,Healthcare,Mexico,Latin America,1000+,179,Annual,Organic,9.7,5571.38,Active,,,8,,2024-12-21 00:00:00,183
+CUST-11026,2024-05-04,Business,Manufacturing,Germany,Europe,51-200,32,Monthly,Organic,8.4,1336.98,Active,,,8,,2024-12-20 00:00:00,27
+CUST-11027,2024-05-04,Growth,Healthcare,United States,North America,1-50,4,Monthly,Paid Search,6.1,231.63,Active,,,8,8,2024-12-15 00:00:00,4
+CUST-11028,2024-05-04,Business,Technology,India,Asia Pacific,201-1000,67,Annual,Partner,20.8,2097.05,Active,,,8,10,2024-12-12 00:00:00,54
+CUST-11029,2024-05-05,Growth,Technology,Singapore,Asia Pacific,1-50,9,Monthly,Referral,0.0,347.0,Active,,,8,5,2024-12-03 00:00:00,9
+CUST-11030,2024-05-05,Starter,Education,United Kingdom,Europe,51-200,11,Monthly,Outbound Sales,14.0,162.52,Active,,,8,6,2024-12-14 00:00:00,13
+CUST-11031,2024-05-05,Growth,Technology,United States,North America,51-200,4,Monthly,Events,16.3,222.66,Active,,,8,8,2024-12-20 00:00:00,6
+CUST-11032,2024-05-06,Business,Manufacturing,United States,North America,201-1000,234,Monthly,Paid Search,16.4,6658.97,Active,,,8,6,2024-12-27 00:00:00,220
+CUST-11033,2024-05-06,Growth,Healthcare,India,Asia Pacific,51-200,38,Annual,Paid Search,8.8,911.43,Active,,,8,9,2024-12-06 00:00:00,36
+CUST-11034,2024-05-06,Business,Retail,France,Europe,1-50,n/a,Monthly,Outbound Sales,14.3,1139.45,Active,,,8,9,2024-12-24 00:00:00,34
+CUST-11035,2024-05-08,Starter,Retail,United States,North America,201-1000,7,Annual,Partner,25.5,111.58,Active,,,8,9,2024-12-13 00:00:00,5
+CUST-11036,2024-05-08,Starter,Financial Services,Canada,North America,1-50,2,Monthly,Outbound Sales,8.9,70.86,Active,,,8,,2024-12-23 00:00:00,2
+CUST-11037,2024-05-09,Starter,Healthcare,Japan,Asia Pacific,51-200,7,Monthly,Paid Search,15.0,120.4,Churned,2024-11-01 00:00:00,Too expensive,6,6,2024-10-03 00:00:00,9
+CUST-11038,2024-05-09,Starter,Education,Canada,North America,1-50,1,Monthly,Paid Search,9.4,59.87,Churned,2024-11-01 00:00:00,Too expensive,6,4,2024-10-24 00:00:00,1
+CUST-11039,2024-05-09,Starter,Retail,India,Asia Pacific,201-1000,11,Annual,Organic,3.7,176.12,Active,,,8,8,,7
+CUST-11040,2024-05-09,Starter,Manufacturing,United States,North America,1-50,5,Monthly,Paid Search,12.9,101.26,Active,,,8,4,2024-12-26 00:00:00,4
+CUST-11041,2024-05-10,Enterprise,Retail,United States,North America,51-200,89,Monthly,Paid Search,11.9,4427.41,Active,,,8,6,2024-12-10 00:00:00,78
+CUST-11042,2024-05-11,Starter,Retail,United Kingdom,Europe,201-1000,29,Monthly,Partner,16.1,340.97,Churned,2024-10-01 00:00:00,Low adoption / unused seats,5,7,2024-09-26 00:00:00,27
+CUST-11043,2024-05-12,Business,Manufacturing,Canada,North America,1-50,17,Annual,Referral,3.9,921.78,Active,,,8,4,2024-12-01 00:00:00,15
+CUST-11044,2024-05-13,Business,Technology,United Kingdom,Europe,1-50,5,Annual,Outbound Sales,6.8,548.12,Active,,,8,6,2024-12-24 00:00:00,8
+CUST-11045,2024-05-14,Business,Financial Services,Australia,Asia Pacific,1-50,7,Annual,Organic,0.0,623.0,Active,,,8,9,2024-12-18 00:00:00,7
+CUST-11046,2024-05-15,Starter,Financial Services,India,Asia Pacific,51-200,20,Monthly,Paid Search,17.4,247.24,Active,,,8,9,2024-12-07 00:00:00,23
+CUST-11047,2024-05-16,Growth,Education,Canada,North America,1-50,12,Annual,Organic,4.9,400.06,Active,,,8,10,2024-12-24 00:00:00,18
+CUST-11048,2024-05-16,Business,Healthcare,United Kingdom,Europe,1-50,8,Monthly,Events,9.9,629.66,Active,,,8,,2024-12-04 00:00:00,11
+CUST-11049,2024-05-16,Starter,Manufacturing,India,Asia Pacific,1-50,3,Monthly,Referral,7.7,82.23,Active,,,8,7,2024-12-26 00:00:00,3
+CUST-11050,2024-05-16,Starter,Manufacturing,United States,North America,1-50,3,Monthly,Organic,0.0,85.0,Active,,,8,9,,3
+CUST-11051,2024-05-17,Growth,Healthcare,Germany,Europe,201-1000,5,Monthly,Partner,17.0,240.3,Active,,,8,5,2024-12-16 00:00:00,7
+CUST-11052,2024-05-17,Growth,Education,Germany,Europe,51-200,16,Monthly,Organic,2.3,492.9,Active,,,8,5,2024-12-24 00:00:00,22
+CUST-11053,2024-05-18,Growth,Technology,United Kingdom,Europe,1-50,4,Annual,Organic,0.0,237.0,Active,,,8,9,2024-12-06 00:00:00,5
+CUST-11054,2024-05-18,Starter,Retail,United States,North America,1-50,3,Monthly,Paid Search,6.4,82.7,Churned,2024-07-01 00:00:00,Missing features,2,9,2024-06-12 00:00:00,3
+CUST-11055,2024-05-19,Business,Retail,United States,North America,1-50,9,Monthly,Outbound Sales,3.3,677.5,Active,,,8,,2024-12-23 00:00:00,7
+CUST-11056,2024-05-20,Starter,Manufacturing,United States,North America,51-200,11,Monthly,Referral,9.5,168.46,Active,,,8,10,2024-12-05 00:00:00,12
+CUST-11057,2024-05-23,Growth,Technology,Canada,North America,1-50,7,Monthly,Paid Search,9.8,287.91,Churned,2024-06-01 00:00:00,Missing features,1,7,2024-05-21 00:00:00,7
+CUST-11058,2024-05-23,Growth,Manufacturing,Canada,North America,201-1000,57,Monthly,Paid Search,8.6,1295.16,Active,,,8,9,2024-12-20 00:00:00,55
+CUST-11059,2024-05-23,Starter,Retail,Mexico,Latin America,1-50,6,Monthly,Referral,0.5,120.64,Active,,,8,9,2024-12-22 00:00:00,6
+CUST-11060,2024-05-23,Growth,Technology,Japan,Asia Pacific,51-200,10,Monthly,Organic,5.2,357.56,Active,,,8,7,2024-12-16 00:00:00,8
+CUST-11061,2024-05-23,Business,Retail,Germany,Europe,51-200,19,Monthly,Referral,7.7,960.18,Active,,,8,8,2024-12-15 00:00:00,28
+CUST-11062,2024-05-24,Business,Financial Services,France,Europe,1-50,7,Annual,Partner,11.3,597.69,Active,,,8,8,2024-12-27 00:00:00,6
+CUST-11063,2024-05-26,Growth,Logistics,Singapore,Asia Pacific,1-50,5,Monthly,Partner,12.5,245.25,Active,,,8,9,,4
+CUST-11064,2024-05-26,Growth,Manufacturing,India,Asia Pacific,1-50,7,Annual,Partner,9.9,287.75,Active,,,8,9,2024-12-02 00:00:00,5
+CUST-11065,2024-05-26,Enterprise,Technology,Brazil,Latin America,1-50,16,Monthly,Paid Search,7.5,1565.0,Churned,2024-08-01 00:00:00,Low adoption / unused seats,3,,2024-07-23 00:00:00,15
+CUST-11066,2024-05-27,Starter,Healthcare,Germany,Europe,1-50,2,Monthly,Organic,3.2,72.23,Active,,,8,,,2
+CUST-11067,2024-05-28,Starter,Technology,United States,North America,1-50,4,Annual,Outbound Sales,5.1,94.55,Churned,2024-11-01 00:00:00,Missing features,6,7,2024-10-27 00:00:00,4
+CUST-11068,2024-05-28,Growth,Technology,United States,North America,201-1000,36,Annual,Outbound Sales,13.2,836.46,Active,,,8,7,2024-12-22 00:00:00,40
+CUST-11069,2024-06-01,Growth,Healthcare,United States,North America,201-1000,17,Monthly,Referral,7.9,493.45,Active,,,7,,2024-12-14 00:00:00,20
+CUST-11070,2024-06-01,Growth,Manufacturing,France,Europe,1-50,3,Monthly,Paid Search,3.2,212.89,Active,,,7,7,2024-12-11 00:00:00,4
+CUST-11071,2024-06-02,Starter,Retail,France,Europe,51-200,3,Monthly,Events,8.0,82.12,Active,,,7,7,2024-12-10 00:00:00,3
+CUST-11072,2024-06-03,Starter,Technology,Japan,Asia Pacific,1-50,2,Monthly,Events,2.8,72.33,Active,,,7,10,2024-12-05 00:00:00,2
+CUST-11073,2024-06-04,Business,Financial Services,United States,North America,1-50,10,Monthly,Paid Search,7.3,695.64,Active,,,7,8,2024-12-10 00:00:00,9
+CUST-11074,2024-06-05,Business,Logistics,India,Asia Pacific,201-1000,41,Annual,Organic,9.3,1588.98,Active,,,7,,2024-12-19 00:00:00,58
+CUST-11075,2024-06-06,Starter,Technology,United States,North America,51-200,1,Annual,Referral,9.7,59.84,Active,,,7,7,2024-12-07 00:00:00,1
+CUST-11076,2024-06-06,Starter,Logistics,Singapore,Asia Pacific,1-50,4,Monthly,Referral,4.9,94.65,Active,,,7,,2024-12-14 00:00:00,4
+CUST-11077,2024-06-07,Starter,Healthcare,United Kingdom,Europe,51-200,25,Monthly,Organic,3.6,338.2,Active,,,7,5,2024-12-15 00:00:00,25
+CUST-11078,2024-06-07,Starter,Healthcare,Germany,Europe,1-50,3,Monthly,Organic,0.0,85.0,Churned,2024-10-01 00:00:00,Too expensive,4,5,2024-09-02 00:00:00,3
+CUST-11079,2024-06-07,Growth,Technology,Brazil,Latin America,51-200,18,Annual,Referral,10.8,502.23,Active,,,7,8,2024-12-16 00:00:00,14
+CUST-11080,2024-06-07,Growth,Education,Japan,Asia Pacific,51-200,14,Monthly,Events,13.9,414.19,Churned,2024-09-01 00:00:00,Switched to competitor,3,7,2024-08-04 00:00:00,13
+CUST-11081,2024-06-08,Business,Retail,India,Asia Pacific,1-50,6,Monthly,Paid Search,9.9,571.99,Active,,,7,8,2024-12-03 00:00:00,7
+CUST-11082,2024-06-08,Business,Technology,United States,North America,51-200,21,Annual,Paid Search,16.6,959.45,Active,,,7,7,2024-12-17 00:00:00,19
+CUST-11083,2024-06-09,Starter,Manufacturing,United States,North America,51-200,18,Monthly,Referral,7.0,249.88,Churned,2024-07-01 00:00:00,Missing features,1,8,2024-06-23 00:00:00,17
+CUST-11084,2024-06-10,Starter,Media,United Kingdom,Europe,1-50,3,Monthly,Partner,14.4,79.82,Churned,2024-07-01 00:00:00,Switched to competitor,1,9,2024-06-06 00:00:00,3
+CUST-11085,2024-06-10,Business,Retail,Canada,North America,51-200,12,Monthly,Partner,7.6,753.82,Churned,01/10/2024,Too expensive,4,4,2024-09-02 00:00:00,8
+CUST-11086,2024-06-10,Starter,Manufacturing,Mexico,Latin America,1-50,2,Monthly,Outbound Sales,6.6,71.42,Active,,,7,8,2024-12-02 00:00:00,2
+CUST-11087,2024-06-12,Starter,Technology,Mexico,Latin America,51-200,8,Annual,Outbound Sales,4.8,140.39,Active,,,7,8,2024-12-15 00:00:00,9
+CUST-11088,2024-06-13,Starter,Manufacturing,United States,North America,1-50,6,Monthly,Organic,3.7,118.34,Active,,,7,6,2024-12-16 00:00:00,6
+CUST-11089,2024-06-14,Starter,Manufacturing,Brazil,Latin America,51-200,8,Monthly,Referral,10.6,134.82,Active,,,7,,2024-12-04 00:00:00,8
+CUST-11090,2024-06-14,Growth,Retail,Brazil,Latin America,51-200,29,Monthly,Referral,8.3,734.05,Active,,,7,9,2024-12-10 00:00:00,39
+CUST-11091,2024-06-14,Starter,Technology,India,Asia Pacific,1-50,2,Annual,Events,10.1,70.58,Active,,,7,5,2024-12-24 00:00:00,2
+CUST-11092,2024-06-14,Starter,Retail,United States,North America,201-1000,19,Monthly,Organic,6.9,261.27,Active,,,7,4,2024-12-02 00:00:00,20
+CUST-11093,2024-06-18,Growth,Financial Services,United States,North America,51-200,32,Annual,Partner,14.1,753.74,Active,,,7,6,2024-12-03 00:00:00,26
+CUST-11094,2024-06-19,Starter,Logistics,France,Europe,1-50,6,Monthly,Referral,11.1,113.01,Active,,,7,4,2024-12-12 00:00:00,6
+CUST-11095,2024-06-23,Growth,Technology,Japan,Asia Pacific,1-50,4,Monthly,Paid Search,4.8,232.78,Active,,,7,7,2024-12-18 00:00:00,4
+CUST-11096,2024-06-23,Business,Technology,Mexico,Latin America,51-200,18,Annual,Outbound Sales,16.8,878.23,Active,,,7,7,2024-12-14 00:00:00,18
+CUST-11097,2024-06-23,Starter,Technology,France,Europe,1-50,5,Monthly,Partner,8.6,103.84,Active,,,7,7,2024-12-24 00:00:00,6
+CUST-11098,2024-06-23,Starter,Financial Services,France,Europe,201-1000,27,Annual,Organic,2.5,364.9,Active,,,7,6,2024-12-25 00:00:00,26
+CUST-11099,2024-06-24,Business,Healthcare,Germany,Europe,1-50,6,Monthly,Referral,10.2,571.42,Active,,,7,4,2024-12-04 00:00:00,8
+CUST-11100,2024-06-24,Starter,Retail,United States,North America,51-200,4,Monthly,Events,11.3,91.58,Churned,2024-08-01 00:00:00,Low adoption / unused seats,2,8,2024-07-22 00:00:00,4
+CUST-11101,2024-06-24,Enterprise,Logistics,Singapore,Asia Pacific,51-200,42,Annual,Paid Search,13.4,2535.74,Active,,,7,8,2024-12-21 00:00:00,53
+CUST-11102,2024-06-24,Enterprise,Manufacturing,United Kingdom,Europe,1-50,32,Monthly,Referral,5.6,2258.36,Active,,,7,,2024-12-14 00:00:00,46
+CUST-11103,2024-06-24,Starter,Technology,Germany,Europe,1-50,3,Monthly,Partner,19.8,77.87,Churned,2024-07-01 00:00:00,Missing features,1,,2024-06-06 00:00:00,3
+CUST-11104,2024-06-25,Growth,Technology,United Kingdom,Europe,1-50,2,Monthly,Partner,17.6,185.26,Active,,,7,,2024-12-25 00:00:00,2
+CUST-11105,2024-06-25,Starter,Retail,United States,North America,51-200,4,Monthly,Organic,2.2,95.94,Active,,,7,7,2024-12-25 00:00:00,3
+CUST-11106,2024-06-26,Growth,Logistics,Singapore,Asia Pacific,51-200,18,Annual,Paid Search,1.9,537.48,Active,,,7,6,2024-12-06 00:00:00,15
+CUST-11107,2024-06-27,Starter,Education,France,Europe,1-50,3,Annual,Organic,0.0,85.0,Active,,,7,,2024-12-19 00:00:00,3
+CUST-11108,2024-06-27,Growth,Retail,Germany,Europe,1-50,4,Monthly,Outbound Sales,6.6,231.19,Churned,2024-08-01 00:00:00,Too expensive,2,7,2024-07-10 00:00:00,4
+CUST-11109,2024-06-28,Growth,Retail,United States,North America,1-50,6,Monthly,Paid Search,7.9,270.57,Churned,2024-08-01 00:00:00,Poor support experience,2,5,2024-07-02 00:00:00,7
+CUST-11110,2024-06-28,Growth,Education,United States,North America,1-50,6,Monthly,Organic,3.4,276.51,Churned,2024-07-01 00:00:00,Too expensive,1,6,2024-06-05 00:00:00,6
+CUST-11111,2024-07-01,Business,Manufacturing,Germany,Europe,201-1000,39,Annual,Organic,0.0,1647.0,Active,,,6,10,2024-12-09 00:00:00,35
+CUST-11112,2024-07-03,Starter,Financial Services,United States,North America,1-50,5,Monthly,Outbound Sales,15.2,99.88,Active,,,6,7,2024-12-27 00:00:00,6
+CUST-11113,2024-07-03,Growth,Technology,United States,North America,1000+,370,Annual,Organic,14.1,7141.26,Active,,,6,6,2024-12-06 00:00:00,350
+CUST-11114,2024-07-03,Starter,Manufacturing,Germany,Europe,51-200,11,Annual,Paid Search,8.8,169.38,Churned,01/11/2024,Business priorities changed,4,4,2024-10-12 00:00:00,11
+CUST-11115,2024-07-04,Starter,Logistics,Japan,Asia Pacific,51-200,10,Annual,Events,6.3,$161.44,Active,,,6,6,2024-12-16 00:00:00,10
+CUST-11116,2024-07-05,Starter,Retail,Brazil,EMEA ,1000+,34,Monthly,Organic,4.3,439.46,Active,,,6,3,2024-12-08 00:00:00,41
+CUST-11117,2024-07-07,Starter,Technology,Mexico,Latin America,1-50,3,Monthly,Organic,4.5,83.38,Active,,,6,5,2024-12-08 00:00:00,3
+CUST-11118,2024-07-08,Growth,Education,United States,North America,51-200,19,Monthly,Outbound Sales,7.2,536.9,Active,,,6,6,2024-12-03 00:00:00,20
+CUST-11119,2024-07-09,Business,Manufacturing,Australia,Asia Pacific,1-50,13,Monthly,Organic,2.7,803.77,Churned,2024-09-01 00:00:00,Switched to competitor,2,5,2024-08-12 00:00:00,13
+CUST-11120,2024-07-09,Business,Retail,Germany,Europe,201-1000,67,Monthly,Referral,12.6,2272.86,Active,,,6,6,2024-12-12 00:00:00,78
+CUST-11121,2024-07-10,Business,Technology,United States,North America,1-50,10,Annual,Referral,7.3,695.64,Churned,2024-09-01 00:00:00,Low adoption / unused seats,2,7,2024-08-01 00:00:00,10
+CUST-11122,2024-07-11,Growth,Manufacturing,Spain,Europe,1-50,2,Monthly,Organic,0.0,193.0,Active,,,6,9,2024-12-18 00:00:00,2
+CUST-11123,2024-07-12,Enterprise,Technology,Australia,Asia Pacific,1-50,25,Monthly,Paid Search,7.2,1943.0,Active,,,6,,,20
+CUST-11124,2024-07-12,Growth,Financial Services,Canada,North America,201-1000,23,Annual,Outbound Sales,23.4,536.6,Churned,2024-09-01 00:00:00,Too expensive,2,8,2024-08-21 00:00:00,25
+CUST-11125,2024-07-13,Enterprise,Healthcare,India,Asia Pacific,1-50,12,Monthly,Partner,11.4,1377.44,Active,,,6,6,2024-12-07 00:00:00,15
+CUST-11126,2024-07-13,Starter,Manufacturing,United States,North America,1-50,1,Monthly,Events,11.9,59.57,Churned,2024-08-01 00:00:00,Too expensive,1,9,,1
+CUST-11127,2024-07-13,Growth,Technology,United Kingdom,Europe,51-200,26,Monthly,Paid Search,19.3,610.6,Active,,,6,9,2024-12-22 00:00:00,22
+CUST-11128,2024-07-14,Starter,Financial Services,Mexico,Latin America,1-50,2,Annual,Events,9.1,70.82,Active,,,6,8,2024-12-25 00:00:00,2
+CUST-11129,2024-07-15,Starter,Financial Services,India,Asia Pacific,1-50,1,Monthly,Paid Search,7.4,60.11,Active,,,6,9,2024-12-14 00:00:00,1
+CUST-11130,2024-07-15,Starter,Healthcare,Canada,North America,201-1000,27,Monthly,Outbound Sales,25.8,289.41,Active,,,6,,,27
+CUST-11131,2024-07-18,Starter,Technology,United States,North America,1-50,2,Monthly,Referral,8.6,70.94,Active,,,6,7,,2
+CUST-11132,2024-07-19,Growth,Technology,Brazil,Latin America,1-50,5,Annual,Referral,0.0,259.0,Active,,,6,,2024-12-22 00:00:00,6
+CUST-11133,2024-07-19,Starter,Technology,United States,North America,1-50,1,Monthly,Paid Search,8.0,60.04,Churned,2024-10-01 00:00:00,Low adoption / unused seats,3,9,2024-09-15 00:00:00,1
+CUST-11134,2024-07-21,Growth,Education,United States,North America,51-200,8,Monthly,Outbound Sales,8.4,310.22,Active,,,6,10,2024-12-09 00:00:00,9
+CUST-11135,2024-07-21,Growth,Retail,United States,North America,1-50,5,Monthly,Partner,17.8,239.42,Churned,2024-09-01 00:00:00,Low adoption / unused seats,2,4,2024-08-04 00:00:00,5
+CUST-11136,2024-07-22,Growth,Technology,France,Europe,51-200,13,Monthly,Referral,6.8,415.55,Active,,,6,7,,12
+CUST-11137,2024-07-23,Growth,Technology,United States,North America,51-200,19,Annual,Paid Search,14.0,508.48,Active,,,6,7,2024-12-08 00:00:00,23
+CUST-11138,2024-07-23,Starter,Technology,Australia,Asia Pacific,51-200,3,Annual,Outbound Sales,15.3,79.49,Active,,,6,5,2024-12-22 00:00:00,2
+CUST-11139,2024-07-23,Business,Logistics,Singapore,Asia Pacific,1-50,12,Annual,Events,6.9,756.5,Active,,,6,9,2024-12-09 00:00:00,12
+CUST-11140,2024-07-23,Business,Retail,Canada,North America,1-50,4,Monthly,Organic,0.0,527.0,Churned,2024-11-01 00:00:00,Low adoption / unused seats,4,8,2024-10-17 00:00:00,4
+CUST-11141,2024-07-24,Growth,Healthcare,United Kingdom,Europe,1000+,61,Annual,Paid Search,5.8,1413.16,Active,,,6,,2024-12-12 00:00:00,56
+CUST-11142,2024-07-24,Growth,Healthcare,Brazil,Latin America,1-50,3,Monthly,Paid Search,3.1,212.95,Active,,,6,10,2024-12-05 00:00:00,3
+CUST-11143,2024-07-24,Starter,Media,Germany,Europe,51-200,10,Monthly,Partner,13.9,152.32,Active,,,6,5,2024-12-03 00:00:00,13
+CUST-11144,2024-07-24,Business,Healthcare,Germany,Europe,201-1000,80,Annual,Organic,2.3,2900.12,Active,,,6,5,,88
+CUST-11145,2024-07-26,Growth,Healthcare,United States,North America,1-50,3,Monthly,Organic,1.3,214.14,Active,,,6,7,2024-12-18 00:00:00,3
+CUST-11146,2024-07-26,Growth,Technology,Spain,Europe,201-1000,22,Monthly,Referral,7.4,597.18,Active,,,6,9,2024-12-18 00:00:00,23
+CUST-11147,2024-07-27,Enterprise,Logistics,Mexico,Latin America,1-50,10,Monthly,Events,14.4,1284.2,Active,,,6,4,2024-12-11 00:00:00,12
+CUST-11148,2024-08-03, growth  ,Healthcare,United Kingdom,Europe,51-200,6,Annual,Partner,15.1,261.07,Active,,,5,3,2024-12-19 00:00:00,6
+CUST-11149,2024-08-04,Growth,Logistics,India,Asia Pacific,1-50,6,Monthly,Referral,7.7,270.84,Active,,,5,9,2024-12-22 00:00:00,5
+CUST-11150,2024-08-05,Growth,Manufacturing,United States,North America,1-50,5,Monthly,Organic,0.0,259.0,Active,,,5,,2024-12-09 00:00:00,5
+CUST-11151,2024-08-07,Business,Healthcare,Germany,Europe,51-200,30,Monthly,Organic,1.9,1340.76,Active,,,5,5,,28
+CUST-11152,2024-08-08,Enterprise,Manufacturing,United States,North America,51-200,72,Monthly,Organic,0.0,4139.0,Active,,,5,9,2024-12-10 00:00:00,85
+CUST-11153,2024-08-10,Growth,Financial Services,United States,North America,1-50,1,Monthly,Organic,0.0,171.0,Active,,,5,9,2024-12-18 00:00:00,1
+CUST-11154,2024-08-11,Starter,Financial Services,Germany,Europe,1-50,4,Annual,Outbound Sales,12.9,90.81,Active,,,5,,2024-12-10 00:00:00,5
+CUST-11155,2024-08-11,Growth,Retail,France,Europe,51-200,13,Monthly,Referral,8.3,411.26,Active,,,5,6,2024-12-04 00:00:00,10
+CUST-11156,2024-08-12,Business,Technology,France,north america,1-50,2,Monthly,Partner,12.0,455.32,Active,,,5,8,2024-12-17 00:00:00,2
+CUST-11157,2024-08-15,Starter,Retail,United States,North America,1-50,1,Monthly,Organic,0.0,61.0,Churned,2024-10-01 00:00:00,Missing features,2,6,2024-09-27 00:00:00,1
+CUST-11158,2024-08-16,Starter,Technology,France,Europe,51-200,25,Annual,Organic,7.4,326.8,Active,,,5,8,,34
+CUST-11159,2024-08-17,Enterprise,Technology,Germany,Europe,1-50,14,Monthly,Outbound Sales,9.5,1469.15,Active,,,5,8,2024-12-12 00:00:00,15
+CUST-11160,2024-08-17,Starter,Retail,Singapore,Asia Pacific,201-1000,33,Annual,Organic,3.0,433.12,Active,,,5,6,2024-12-27 00:00:00,38
+CUST-11161,2024-08-18,Starter,Education,United Kingdom,Europe,1-50,4,Monthly,Referral,10.0,92.2,Active,,,5,,2024-12-05 00:00:00,5
+CUST-11162,2024-08-19,Growth,Retail,France,Europe,201-1000,34,Annual,Events,11.8,808.74,Active,,,5,9,2024-12-21 00:00:00,43
+CUST-11163,2024-08-19,Enterprise,Healthcare,France,Europe,1-50,11,Monthly,Paid Search,8.9,1349.94,Active,,,5,7,2024-12-09 00:00:00,9
+CUST-11164,2024-08-19,Enterprise,Manufacturing,United Kingdom,Europe,201-1000,120,Monthly,Organic,0.0,6299.0,Active,,,5,7,2024-12-19 00:00:00,121
+CUST-11165,2024-08-20,Starter,Financial Services,France,Europe,1-50,2,Annual,Referral,6.3,71.49,Active,,,5,,2024-12-16 00:00:00,2
+CUST-11166,2024-08-20,Starter,Manufacturing,France,Europe,201-1000,41,Annual,Paid Search,14.4,470.15,Churned,2024-10-01 00:00:00,Switched to competitor,2,10,2024-09-07 00:00:00,41
+CUST-11167,2024-08-21,Business,Healthcare,Brazil,Latin America,1-50,5,Monthly,Events,7.2,547.48,Active,,,5,5,2024-12-20 00:00:00,4
+CUST-11168,2024-08-21,Starter,Logistics,France,Europe,51-200,13,Monthly,Paid Search,10.2,189.09,Churned,2024-10-01 00:00:00,,2,7,2024-09-16 00:00:00,13
+CUST-11169,2024-08-22,Starter,Financial Services,United States,North America,51-200,10,Annual,Events,12.0,154.6,Active,,,5,,2024-12-25 00:00:00,11
+CUST-11170,2024-08-24,Starter,Healthcare,Germany,Europe,1-50,1,Annual,Paid Search,4.2,60.5,Churned,2024-09-01 00:00:00,Switched to competitor,1,7,2024-08-13 00:00:00,1
+CUST-11171,2024-08-24,Starter,Healthcare,Brazil,Latin America,1-50,1,Monthly,Paid Search,11.0,59.68,Active,,,5,10,2024-12-24 00:00:00,1
+CUST-11172,2024-08-25,Growth,Retail,United States,North America,201-1000,32,Annual,Partner,26.5,666.44,Churned,2024-09-01 00:00:00,Too expensive,1,8,2024-08-12 00:00:00,32
+CUST-11173,2024-08-26,Starter,Retail,Germany,Europe,1-50,7,Annual,Outbound Sales,12.6,122.42,Churned,2024-09-01 00:00:00,Missing features,1,9,2024-08-15 00:00:00,7
+CUST-11174,2024-08-26,Starter,Media,Brazil,north america,51-200,13,Monthly,Referral,8.2,192.21,Active,,,5,7,2024-12-08 00:00:00,11
+CUST-11175,2024-08-27,Growth,Technology,France,Europe,1-50,1,Annual,Organic,5.9,169.7,Active,,,5,5,2024-12-26 00:00:00,1
+CUST-11176,2024-08-27,Starter,Financial Services,United Kingdom,Europe,1-50,2,monthly,Outbound Sales,17.0,68.92,Active,,,5,8,2024-12-25 00:00:00,2
+CUST-11177,2024-08-28,Growth,Media,India,Asia Pacific,201-1000,17,Annual,Paid Search,17.4,457.92,Churned,2024-11-01 00:00:00,Company downsizing,3,3,2024-10-09 00:00:00,16
+CUST-11178,2024-08-28,Business,Healthcare,United States,North America,1-50,14,Monthly,Outbound Sales,13.3,787.42,Active,,,5,5,2024-12-23 00:00:00,15
+CUST-11179,2024-09-02, starter  ,Financial Services,Brazil,Latin America,51-200,6,Annual,Outbound Sales,16.2,109.34,Active,,,4,8,2024-12-07 00:00:00,8
+CUST-11180,2024-09-02,Starter,Manufacturing,United States,North America,51-200,5,Monthly,Outbound Sales,17.3,98.62,Active,,,4,,,4
+CUST-11181,2024-09-02,Starter,Healthcare,Singapore,Asia Pacific,1-50,1,Monthly,Organic,0.0,61.0,Active,,,4,9,2024-12-05 00:00:00,1
+CUST-11182,2024-09-04,Starter,Education,United States,North America,51-200,5,Monthly,Organic,0.9,108.46,Active,,,4,3,2024-12-13 00:00:00,4
+CUST-11183,2024-09-05,Starter,Manufacturing,United States,North America,1-50,3,Monthly,Paid Search,3.9,83.6,Active,,,4,,2024-12-11 00:00:00,3
+CUST-11184,2024-09-05,Growth,Retail,Spain,Europe,51-200,12,Monthly,Paid Search,10.9,384.22,Active,,,4,9,2024-12-16 00:00:00,15
+CUST-11185,2024-09-07,Starter,Technology,India,Asia Pacific,201-1000,19,Annual,Organic,1.4,273.81,Active,,,4,8,2024-12-06 00:00:00,17
+CUST-11186,2024-09-07,Growth,Healthcare,France,Europe,1-50,4,Monthly,Paid Search,14.4,224.33,Active,,,4,5,2024-12-06 00:00:00,4
+CUST-11187,2024-09-07,Starter,Healthcare,United Kingdom,Europe,51-200,14,Monthly,Organic,1.5,214.48,Active,,,4,6,2024-12-20 00:00:00,15
+CUST-11188,2024-09-12,Growth,Technology,France,Europe,201-1000,26,Annual,Paid Search,11.7,654.08,Active,,,4,,2024-12-07 00:00:00,25
+CUST-11189,2024-09-12,Growth,Manufacturing,Australia,Asia Pacific,51-200,4,Monthly,Partner,12.7,225.82,Active,,,4,5,2024-12-15 00:00:00,4
+CUST-11190,2024-09-12,Starter,Logistics,United Kingdom,Europe,51-200,4,Monthly,Referral,9.2,92.58,Churned,01/10/2024,Too expensive,1,0,2024-09-26 00:00:00,4
+CUST-11191,2024-09-15,Starter,Logistics,United States,North America,51-200,7,Monthly,Paid Search,10.9,123.84,Active,,,4,7,2024-12-19 00:00:00,6
+CUST-11192,2024-09-15,Starter,Financial Services,Mexico,Latin America,51-200,4,Monthly,Organic,0.0,97.0,Active,,,4,8,2024-12-08 00:00:00,4
+CUST-11193,2024-09-19,Growth,Retail,Canada,North America,1-50,6,Monthly,Organic,1.3,279.28,Active,,,4,4,2024-12-27 00:00:00,5
+CUST-11194,2024-09-23,Growth,Education,United States,North America,1-50,5,Monthly,Outbound Sales,20.5,236.45,Active,,,4,9,2024-12-02 00:00:00,5
+CUST-11195,2024-09-23,Business,Retail,United Kingdom,Europe,51-200,32,Annual,Partner,18.2,1236.63,Active,,,4,10,2024-12-12 00:00:00,26
+CUST-11196,2024-09-24,Starter,Logistics,India,Asia Pacific,1-50,4,Annual,Referral,6.6,93.83,Churned,2024-11-01 00:00:00,Too expensive,2,6,2024-10-16 00:00:00,5
+CUST-11197,2024-09-24,Starter,Education,United Kingdom,Europe,1-50,7,Annual,Partner,18.1,117.8,Churned,2024-10-01 00:00:00,Low adoption / unused seats,1,8,2024-09-24 00:00:00,6
+CUST-11198,2024-09-24,Starter,Retail,United States,North America,51-200,12,Monthly,Organic,1.5,190.84,Active,,,4,8,2024-12-14 00:00:00,13
+CUST-11199,2024-09-24,Growth,Technology,United States,North America,1-50,2,Monthly,Referral,5.0,190.8,Active,,,4,7,2024-12-16 00:00:00,2
+CUST-11200,2024-09-25,Starter,Retail,Germany,Europe,1-50,2,Annual,Partner,11.3,70.29,Active,,,4,4,2024-12-26 00:00:00,2
+CUST-11201,2024-09-25,Starter,Education,United States,North America,51-200,3,Annual,Referral,3.0,83.92,Active,,,4,,2024-12-23 00:00:00,3
+CUST-11202,2024-09-26,Growth,Technology,Germany,Europe,1-50,4,Monthly,Outbound Sales,14.0,224.68,Churned,2024-11-01 00:00:00,,2,7,2024-10-04 00:00:00,4
+CUST-11203,2024-09-27,Growth,Logistics,United States,North America,201-1000,75,Annual,Organic,2.9,1751.15,Active,,,4,7,2024-12-13 00:00:00,80
+CUST-11204,2024-09-28,Growth,Education,United States,North America,1-50,7,Monthly,Partner,14.5,280.67,Active,,,4,9,2024-12-03 00:00:00,7
+CUST-11205,2024-10-01,Business,Healthcare,Brazil,Latin America,51-200,19,Monthly,Paid Search,13.3,926.14,Active,,,3,8,,16
+CUST-11206,2024-10-02,Starter,Education,United Kingdom,Europe,1-50,1,Monthly,Outbound Sales,13.6,59.37,Active,,,3,6,2024-12-06 00:00:00,1
+CUST-11207,2024-10-02,Business,Technology,France,Europe,1-50,10,Monthly,Partner,10.1,686.68,Active,,,3,7,2024-12-25 00:00:00,9
+CUST-11208,2024-10-04,Starter,Media,United States,North America,1-50,8,Monthly,Events,7.1,138.18,Active,,,3,8,2024-12-17 00:00:00,9
+CUST-11209,2024-10-05,Starter,Logistics,Canada,North America,201-1000,19,Annual,Paid Search,5.7,264.0,Active,,,3,5,2024-12-02 00:00:00,23
+CUST-11210,2024-10-07,Growth,Healthcare,United States,North America,1-50,6,Monthly,Referral,11.5,265.82,Active,,,3,8,2024-12-26 00:00:00,6
+CUST-11211,2024-10-07,Starter,Manufacturing,Australia,Asia Pacific,1-50,1,Monthly,Referral,5.4,60.35,Active,,,3,6,2024-12-20 00:00:00,1
+CUST-11212,2024-10-09,Growth,Technology,India,Asia Pacific,51-200,15,Monthly,Outbound Sales,7.7,453.59,Active,,,3,7,2024-12-10 00:00:00,16
+CUST-11213,2024-10-11, starter  ,Technology,United Kingdom,Europe,1-50,13,Monthly,Referral,0.0,205.0,Active,,,3,5,2024-12-08 00:00:00,14
+CUST-11214,2024-10-15,Business,Media,India,Asia Pacific,1-50,15,Monthly,Outbound Sales,14.6,808.92,Active,,,3,4,2024-12-02 00:00:00,17
+CUST-11215,2024-10-16,Growth,Technology,Germany,Europe,51-200,9,Monthly,Referral,4.8,337.5,Active,,,3,8,2024-12-08 00:00:00,9
+CUST-11216,2024-10-17,Starter,Retail,Australia,north america,51-200,10,Monthly,Organic,3.5,164.8,Active,,,3,6,2024-12-19 00:00:00,10
+CUST-11217,2024-10-18,Starter,Retail,India,Asia Pacific,1-50,1,Annual,Referral,0.0,61.0,Active,,,3,6,2024-12-14 00:00:00,1
+CUST-11218,2024-10-18,Business,Logistics,Australia,Asia Pacific,51-200,27,Monthly,Organic,2.8,1238.81,Active,,,3,8,2024-12-19 00:00:00,27
+CUST-11219,2024-10-20,Starter,Retail,Spain,Europe,51-200,10,Monthly,Partner,16.6,149.08,Active,,,3,9,2024-12-15 00:00:00,9
+CUST-11220,2024-10-21,Starter,Logistics,Mexico,Latin America,51-200,5,Monthly,Organic,0.2,108.88,Active,,,3,10,2024-12-12 00:00:00,5
+CUST-11221,2024-10-22,Enterprise,Technology,Germany,Europe,51-200,43,Annual,Organic,1.5,2804.97,Active,,,3,4,2024-12-11 00:00:00,39
+CUST-11222,2024-10-24,Starter,Manufacturing,Brazil,Latin America,1-50,1,Monthly,Organic,0.0,61.0,Active,,,3,4,2024-12-14 00:00:00,1
+CUST-11223,2024-10-24,Starter,Financial Services,Singapore,Asia Pacific,201-1000,16,Annual,Paid Search,19.1,204.33,Active,,,3,10,2024-12-09 00:00:00,13
+CUST-11224,2024-10-24,Starter,Retail,United Kingdom,Europe,51-200,7,Annual,Referral,10.5,124.18,Active,,,3,,,8
+CUST-11225,2024-10-24,Growth,Technology,Australia,Asia Pacific,201-1000,35,Monthly,Organic,6.9,865.87,Active,,,3,8,2024-12-26 00:00:00,39
+CUST-11226,2024-11-02,Starter,Retail,Germany,Europe,201-1000,43,Monthly,Paid Search,7.3,527.33,Active,,,2,7,2024-12-12 00:00:00,41
+CUST-11227,2024-11-02,Starter,Retail,Brazil,Latin America,1-50,4,Monthly,Referral,7.2,93.54,Active,,,2,2,,4
+CUST-11228,2024-11-02,Starter,Technology,Mexico,Latin America,51-200,13,Annual,Organic,0.1,204.84,Active,,,2,7,2024-12-01 00:00:00,15
+CUST-11229,2024-11-08,Starter,Retail,Mexico,Latin America,1-50,1,Monthly,Organic,3.5,60.58,Active,,,2,7,2024-12-04 00:00:00,1
+CUST-11230,2024-11-08,Starter,Logistics,United States,North America,51-200,5,Monthly,Partner,13.9,100.66,Active,,,2,,2024-12-09 00:00:00,4
+CUST-11231,2024-11-10,Growth,Healthcare,Singapore,Asia Pacific,1-50,12,Annual,Organic,5.3,399.01,Active,,,2,,2024-12-13 00:00:00,12
+CUST-11232,2024-11-16,Growth,Education,Australia,Asia Pacific,51-200,9,Monthly,Partner,17.1,313.14,Active,,,2,9,2024-12-27 00:00:00,9
+CUST-11233,2024-11-16,Starter,Education,Australia,Asia Pacific,201-1000,26,Annual,Paid Search,15.5,312.64,Active,,,2,7,2024-12-11 00:00:00,26
+CUST-11234,2024-11-17,Growth,Logistics,Canada,North America,1-50,2,Monthly,Referral,1.3,192.43,Active,,,2,6,2024-12-24 00:00:00,2
+CUST-11235,2024-11-18,Starter,Retail,India,Asia Pacific,1000+,46,Annual,Partner,28.9,441.47,Active,,,2,6,2024-12-17 00:00:00,47
+CUST-11236,2024-11-19,Starter,Retail,Germany,Europe,1-50,4,Annual,Paid Search,2.4,95.85,Active,,,2,1,,4
+CUST-11237,2024-11-20,Growth,Retail,Canada,North America,1-50,7,Monthly,Organic,1.1,301.31,Churned,2024-12-01 00:00:00,Poor support experience,1,7,2024-11-24 00:00:00,7
+CUST-11238,2024-11-22,Business,Retail,United States,North America,201-1000,45,monthly,Paid Search,14.4,1631.64,Active,,,2,7,2024-12-02 00:00:00,43
+CUST-11239,2024-11-23,Starter,Retail,United States,North America,1000+,34,Annual,Events,19.0,379.48,Active,,,2,7,2024-12-20 00:00:00,33
+CUST-11240,2024-11-28,Business,Technology,United Kingdom,Europe,1-50,4,Monthly,Events,9.9,514.33,Active,,,2,7,2024-12-10 00:00:00,4
+CUST-11241,2024-12-06,Enterprise,Retail,Australia,Asia Pacific,1-50,10,Monthly,Outbound Sales,15.0,1281.5,Active,,,1,7,2024-12-19 00:00:00,9
+CUST-11242,2024-12-07,Starter,Retail,United States,North America,1-50,3,Monthly,Organic,0.0,85.0,Active,,,1,9,2024-12-18 00:00:00,3
+CUST-11243,2024-12-07,Enterprise,Media,Mexico,Latin America,1-50,17,Monthly,Referral,1.0,1656.35,Active,,,1,9,2024-12-13 00:00:00,18
+CUST-11244,2024-12-08,Starter,Healthcare,United States,North America,51-200,12,Annual,Organic,0.0,193.0,Active,,,1,,2024-12-08 00:00:00,13
+CUST-11245,2024-12-08,Starter,Technology,United States,North America,51-200,20,Annual,Partner,16.7,248.92,Active,,,1,6,2024-12-17 00:00:00,20
+CUST-11246,2024-12-08,Growth,Healthcare,France,Europe,51-200,15,Monthly,Organic,3.2,468.44,Active,,,1,7,2024-12-04 00:00:00,15
+CUST-11247,2024-12-12,Growth,Media,Japan,Asia Pacific,1-50,4,Monthly,Organic,0.0,237.0,Active,,,1,6,2024-12-04 00:00:00,4
+CUST-11248,2024-12-18,Growth,Technology,India,Asia Pacific,1-50,5,Monthly,Partner,12.8,244.92,Active,,,1,7,2024-12-17 00:00:00,5
+CUST-11249,2024-12-20,Starter,Financial Services,United States,North America,1-50,5,Monthly,Paid Search,10.1,102.94,Active,,,1,8,2024-12-09 00:00:00,6
+CUST-11250,2024-12-28,Growth,Manufacturing,Brazil,Latin America,51-200,8,Annual,Outbound Sales,14.9,298.78,Active,,,1,6,2024-12-08 00:00:00,7
+CUST-11101,2024-06-24,Enterprise,Logistics,Singapore,Asia Pacific,51-200,42,Annual,Paid Search,13.4,2535.74,Active,,,7,8,2024-12-21 00:00:00,53
+CUST-10443,2023-08-02,Starter,Education,Mexico,Latin America,1000+,53,Monthly,Events,21.2,550.17,Active,,,17,10,2024-12-13 00:00:00,77
+CUST-11200,2024-09-25,Starter,Retail,Germany,Europe,1-50,2,Annual,Partner,11.3,70.29,Active,,,4,4,2024-12-26 00:00:00,2
+CUST-10777,2023-12-23,Starter,Financial Services,France,Europe,1000+,96,Annual,Organic,11.1,1073.13,Active,,,13,3,2024-12-04 00:00:00,103
+CUST-10118,2023-03-11,Starter,Logistics,India,Asia Pacific,1000+,174,Monthly,Partner,17.0,1782.04,Active,,,22,,2024-12-20 00:00:00,166
+CUST-10317,2023-06-08,Enterprise,Education,United States,North America,1000+,526,Annual,Outbound Sales,22.0,19361.6,Active,,,19,8,2024-12-01 00:00:00,747
+CUST-10981,2024-04-08,Growth,Education,United States,North America,201-1000,26,Monthly,Organic,3.4,701.55,Active,,,9,5,2024-12-01 00:00:00,33
+CUST-10506,2023-08-26,Business,Manufacturing,United States,North America,1-50,4,Monthly,Organic,0.0,527.0,Active,,,17,5,2024-12-26 00:00:00,5
+CUST-10111,2023-03-07,Business,Retail,United States,North America,1-50,16,Monthly,Referral,9.6,861.85,Churned,01/10/2024,Poor support experience,19,7,2024-09-27 00:00:00,19
+CUST-10193,2023-04-17,Business,Technology,United States,North America,1-50,5,Monthly,Partner,18.0,530.2,Churned,2024-06-01 00:00:00,Poor support experience,14,3,2024-05-11 00:00:00,6
+CUST-11036,2024-05-08,Starter,Financial Services,Canada,North America,1-50,2,Monthly,Outbound Sales,8.9,70.86,Active,,,8,,2024-12-23 00:00:00,2
+CUST-10722,2023-11-26,Starter,Education,United States,North America,51-200,4,Annual,Partner,14.9,89.85,Churned,2024-03-01 00:00:00,Switched to competitor,4,8,2024-02-04 00:00:00,4
+CUST-10567,2023-09-23,Starter,Retail,Spain,Europe,51-200,10,Monthly,Partner,12.8,153.64,Churned,2024-11-01 00:00:00,Low adoption / unused seats,14,5,2024-10-19 00:00:00,6
+CUST-10375,2023-07-04,Growth,Retail,United Kingdom,Europe,51-200,35,monthly,Referral,3.7,890.51,Active,,,18,6,2024-12-08 00:00:00,30
+CUST-10190,2023-04-16,Starter,Healthcare,United States,North America,51-200,11,Monthly,Referral,6.6,172.29,Churned,2023-09-01 00:00:00,Too expensive,5,6,2023-08-26 00:00:00,12
+CUST-10208,2023-04-23,Business,Healthcare,Canada,North America,201-1000,52,Monthly,Outbound Sales,17.1,1778.46,Churned,2023-12-01 00:00:00,Low adoption / unused seats,8,,2023-11-15 00:00:00,47
+CUST-10184,2023-04-13,Starter,Healthcare,United States,North America,1000+,71,Annual,Organic,5.6,853.29,Active,,,21,6,2024-12-21 00:00:00,59
+CUST-11102,2024-06-24,Enterprise,Manufacturing,United Kingdom,Europe,1-50,32,Monthly,Referral,5.6,2258.36,Active,,,7,,2024-12-14 00:00:00,46
+CUST-10713,2023-11-22,Growth,Manufacturing,France,Europe,201-1000,56,Annual,Events,10.1,1256.57,Churned,2024-12-01 00:00:00,Too expensive,13,7,,63
+CUST-10251,2023-05-14,Starter,Healthcare,United States,North America,51-200,19,Monthly,Referral,7.9,258.99,Churned,2023-08-01 00:00:00,Low adoption / unused seats,3,,2023-07-05 00:00:00,20
+CUST-10018,2023-01-15,Growth,Healthcare,United Kingdom,Europe,51-200,16,Monthly,Outbound Sales,16.5,442.92,Churned,2023-12-01 00:00:00,Company downsizing,11,5,2023-11-23 00:00:00,12
+CUST-10609,2023-10-14,Growth,Technology,Spain,Europe,51-200,24,Monthly,Referral,4.0,655.88,Active,,,15,8,2024-12-23 00:00:00,29
+CUST-10029,2023-01-21,Business,Healthcare,United Kingdom,Europe,1-50,10,Monthly,Referral,9.9,687.32,Active,,,24,3,2024-12-15 00:00:00,9

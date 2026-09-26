@@ -1,0 +1,668 @@
+
+============================================================================
+SECTION 1  |  LOADING RAW DATA
+============================================================================
+customers_raw.csv           1,273 rows x 19 columns
+customer_monthly_raw.csv   13,846 rows x 12 columns
+
+First 3 customer records, exactly as they arrived from the file:
+customer_id signup_date plan_tier      industry country        region company_size seats billing_cycle acquisition_channel discount_pct mrr_at_signup  status          churn_date           churn_reason tenure_months nps_score     last_login_date seats_current
+ CUST-10001  2023-01-02  Business    Healthcare  France        Europe         1-50    12       Monthly            Referral          0.0         783.0 Churned 2024-10-01 00:00:00     Company downsizing            21         6 2024-09-05 00:00:00            24
+ CUST-10002  2023-01-03   Starter    Healthcare  Brazil Latin America         1-50     2       Monthly            Referral          5.5         71.68 Churned 2024-10-01 00:00:00                    NaN            21         7 2024-09-03 00:00:00             1
+ CUST-10003  2023-01-03  Business Manufacturing  Mexico Latin America         1-50     6       Monthly              Events         14.2        563.74 Churned 2023-08-01 00:00:00 Switched to competitor             7        10                 NaN             4
+
+============================================================================
+SECTION 2  |  FIRST LOOK AT THE DATA
+============================================================================
+What is one row?
+  customers_raw.csv          one row = one CUSTOMER (the master list)
+  customer_monthly_raw.csv   one row = one CUSTOMER in one MONTH (activity)
+
+Columns in the customer table and what they mean:
+  customer_id          Unique code for the customer (primary key)
+  signup_date          Date the customer first started paying
+  plan_tier            Which plan they bought (Starter / Growth / Business / Enterprise)
+  industry             Industry the customer's company works in
+  country              Country of the customer
+  region               Wider geographic region
+  company_size         Employee band of the customer (1-50, 51-200, 201-1000, 1000+)
+  seats                Number of user seats bought
+  billing_cycle        Monthly or Annual billing
+  acquisition_channel  How the customer was first won
+  discount_pct         Percentage discount off the list price
+  mrr_at_signup        Monthly Recurring Revenue on day one
+  status               Active or Churned at the end of the period
+  churn_date           Date the customer cancelled (blank if still active)
+  churn_reason         Why they cancelled (blank if still active)
+  tenure_months        How many months the customer stayed
+  nps_score            Net Promoter Score 0-10 given by the customer
+  last_login_date      Last time anyone logged into the product
+  seats_current        Seats held at the end of the period
+
+Columns in the monthly activity table:
+  customer_id          Links back to the customer table
+  month_start          First day of the month this row describes
+  month_number         Calendar month number (1-12)
+  year                 Calendar year
+  tenure_month         How many months the customer had been subscribed
+  mrr                  Revenue this customer generated that month
+  seats                Seats held that month
+  active_users         Seats that were actually used that month
+  adoption_rate        Share of seats actually used (0-1, or a percent as text)
+  support_tickets      Support tickets raised that month
+  nps_score            NPS given that month
+  is_active            1 = the customer was active that month
+
+============================================================================
+SECTION 3  |  DATA QUALITY AUDIT
+============================================================================
+Before trusting any number we check the file for the problems that are
+always present in a real data export. Findings are listed as we go.
+
+3.1  Duplicate records
+     customers_raw.csv          : 23 fully identical rows
+     customer_monthly_raw.csv   : 31 fully identical rows
+     Cause: the export job ran twice and appended the same rows.
+     Treatment: drop_duplicates() -> removes 54 rows.
+
+3.2  Inconsistent text values
+     plan_tier       8 distinct value(s): [' business  ', ' enterprise  ', ' growth  ', ' starter  ', 'Business', 'Enterprise', 'Growth', 'Starter']
+     billing_cycle   3 distinct value(s): ['Annual', 'Monthly', 'monthly']
+     region          6 distinct value(s): ['Asia Pacific', 'EMEA ', 'Europe', 'Latin America', 'North America', 'north america']
+     status          2 distinct value(s): ['Active', 'Churned']
+     company_size    4 distinct value(s): ['1-50', '1000+', '201-1000', '51-200']
+     Cause: three different systems write to this field.
+     Treatment: strip spaces, then standardise capitalisation.
+     plan_tier needs cleaning on 16 row(s) (stray spaces and lower case)
+
+3.3  Numeric columns that contain text
+     mrr_at_signup : 14 row(s) are not numbers (currency symbols, e.g. '$1,674.39')
+     seats         : 7 row(s) are not numbers (the text 'n/a')
+     Treatment: strip '$' and ',' then convert with pd.to_numeric().
+
+3.4  Inconsistent date formats
+     churn_date   : 27 row(s) use DD/MM/YYYY, the rest use YYYY-MM-DD
+     signup_date  : all rows use YYYY-MM-DD
+     last_login_date : all rows use YYYY-MM-DD
+     Treatment: parse both formats with dayfirst=True, then store as datetime.
+
+3.5  Missing values
+     customers.seats                    7 missing ( 0.55%)
+     customers.churn_date             834 missing (65.51%)
+     customers.churn_reason           875 missing (68.74%)
+     customers.nps_score              190 missing (14.93%)
+     customers.last_login_date         97 missing ( 7.62%)
+
+     Note: churn_reason is legitimately blank for every customer who is
+           still active - that is missing BY DESIGN, not a defect.
+
+3.6  Impossible or suspicious values
+     mrr_at_signup : 3 row(s) are negative (an unapplied credit note, not a real subscription)
+     seats         : 2 row(s) above 10,000 seats (double data entry - see the plan/size mismatch)
+     Treatment: negative MRR set to missing; impossible seat counts set to
+               missing so they cannot distort averages.
+
+3.7  adoption_rate stored two different ways
+     140 row(s) are stored as a percentage such as '45.3'
+     13706 row(s) are stored as a fraction such as 0.453
+     Treatment: any value above 1 is divided by 100.
+
+3.8  Business-rule checks (does the data make sense?)
+     Active customers that also have a churn_date : 0  (expected 0)
+     Churned customers with no churn_date         : 0  (expected 0)
+     tenure_months below 1                       : 0  (expected 0)
+
+3.9  Data quality summary
+            Area                                             Issue found  Rows affected                                   How it was treated
+       Customers                   Fully duplicated rows (double export)             23                       Removed with drop_duplicates()
+Monthly activity                   Fully duplicated rows (double export)             31                       Removed with drop_duplicates()
+       Customers       plan_tier stored with stray spaces and lower case             16           Stripped whitespace and applied title case
+       Customers    mrr_at_signup stored as text with $ and , characters             14                Removed symbols, converted to numeric
+       Customers                          seats stored as the text 'n/a'              7                Converted to numeric, left as missing
+       Customers              churn_date mixes DD/MM/YYYY and YYYY-MM-DD             27     Parsed with dayfirst=True and stored as datetime
+       Customers      churn_reason blank for active customers (expected)            834       Left blank; it is correct for active customers
+       Customers                nps_score not answered by every customer            190 Left missing; averages use only the answers received
+       Customers              last_login_date not tracked for a minority             97  Left missing; excluded from date-based calculations
+       Customers          Negative MRR (credit note, not a subscription)              3           Set to missing, flagged in the audit table
+       Customers   Seat count of 50,000 on small accounts (double entry)              2             Set to missing as physically implausible
+Monthly activity adoption_rate mixes percent (45.3) and fraction (0.453)            140                        Values above 1 divided by 100
+
+TOTAL ISSUES FOUND: 12 categories across both tables.
+
+============================================================================
+SECTION 4  |  DATA CLEANING
+============================================================================
+4.1  Removed duplicate rows
+       customers : 1,273 -> 1,250 (23 removed)
+       monthly   : 13,846 -> 13,815 (31 removed)
+
+4.2  Standardising text columns (trim spaces, fix capitalisation)
+       plan_tier       now: ['Business', 'Enterprise', 'Growth', 'Starter']
+       billing_cycle   now: ['Annual', 'Monthly']
+       company_size    now: ['1-50', '1000+', '201-1000', '51-200']
+       region          now: ['Asia Pacific', 'Europe', 'Latin America', 'North America']
+
+4.3  Converting text columns to numbers
+       adoption_rate now ranges 0.030 to 1.000 (0-1 scale)
+
+4.4  Parsing dates
+       signup_date       1250 values in -> 1250 parsed, 0 unparseable
+       last_login_date   1154 values in -> 1154 parsed, 0 unparseable
+       churn_date        430 values in -> 430 parsed, 0 unparseable
+       signup_date    2023-01-02 -> 2024-12-28
+       churn_date     parsed for 430 churned customers
+       month_start    2023-01-01 -> 2024-12-01
+       churn month vs last active month: 0 mismatches out of 430 churned customers
+       churn dates outside Jan 2023-Dec 2024: 0
+
+4.5  Handling impossible values
+       3 negative MRR value(s)  -> set to missing
+       2 impossible seat count(s) -> set to missing
+
+4.6  Recomputing derived fields so they agree with the cleaned data
+       reporting period 2023-01-01 to 2024-12-01
+       tenure rebuilt from the monthly table for 1,250 of 1,250 customers
+       reported tenure vs rebuilt tenure differ on 0 row(s)
+       -> the rebuilt value is used, because it is derived from the rows
+          that actually exist in the activity table
+       tenure now ranges 1 to 24 months
+       churn dates after the end of the data : 0  (expected 0)
+       churned customers with no churn date   : 0  (expected 0)
+
+4.7  Removed internal simulator columns: none
+
+4.8  Post-cleaning verification
+       duplicate rows remaining : 0
+       customers                : 1,250
+       monthly rows             : 13,815
+       customers in both tables : 1,250
+       orphan monthly rows      : 0
+
+============================================================================
+SECTION 5  |  FEATURE ENGINEERING
+============================================================================
+The raw columns do not answer the business questions, so we build the
+columns that do. Each new column is explained below.
+
+5.1  churn_flag = 1 if the customer cancelled, 0 if still active
+       430 churned / 1,250 total = 34.4%
+5.2  signup_cohort = the month the customer joined (used for cohorts)
+5.3  arpu = average revenue per user (MRR / seats); arr = annualised MRR x12
+5.4  engagement_band built from average seat adoption over the customer's life
+5.5  final_adoption / final_tickets / final_nps / final_mrr
+       = the customer's average over their LAST 3 ACTIVE months.
+5.6  lifetime_value = mrr_at_signup x tenure_months (simple LTV proxy)
+5.7  Joined the customer attributes onto the monthly table and added
+       month and arr_run_rate (MRR x 12) for convenience.
+
+5.8  Final column list
+       customers_clean : 33 columns
+       customer_id, signup_date, plan_tier, industry, country, region, company_size, seats, billing_cycle, acquisition_channel, discount_pct, mrr_at_signup, status, churn_date, churn_reason, tenure_months, nps_score, last_login_date, seats_current, tenure_months_calc, churn_flag, signup_cohort, seat_estimate, is_seat_data_missing, arpu, arr, avg_adoption, engagement_band, final_adoption, final_tickets, final_nps, final_mrr, lifetime_value
+       customer_monthly_clean : 20 columns
+
+============================================================================
+SECTION 6  |  DESCRIPTIVE STATISTICS
+============================================================================
+6.1  Headline numbers
+       Total customers (2023-2024)      : 1,250
+       Churned                          : 430
+       Still active at end of period    : 820
+       Logo churn rate (whole period)   : 34.4%
+       Active customers, Dec 2024       : 820
+       MRR, Dec 2024                    : $1,051,252
+       ARR run-rate, Dec 2024           : $12,615,022
+       ARPU, Dec 2024                   : $1,282
+       Average MRR per customer          : $1,011
+       Average NPS (who answered)       : 6.99
+       Average tenure                   : 11.1 months
+
+6.2  Numeric summary of the key measures
+                 count      mean       std    min      25%      50%       75%        max
+mrr_at_signup   1247.0   1010.64   2295.04  59.10   144.04   338.20    907.94   34745.12
+seats           1241.0     30.04     65.60   1.00     4.00    10.00     26.00     847.00
+discount_pct    1250.0      9.48      6.32   0.00     4.50     9.50     13.88      28.90
+tenure_months   1250.0     11.05      6.52   1.00     5.00    11.00     16.00      24.00
+nps_score       1065.0      6.99      1.92   0.00     6.00     7.00      8.00      10.00
+lifetime_value  1247.0  13414.82  39169.62  59.57  1033.07  3364.95  11075.23  669569.56
+final_adoption  1250.0      0.37      0.26   0.03     0.14     0.35      0.54       1.00
+final_tickets   1250.0      1.26      0.93   0.00     0.67     1.00      1.67       7.00
+final_nps       1250.0      6.99      1.88   0.00     6.00     7.00      8.33      10.00
+
+6.3  Categorical summary
+
+       plan_tier
+       Starter       493
+       Growth        373
+       Business      267
+       Enterprise    117
+
+       billing_cycle
+       Monthly    817
+       Annual     433
+
+       region
+       North America    445
+       Europe           404
+       Asia Pacific     281
+       Latin America    120
+
+       acquisition_channel
+       Organic           282
+       Paid Search       281
+       Referral          232
+       Partner           196
+       Outbound Sales    146
+       Events            113
+
+       company_size
+       1-50        562
+       51-200      398
+       201-1000    191
+       1000+        99
+
+       engagement_band
+       Low (<30% seats used)    506
+       High (>45%)              459
+       Medium (30-45%)          285
+
+============================================================================
+SECTION 7  |  EXPLORATORY DATA ANALYSIS
+============================================================================
+
+CHART 1  Monthly Recurring Revenue and active customers over time
+  Question: is the business growing or shrinking?
+  MRR rose from $50,390 in Jan 2023 to a peak of $1,052,669 in Oct 2024.
+  It has been flat since: $1,051,252 in Dec 2024, only -0.1% against the Oct 2024 peak.
+  Average month-on-month MRR growth: +51.9% early in the period versus +0.8% over the last 6 months.
+  Active customers peaked at 846 in Sep 2024 and are now 820 (-3.1%).
+  INTERPRETATION: the top line grew explosively through 2023, but the
+  growth rate has collapsed from +51.9% a month to +0.8% a month.
+  The customer count has stopped growing too. Whatever was driving this
+  business has stopped working - this is the core problem.
+    chart saved -> visualizations/charts/01_mrr_and_customers_trend.png
+
+CHART 2  Cohort retention - what share of each signup cohort is still active?
+  Question: do newer customers stick around as well as older ones?
+  24 signup cohorts, from 2023-01 to 2024-12.
+  Average retention: month 1 95% (n=23 cohorts), month 3 86% (n=21), month 6 79% (n=18), month 12 68% (n=12).
+  Only the 6 earliest cohorts are old enough to have reached month 18; they retain 55% at that point.
+  Each average uses ONLY the cohorts that lived long enough to reach that
+  month. Folding in younger cohorts as 0% would understate retention badly.
+  INTERPRETATION: retention falls steeply in the first 3 months and then
+  flattens. The danger zone is onboarding, not the long tail.
+  Cells are left blank where a cohort has not yet reached that month.
+    chart saved -> visualizations/charts/02_cohort_retention_heatmap.png
+
+CHART 3  Churn rate by plan tier
+  Question: which product tier loses the most customers?
+ plan_tier  customers  churned  total_mrr  churn_pct  mrr_lost  share_of_all_losses
+   Starter        493      198   98984.47       40.2  33087.74                 10.9
+    Growth        373      130  205252.03       34.9  62088.18                 20.4
+  Business        267       75  486222.73       28.1 124131.70                 40.7
+Enterprise        117       27  469810.05       23.1  85620.71                 28.1
+  Starter churns at 40.2% versus 23.1% for Enterprise - a gap of 17.1 percentage points.
+  INTERPRETATION: the entry-level plan is the leak. These are the customers
+  the sales team signs most easily and they leave soonest.
+    chart saved -> visualizations/charts/03_churn_by_plan_tier.png
+
+CHART 4  Churn rate by acquisition channel
+  Question: are we buying customers that stay?
+acquisition_channel  customers  churned  total_mrr  churn_pct  mrr_lost  share_of_all_losses
+            Organic        282       68  312459.18       24.1  51404.16                 16.9
+           Referral        232       64  236191.69       27.6  34074.98                 11.2
+     Outbound Sales        146       53  123422.71       36.3  27214.31                  8.9
+            Partner        196       79  159135.38       40.3  57558.39                 18.9
+        Paid Search        281      117  326719.49       41.6  86987.03                 28.5
+             Events        113       49  102340.83       43.4  47689.46                 15.6
+  Best: Organic at 24.1%. Worst: Events at 43.4%.
+  Events accounts represent 15.6% of all MRR lost to churn, but they are only 9% of the customer base.
+  INTERPRETATION: the channels that discount hardest to win a deal are the
+  ones that lose it soonest. Discounting buys contracts that do not last.
+
+  Is the channel worth its cost? (value per customer won)
+acquisition_channel  customers  churn_pct  avg_mrr  avg_discount  avg_ltv
+            Organic        282       24.1  1111.95          3.11 15330.94
+        Paid Search        281       41.6  1162.70         10.20 15082.96
+           Referral        232       27.6  1018.07          6.76 14898.79
+     Outbound Sales        146       36.3   851.19         13.71 11415.28
+            Partner        196       40.3   816.08         16.38 10124.41
+             Events        113       43.4   905.67         11.77  9698.96
+    chart saved -> visualizations/charts/04_churn_and_ltv_by_channel.png
+
+CHART 5  How were customers behaving just before they left?
+  Question: are there early warning signs we could act on?
+              final_adoption  final_tickets  final_nps
+Still active           0.385          1.222      7.067
+Churned                0.336          1.339      6.851
+
+  Adoption   : churned 33.6% vs active 38.5% (-12.8%)
+  Tickets    : churned 1.34 vs active 1.22 (+9.6%)
+  NPS        : churned 6.85 vs active 7.07 (-0.22 points)
+  INTERPRETATION: customers who leave were already using fewer seats and
+  were less happy in their final 3 months. These are usable warning signs.
+    chart saved -> visualizations/charts/05_early_warning_signals.png
+
+CHART 6  When do customers actually leave?
+  Question: at what point in the customer lifecycle does churn happen?
+  Base for every point: all 1,250 customers who ever signed up.
+  Customers still active at the end of the data are treated as censored:
+  they count as at risk, but not as cancellations.
+ tenure_month  at_risk_subscribed  cancelled_this_month  monthly_churn_pct  retention_pct
+            0                1250                    63               5.04         100.00
+            1                1177                    62               5.27          94.16
+            2                1101                    39               3.54          88.08
+            3                1041                    37               3.55          83.28
+            4                 982                    34               3.46          78.56
+            5                 924                    21               2.27          73.92
+            6                 874                    23               2.63          69.92
+            7                 819                    18               2.20          65.52
+            8                 763                    20               2.62          61.04
+            9                 703                    15               2.13          56.24
+           10                 647                    13               2.01          51.76
+           11                 594                    12               2.02          47.52
+           12                 539                     9               1.67          43.12
+           13                 481                    12               2.49          38.48
+           14                 427                    13               3.04          34.16
+           15                 361                    14               3.88          28.88
+           16                 292                     8               2.74          23.36
+           17                 243                     6               2.47          19.44
+           18                 201                     6               2.99          16.08
+           19                 147                     1               0.68          11.76
+           20                 113                     4               3.54           9.04
+           21                  71                     0               0.00           5.68
+           22                  47                     0               0.00           3.76
+           23                  18                     0               0.00           1.44
+  Of everyone who signed up, 83% were still subscribed at month 3, 70% at month 6 and 43% at month 12.
+  The monthly cancellation rate is 5.0% in the first month and peaks at 5.3% in tenure month 1.
+  38% of all 430 cancellations happened in the first 3 months of tenure.
+  A smaller second wave appears at the first renewal: the cancellation rate reaches 3.9% around tenure months 12-18,
+  against a low of roughly 2% in the calm middle of the curve.
+  NOTE: only customers who signed up early can appear in the later months,
+  so the tail of this curve is a small, already-loyal group. Read it
+  together with the cohort heatmap, not instead of it.
+  Biggest 3-month loss: 16.7 points of the original base, between month 0 and month 3.
+  NOTE: only customers who signed up early can appear in the later months,
+  so the tail of this curve is a small, already-loyal group. Read it
+  together with the cohort heatmap, not instead of it.
+    chart saved -> visualizations/charts/06_retention_by_tenure.png
+
+CHART 7  Why customers leave
+  Question: what do customers tell us when they cancel?
+               churn_reason  customers  mrr_lost  share_pct  mrr_share_pct
+              Too expensive        105   54089.7       27.0           20.0
+Low adoption / unused seats         71   41935.0       18.3           15.5
+           Missing features         67   44261.5       17.2           16.4
+     Switched to competitor         63   65170.5       16.2           24.1
+    Poor support experience         57   35768.0       14.7           13.2
+         Company downsizing         16    7141.2        4.1            2.6
+Business priorities changed         10   22230.5        2.6            8.2
+  'Too expensive' is the single largest reason at 105 customers (27%).
+    chart saved -> visualizations/charts/07_churn_reasons.png
+
+CHART 8  Where the revenue actually goes
+  Question: which groups cost us the most money, not just the most logos?
+            customers_lost  mrr_lost  share_pct
+plan_tier                                      
+Starter                198   33088.0       11.0
+Growth                 130   62088.0       20.0
+Business                75  124132.0       41.0
+Enterprise              27   85621.0       28.0
+  Total MRR lost to churn over the two years: $304,928
+    chart saved -> visualizations/charts/08_revenue_impact_of_churn.png
+
+============================================================================
+SECTION 8  |  BUSINESS ANALYSIS
+============================================================================
+
+============================================================================
+KEY QUESTION 1  |  What is the state of the business right now?
+============================================================================
+  Total customers on the books            : 1,250
+  Churned during 2023-2024                : 430 (34.4%)
+  Still active in December 2024           : 820
+  MRR in December 2024                    : $1,051,252
+  ARR run-rate in December 2024           : $12,615,022
+  Average revenue per active customer     : $1,282
+  MRR lost to churn over the period       : $304,928
+  Change in MRR since the Oct 2024 peak   : -0.1%
+  MRR growth, last 6 months                   : +0.8% per month
+
+  WHAT HAPPENED
+  The customer base grew explosively through 2023, with MRR peaking at
+  $1,052,669 in Oct 2024. Growth then stopped: average monthly
+  growth fell from +51.9% to +0.8%, and active customers
+  are down 3% from their Sep 2024 peak of 846.
+
+  WHY IT MATTERS
+  Revenue is now flat only because new logos almost exactly replace the ones lost:
+  over the last 6 months the business added 140 new customers and lost 143 existing ones, a net -3 logos,
+  while MRR grew +0.8% a month. There is no growth left to absorb a
+  bad month: churn compounds on a base that is no longer expanding.
+
+============================================================================
+KEY QUESTION 2  |  Are we still growing, and is new business replacing churn?
+============================================================================
+ year  new_customers  mrr_added  churned  mrr_lost  net_new_customers  net_mrr_change
+ 2023            792   935939.0      145  137882.0                647        798057.0
+ 2024            458   324330.0      285  167046.0                173        157284.0
+
+  2023: 792 new customers ($935,939 MRR) vs 145 churned ($137,882 MRR) -> net +647 customers, $798,057 MRR
+  2024: 458 new customers ($324,330 MRR) vs 285 churned ($167,046 MRR) -> net +173 customers, $157,284 MRR
+
+  Fewer customers, or smaller ones? (quality of new business)
+signup_cohort  new_customers  avg_mrr_per_customer  avg_seats  starter_share
+      2023-01             40                1297.9       43.4           35.0
+      2023-02             53                1104.1       32.9           32.1
+      2023-03             61                1265.0       37.8           31.1
+      2023-04             67                1179.6       36.2           29.9
+      2023-05             70                1361.7       42.3           28.6
+      2023-06             73                1766.3       46.8           34.2
+      2023-07             73                1130.0       36.2           38.4
+      2023-08             74                1206.9       36.9           33.8
+      2023-09             73                1011.1       27.8           46.6
+      2023-10             72                 902.0       30.2           31.9
+      2023-11             69                1187.9       33.4           44.9
+      2023-12             67                 812.7       27.3           49.3
+      2024-01             63                1141.8       29.0           44.4
+      2024-02             60                 531.2       18.8           46.7
+      2024-03             56                 641.1       20.8           48.2
+      2024-04             51                 987.2       25.8           31.4
+      2024-05             46                 805.0       23.4           37.0
+      2024-06             42                 439.3       11.8           50.0
+      2024-07             37                 789.0       26.0           35.1
+      2024-08             31                 718.0       17.4           45.2
+      2024-09             26                 288.8       10.5           57.7
+      2024-10             21                 475.6       12.9           57.1
+      2024-11             15                 371.2       17.0           60.0
+      2024-12             10                 481.7        9.9           40.0
+
+  Average MRR per new customer: $1,349 in the first half of 2023
+  versus $567 in the second half of 2024 (-58%).
+  Starter-plan share of new customers: 32% -> 48%.
+  WHAT HAPPENED
+  The company is still signing customers, but each one is worth a fraction of
+  what it used to be worth, and the mix has shifted towards small Starter
+  accounts. Logo growth therefore hides a collapse in revenue quality.
+
+  WHY IT MATTERS
+  This is why MRR stalled even while logos kept arriving. Chasing more small
+  logos will not fix it: the average new customer would have to be worth
+  roughly what it was in early 2023 just to replace the revenue lost to churn.
+
+============================================================================
+KEY QUESTION 3  |  Which customers are we losing?
+============================================================================
+
+  By Plan tier:
+ plan_tier  customers  churned  total_mrr  churn_pct  mrr_lost  share_of_all_losses
+   Starter        493      198   98984.47       40.2  33087.74                 10.9
+    Growth        373      130  205252.03       34.9  62088.18                 20.4
+  Business        267       75  486222.73       28.1 124131.70                 40.7
+Enterprise        117       27  469810.05       23.1  85620.71                 28.1
+
+  By Billing cycle:
+billing_cycle  customers  churned  total_mrr  churn_pct  mrr_lost  share_of_all_losses
+      Monthly        817      305  580454.55       37.3 146758.72                 48.1
+       Annual        433      125  679814.73       28.9 158169.61                 51.9
+
+  By Acquisition channel:
+acquisition_channel  customers  churned  total_mrr  churn_pct  mrr_lost  share_of_all_losses
+             Events        113       49  102340.83       43.4  47689.46                 15.6
+        Paid Search        281      117  326719.49       41.6  86987.03                 28.5
+            Partner        196       79  159135.38       40.3  57558.39                 18.9
+     Outbound Sales        146       53  123422.71       36.3  27214.31                  8.9
+           Referral        232       64  236191.69       27.6  34074.98                 11.2
+            Organic        282       68  312459.18       24.1  51404.16                 16.9
+
+  By Company size:
+company_size  customers  churned  total_mrr  churn_pct  mrr_lost  share_of_all_losses
+        1-50        562      222  241877.00       39.5  74962.07                 24.6
+      51-200        398      129  268763.88       32.4  64678.31                 21.2
+    201-1000        191       56  270909.14       29.3  61687.74                 20.2
+       1000+         99       23  478719.26       23.2 103600.21                 34.0
+
+  By Engagement band:
+      engagement_band  customers  churned  total_mrr  churn_pct  mrr_lost  share_of_all_losses
+Low (<30% seats used)        506      193  502690.43       38.1 142442.08                 46.7
+      Medium (30-45%)        285      106  254484.79       37.2  42044.71                 13.8
+          High (>45%)        459      131  503094.06       28.5 120441.54                 39.5
+
+============================================================================
+KEY QUESTION 4  |  What signals are associated with a customer leaving?
+============================================================================
+  We compare the final 3 months of churned customers with those still active.
+
+  Signal                                 Churned      Active    Difference
+  Seat adoption                           33.6%       38.5%        -4.9%
+  Support tickets / month                   1.34        1.22         +0.12
+  NPS score                                 6.85        7.07         -0.22
+  Average discount %                       10.5%        9.0%          1.5pp
+
+  WHAT HAPPENED
+  Customers who churned were using a smaller share of their seats, raised
+  slightly more support tickets, gave a lower NPS, and had been given a
+  larger discount at signup - than customers who stayed.
+
+  WHY IT MATTERS
+  All four are recorded BEFORE the cancellation, so they can be used to
+  flag accounts while there is still time to save them. Note this is an
+  association, not proof of cause: low adoption may be a symptom of a
+  customer who was already planning to leave.
+
+============================================================================
+KEY QUESTION 5  |  Is revenue retained from existing customers?
+============================================================================
+  Comparing December 2023 with December 2024 for the same customers:
+    MRR 12 months ago (that cohort)      : $836,792
+    MRR now from the customers who stayed: $756,792
+    Net Revenue Retention (NRR)          : 90.4%
+    of which expansion from seat growth   : +6.8 pp
+    of which churn from cancellations    : -16.4 pp
+
+  WHAT HAPPENED
+  NRR of 90% means the existing customer base shrank: the company
+  gave back more revenue through churn (-16.4 pp) than it
+  gained from expansion (+6.8 pp).
+
+  WHY IT MATTERS
+  NRR is the single number that tells a subscription business whether it
+  is getting healthier or just buying more customers to stand still.
+
+============================================================================
+KEY QUESTION 6  |  How much revenue is currently at risk?
+============================================================================
+  We build a simple, explainable risk score out of the signals that Section 8
+  Question 4 identified. It is a rule-based score, not a black-box model, so
+  a customer-success manager can see exactly why an account is flagged.
+
+  Risk score = weighted sum of six signals, each rescaled to 0-1 so that
+  no single measurement dominates because of its units. The SIGN of the
+  weight carries the direction: a negative weight means a high value is
+  protective, a positive weight means a high value is a warning sign.
+
+    final_adoption       weight -2.0   low seat use pushes the score UP
+    final_tickets        weight +1.0   more support tickets pushes the score UP
+    final_nps            weight -1.2   a low NPS pushes the score UP
+    final_mrr            weight +1.0   bigger accounts rank higher - more MRR is at stake
+    tenure_months        weight -0.8   a short tenure pushes the score UP
+    discount_pct         weight +0.6   a heavy signup discount pushes the score UP
+
+  risk_band  customers  total_mrr  avg_score  avg_adoption  avg_nps  avg_tickets  share_of_active_mrr
+   Low risk        274 266638.403     -2.142         0.662    8.320        0.681               25.545
+Medium risk        273 268719.360     -0.931         0.337    7.100        1.131               25.744
+  High risk        273 508458.473      0.057         0.154    5.777        1.855               48.711
+
+  MRR sitting with HIGH-RISK active customers: $508,458 (49% of active MRR)
+  These 273 accounts use 15% of their seats on average, give NPS 5.8 and raise 1.9 tickets a month.
+
+  WHY IT MATTERS
+  This is the number a retention campaign would be measured against.
+  Improving adoption in this group alone protects $508,458 of
+  recurring revenue - and the accounts are already identified, so the
+  work can start immediately rather than waiting for a predictive model.
+
+============================================================================
+KEY QUESTION 7  |  What should the business do?
+============================================================================
+  The recommendations below follow directly from the evidence above.
+
+  1. Fix the first 90 days. 38% of all cancellations happen before a customer has been
+     subscribed for 3 months, and months 0-3 are the worst window of the whole
+     curve (17 points of the customer base). The cancellation rate is 5.0%
+     in month one. Move onboarding, activation and the first support contact
+     into a structured 90-day programme instead of reactive support.
+
+  2. Then handle the first renewal. The cancellation rate dips to about 2%
+     mid-tenure and then climbs back to 3.9% around months 12-18 as the first annual
+     contracts come up for decision. Start that conversation 90 days before
+     the anniversary, not when the cancellation notice arrives.
+
+  3. Stop losing Monthly accounts faster than Annual ones.
+     Monthly billing churns at 37% versus 29% on Annual billing. Offer an
+     annual-billing incentive at signup to close the gap.
+
+  4. Review discounting. Churned customers were given 1.5 percentage points more discount on average
+     than customers who stayed. Discounts buy contracts that do not last.
+     Tie discount approval to company size and to the plan the account can
+     realistically grow into.
+
+  5. Re-balance acquisition spend away from Events.
+     It has the highest churn (43.4%) and lifetime value ranked 6 of 6 ($9,699),
+     yet it still produces logos. Organic keeps customers far better at 24.1%.
+     Shift budget, and add a 90-day retention check before renewing
+     acquisition budget.
+
+  6. Run a targeted save programme on the high-risk accounts identified above
+     rather than a company-wide discount campaign, which would cost more
+     than the churn it prevents.
+
+============================================================================
+SECTION 9  |  SAVING OUTPUTS
+============================================================================
+    period column written as text: signup_cohort
+    period column written as text: signup_cohort
+    period column written as text: month
+Files written to data/cleaned/:
+  customers_clean.csv                      1,250 rows x 33 cols
+  customer_monthly_clean.csv              13,815 rows x 20 cols
+  churn_risk_scoring.csv                     820 rows x 16 cols
+  analysis_monthly_trend.csv                  24 rows x  5 cols
+  analysis_churn_by_plan.csv                   4 rows x  7 cols
+  analysis_churn_by_channel.csv                6 rows x  7 cols
+  analysis_churn_reasons.csv                   7 rows x  5 cols
+  analysis_cohort_retention.csv               24 rows x 26 cols
+  analysis_retention_by_tenure.csv            24 rows x  5 cols
+  analysis_yearly_growth_vs_churn.csv          2 rows x  7 cols
+  analysis_risk_summary.csv                    3 rows x  8 cols
+  analysis_channel_value.csv                   6 rows x  6 cols
+  kpi_summary.csv                             16 rows x  3 cols
+
+Charts written to visualizations/charts/: 8
+  01_mrr_and_customers_trend.png
+  02_cohort_retention_heatmap.png
+  03_churn_by_plan_tier.png
+  04_churn_and_ltv_by_channel.png
+  05_early_warning_signals.png
+  06_retention_by_tenure.png
+  07_churn_reasons.png
+  08_revenue_impact_of_churn.png
